@@ -7,7 +7,14 @@ html(lang="en")
     link(rel="stylesheet" type="text/css" href="styles/style.css")
 
   body
-    .container
-      include _partials/navbar
-
     include _partials/header
+    
+    .container
+      include _partials/hero-banner
+    
+    .container.container--960
+      .post-section
+        h2.post-section__header
+          | Every great framework deserves a great conference.
+
+      
