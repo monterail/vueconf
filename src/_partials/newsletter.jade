@@ -1,11 +1,13 @@
 .newsletter-section
   .container__inner
-    .newsletter-section__input-wrapper
-      label
+      label.form__label
         | Vue.js Newsletter
-      input
-      
+      .newsletter-section__input-wrapper
+        input.form__input(placeholder='Your email address...')
+        button.button.button--dark
+          | Subscribe
+
     p.newsletter__paragraph
-      | Subscribe to get weekly updates on everything Vue-related. 
+      | Subscribe to get weekly updates on everything Vue-related.
       br
       | Conference included!
