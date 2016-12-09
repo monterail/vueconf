@@ -1,0 +1,34 @@
+.speakers
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+
+.speaker
+  width: 100%
+  margin: 10px 0
+
+  @media #{$medium-up}
+    width: 50%
+
+  @media #{$large-up}
+    width: 25%
+
+.speaker__title
+  font-size: 24px
+  font-weight: 600
+  color: $color-text
+
+.speaker__subtitle
+  font-size: 18px
+  font-weight: 300
+  color: $color-blue
+
+.speaker__image
+  max-width: 202px
+  margin-bottom: 25px
+
+.speaker__social
+  margin-top: 15px
+
+  .icon--twiter
+    margin-left: 15px
