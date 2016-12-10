@@ -20,3 +20,37 @@
     display: flex
     flex-direction: column
     margin-top: 45px
+
+.organizers-more
+  margin-top: 60px
+
+  @media #{$large-up}
+    text-align: left
+
+.organizers-more__text,
+.organizers-more__button
+  margin: 10px 0
+
+  @media #{$large-up}
+    display: inline-block
+    vertical-align: middle
+
+.organizers-more__text
+  font-size: 20px
+  font-weight: 300
+  color: $color-text
+  line-height: 1.4
+
+  a
+    font-weight: bold
+    text-decoration: none
+    color: $color-red
+
+  @media #{$large-up}
+    margin-right: 35px
+
+.organizers-more__button
+  background-color: $color-red
+
+  &:hover
+    background-color: lighten($color-red, 10%)
