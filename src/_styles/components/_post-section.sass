@@ -1,24 +1,52 @@
 .post-section
   text-align: center
-  padding-bottom: 80px
-  padding-top: 40px
+  padding-bottom: 40px
+  padding-top: 20px
+
+  @media #{$medium-up}
+    padding-bottom: 40px
+    padding-top: 20px
+
+  @media #{$large-up}
+    padding-bottom: 80px
+    padding-top: 40px
 
 .post-section__header
-  font-size: 38px
+  font-size: 28px
   color: $color-text
   font-weight: 300
+
+  @media #{$medium-up}
+    font-size: 32px
+
+  @media #{$large-up}
+    font-size: 38px
 
 .post-section__paragraph
   margin: 0
-  font-size: 24px
+  font-size: 18px
   line-height: 1.4
   color: $color-text
   font-weight: 300
+
+  @media #{$medium-up}
+    font-size: 20px
+
+  @media #{$large-up}
+    font-size: 24px
 
 .post-section__paragraph--important
   font-weight: 600
 
 .post-section__button
-  margin: 45px 0
-  font-size: 24px
+  margin: 25px 0
+  font-size: 20px
   border-radius: 50px
+
+  @media #{$medium-up}
+    font-size: 22px
+    margin: 35px 0
+
+  @media #{$large-up}
+    margin: 45px 0
+    font-size: 24px

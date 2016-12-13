@@ -1,5 +1,6 @@
 $screen: "only screen" !default
 
+$xsmall: 420px
 $small: 640px
 $medium: 1024px
 $large: 1240px
@@ -10,6 +11,9 @@ $portrait: "#{$screen} and (orientation: portrait)"
 
 $small-up: "#{$screen}" !default
 $small-only: "#{$screen} and (max-width: #{$small})" !default
+
+$xsmall-up: "#{$screen} and (min-width: #{$xsmall})" !default
+$xsmall-only: "#{$screen} and (min-width: #{$small}) and (max-width: #{$xsmall})" !default
 
 $medium-up: "#{$screen} and (min-width: #{$small})" !default
 $medium-only: "#{$screen} and (min-width: #{$small}) and (max-width: #{$medium})" !default

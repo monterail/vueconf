@@ -2,11 +2,20 @@
   background-image: url('../images/hero-banner.jpg')
   background-size: cover
   background-repeat: no-repeat
-  height: 660px
+  height: 560px
   text-align: center
 
+  @media #{$xsmall-up}
+    height: 660px
+
+  .post-section__button
+    margin: 25px 0
+
 .hero-banner__content
-  padding-top: 170px
+  padding-top: 80px
+
+  @media #{$xsmall-up}
+    padding-top: 120px
 
 .hero-banner__image
   display: block
@@ -14,7 +23,7 @@
 
 .hero-banner__header
   font-family: $font--primary
-  font-size: 82px
+  font-size: 40px
   color: $color-white
   font-weight: 400
   display: inline-block
@@ -22,6 +31,12 @@
   margin:
     top: 0
     bottom: 5px
+
+  @media #{$medium-up}
+    font-size: 62px
+
+  @media #{$large-up}
+    font-size: 82px
 
   .hero-banner__header__place
     color: $color-green--dark
@@ -32,12 +47,18 @@
 
 .hero-banner__subheader
   font-family: $font--primary
-  font-size: 26px
+  font-size: 18px
   color: $color-white
   font-weight: 400
   letter-spacing: 1pt
   text-transform: uppercase
 
   &--last
-    margin-top: 55px
+    margin-top: 45px
     text-transform: none
+
+  @media #{$medium-up}
+    font-size: 22px
+
+  @media #{$large-up}
+    font-size: 26px
