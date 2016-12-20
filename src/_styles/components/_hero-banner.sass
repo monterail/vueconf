@@ -2,21 +2,34 @@
   height: 560px
   text-align: center
   position: relative
-  background-size: cover
-  background-attachment: fixed
   background-repeat: no-repeat
-  background-position: center
+  background-position: -170px center
   background-image: url('../images/hero-banner.jpg')
   transform: translateZ(0)
 
-  @media #{$xlarge-up}
+  @media #{$medium-up}
+    background-position: center
+
+  @media #{$large-up}
     height: 660px
+
+  @media #{$xlarge-up}
+    height: 760px
+
+  @media only screen and (min-width: 1900px)
+    background-size: cover
 
   .post-section__button
     margin: 25px 0
 
 .hero-banner__content
-  padding-top: 120px
+  padding-top: 100px
+
+  @media #{$large-up}
+    padding-top: 120px
+
+  @media #{$xlarge-up}
+    padding-top: 150px
 
 .hero-banner__image
   display: block
