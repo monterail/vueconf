@@ -4,28 +4,30 @@
 .organizer
   width: 100%
   margin: 10px 0
+  order: 4
 
   @media #{$large-up}
+    order: 2
     width: 35%
 
 .organizers__logo
   img
     max-width: 233px
+    width: 100%
 
 .organizer__content
   display: inline-block
-  text-align: left
 
   @media #{$large-up}
     display: flex
     flex-direction: column
     margin-top: 45px
 
+  .post-section__paragraph
+    text-align: center
+
 .organizers-more
   margin-top: 60px
-
-  @media #{$large-up}
-    text-align: left
 
 .organizers-more__text,
 .organizers-more__button
@@ -36,18 +38,21 @@
     vertical-align: middle
 
 .organizers-more__text
-  font-size: 20px
+  font-size: 18px
   font-weight: 300
   color: $color-text
   line-height: 1.4
+  text-align: left
 
   a
-    font-weight: bold
+    font-weight: 600
     text-decoration: none
     color: $color-red
 
   @media #{$large-up}
     margin-right: 35px
+    font-size: 20px
+    text-align: center
 
 .organizers-more__button
   background-color: $color-red

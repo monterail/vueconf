@@ -1,13 +1,15 @@
-.newsletter-section
+.section.newsletter-section
   .container__inner
       label.form__label
         | Vue.js Newsletter
-      .newsletter-section__input-wrapper
-        input.form__input(placeholder='Your email address...')
-        button.button.button--dark
-          | Subscribe
+      .newsletter-section__input-wrapper(id="revue-embed")
+        form(action="https://www.getrevue.co/profile/vuenewsletter/add_subscriber" method="post" id="revue-form" name="revue-form"  target="_blank")
+          input.form__input(placeholder="Your email address..." type="email" name="member[email]" id="member_email" autocomplete="off" required)
+          input.button.button--dark(type="submit" value="Subscribe" name="member[subscribe]" id="member_submit")
 
     p.newsletter__paragraph
+      | Don’t miss the tickets!
+      br
       | Subscribe to get weekly updates on everything Vue-related.
       br
       | Conference included!

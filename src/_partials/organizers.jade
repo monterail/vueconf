@@ -1,37 +1,35 @@
-.organizers-section.post-section
+.section.organizers-section.post-section
   .container__inner
     h2.post-section__header
       | People behind the conference
 
     .speakers
       .speaker
-        img.speaker__image(src="../images/evan.png" alt="Evan You")
+        img.speaker__image(src="../images/evan.jpg" alt="Evan You")
         .speaker__title
           | Evan You
         .speaker__social
-          a.icon.icon--github(href="/")
-          a.icon.icon--twiter(href="/")
-
-      .speaker
-        img.speaker__image(src="../images/damian.png" alt="Damian Dulisz")
-        .speaker__title
-          | Damian Dulisz
-        .speaker__social
-          a.icon.icon--github(href="/")
-          a.icon.icon--twiter(href="/")
+          a.icon.icon--github(href="https://github.com/yyx990803" target="_blank")
+          a.icon.icon--twiter(href="https://twitter.com/youyuxi" target="_blank")
 
       .organizer
         .organizer__content
           p.post-section__paragraph
             | Organized and supported by
 
-          a.organizers__logo(href="/")
-            img(src="../images/monterail.png" alt="Monterail")
+          a.organizers__logo(href="https://monterail.com" target="_blank")
+            img(src="../images/monterail-logotype.svg" alt="Monterail")
+            
+      .speaker.speaker--last
+        img.speaker__image(src="../images/damian.jpg" alt="Damian Dulisz")
+        .speaker__title
+          | Damian Dulisz
+        .speaker__social
+          a.icon.icon--github(href="https://github.com/shentao" target="_blank")
+          a.icon.icon--twiter(href="https://twitter.com/damiandulisz" target="_blank")
+
 
     .organizers-more
       .organizers-more__text
-        | #[a(href="/") @Monterail] is a #[strong web development and design agency] based in Poland.
-        | #[br] It just happens that we kinda love #[strong Vue.js]!
-
-      a.button.organizers-more__button(href="/")
-        | READ OUR LOVE STORY
+        | #[a(href="https://twitter.com/monterail" target="_blank") @Monterail] is a #[strong web development and design agency] based in Poland.
+        | #[br] And we kinda love #[strong Vue]!

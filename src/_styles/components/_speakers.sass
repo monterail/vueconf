@@ -6,6 +6,7 @@
 .speaker
   width: 100%
   margin: 10px 0 40px 0
+  order: 1
 
   @media #{$medium-up}
     width: 50%
@@ -26,10 +27,25 @@
 
 .speaker__image
   max-width: 202px
-  margin-bottom: 25px
+  margin-bottom: 15px
+  border-radius: 300px
 
 .speaker__social
   margin-top: 15px
 
   .icon--twiter
     margin-left: 15px
+
+.speaker--last
+  order: 3
+
+.h3
+  margin: 50px 0 0
+  font:
+    size: 24px
+    family: $font
+    weight: 300
+  color: $color-text
+
+  @media #{$medium-up}
+    font-size: 32px

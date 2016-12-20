@@ -12,14 +12,19 @@ html(lang="en")
 
     .container
       .container__inner
-        .post-section
+        .section.post-section
           h2.post-section__header
             | Every great framework deserves a great conference.
           p.post-section__paragraph
-            | We aim at bringing you the most inspiring tech-talks and in-depth case studies from the leading Vue.js developers of our community.
-            br
-            br
-            | The event is also a perfect opportunity to meet other like-minded developers.
+            | We aim at bringing you the most inspiring tech-talks and in-depth case studies from the community's leading Vue.js developers.
+          p.post-section__paragraph
+            | It is also a perfect opportunity to meet other like-minded developers.
+          p.post-section__paragraph
+            | However, #[strong we could use some help]! 
+            br 
+            | Please fill in the short survey regarding your preferences on lectures, workshops and organizational matters.
+          a.post-section__button.button(href="")
+            | Take the survey
 
       include _partials/newsletter
 
