@@ -1,9 +1,31 @@
 .hero-banner
-  background-image: url('../images/hero-banner.jpg')
-  background-size: cover
-  background-repeat: no-repeat
   height: 560px
   text-align: center
+  position: relative
+
+  &:before
+    content: ""
+    background-color: darken($color-text, 20%)
+    z-index: -2
+    display: block
+    position: absolute
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+
+  &:after
+    background-size: cover
+    background-repeat: no-repeat
+    background-image: url('../images/hero-banner.jpg')
+    content: ""
+    opacity: 0.3
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    position: absolute
+    z-index: -1
 
   @media #{$xsmall-up}
     height: 660px
@@ -12,7 +34,7 @@
     margin: 25px 0
 
 .hero-banner__content
-  padding-top: 80px
+  padding-top: 120px
 
 .hero-banner__image
   display: block
