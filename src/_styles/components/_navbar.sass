@@ -1,7 +1,18 @@
 .navbar
+  display: block
+  position: fixed
+  z-index: 10
+  background: white
+  width: 100%
+  padding: 20px 0
+  align-items: center
+
+.navbar__container
+  max-width: 960px
+  padding: 0 20px
+  margin: 0 auto
   display: flex
   justify-content: space-between
-  padding: 20px 0
 
 .navbar__logo
   font-family: $font--secondary
@@ -25,6 +36,7 @@
   display: inline-block
   vertical-align: middle
   padding-left: 25px
+  line-height: 35px
   text-transform: uppercase
 
   a
