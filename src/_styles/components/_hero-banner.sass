@@ -2,35 +2,11 @@
   height: 560px
   text-align: center
   position: relative
-
-  &:before
-    content: ""
-    background-color: darken($color-text, 20%)
-    z-index: -2
-    display: block
-    position: absolute
-    top: 0
-    left: 0
-    bottom: 0
-    right: 0
-
-  &:after
-    background-size: cover
-    background-attachment: fixed
-    background-repeat: no-repeat
-    background-position: top center
-    background-image: url('../images/hero-banner.jpg')
-    content: ""
-    opacity: 0.3
-    top: 0
-    left: 0
-    bottom: 0
-    right: 0
-    position: absolute
-    z-index: -1
-
-    @media #{$large-up}
-      background-size: contain
+  background-size: cover
+  background-attachment: fixed
+  background-repeat: no-repeat
+  background-position: center
+  background-image: url('../images/hero-banner.jpg')
 
   @media #{$xlarge-up}
     height: 660px
