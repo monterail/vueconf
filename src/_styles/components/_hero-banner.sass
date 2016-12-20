@@ -16,6 +16,7 @@
 
   &:after
     background-size: cover
+    background-attachment: fixed
     background-repeat: no-repeat
     background-image: url('../images/hero-banner.jpg')
     content: ""
@@ -29,6 +30,9 @@
 
   @media #{$xsmall-up}
     height: 660px
+
+  @media #{$medium-up}
+    background-size: contain
 
   .post-section__button
     margin: 25px 0
