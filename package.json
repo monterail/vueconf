@@ -1,5 +1,5 @@
 {
-  "name": "monterailcom-v3",
+  "name": "vueconf",
   "version": "0.0.1",
   "dependencies": {
     "autoprefixer": "~6.3.1",
@@ -49,6 +49,7 @@
     "clean-deps": "rimraf node_modules",
     "start": "gulp prod",
     "build": "gulp build",
+    "dev": "gulp serve",
     "test": "echo \"Error: no test specified\""
   },
   "engines": {

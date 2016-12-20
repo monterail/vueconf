@@ -7,6 +7,10 @@
   padding: 20px 0
   align-items: center
 
+.nav-target
+  position: absolute
+  top: -76px
+
 .navbar__container
   max-width: 960px
   padding: 0 20px
@@ -18,6 +22,7 @@
   font-family: $font--secondary
   font-size: 28px
   font-weight: 500
+  white-space: nowrap
 
   span
     color: $color-green--dark
@@ -42,3 +47,52 @@
   a
     font-size: 16px
     font-weight: normal
+
+#burger
+  display: none
+
+#burger-target
+  position: fixed
+  left: -99999px
+  display: none
+
+@media screen and (max-width:639px)
+  #burger
+    display: block
+    align-self: center
+    border: 1px solid #ccc
+    border-radius: 5px
+    display: flex
+    flex-direction: column
+    align-items: stretch
+    justify-content: space-between
+    height: 30px
+    width: 40px
+    box-sizing: border-box
+    padding: 8px 8px
+
+    .bar
+      height: 2px
+      background: #ccc
+
+  #burger-target
+    display: inline-block
+
+  #burger-target ~ *
+    transition: transform 0.3s ease
+
+  #burger-target:focus ~ *
+    transform: translateX(-250px)
+
+  nav
+    position: absolute
+    left: 100%
+    top: 0
+    li
+      width: 250px
+      padding: 0
+      > a
+        padding: 15px 25px
+        display: block
+      + li
+        box-shadow: 0 -10px 0 -9px #eee

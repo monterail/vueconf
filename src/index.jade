@@ -16,6 +16,7 @@ html(lang="en")
     link(rel="stylesheet" type="text/css" href="styles/style.css")
     link(rel="icon" href="images/logo.png" type="image/x-icon")
   body
+    input#burger-target(type="checkbox")
     include _partials/navbar
     .container
       include _partials/hero-banner
@@ -23,6 +24,7 @@ html(lang="en")
     .container
       .container__inner
         .section.post-section
+          .nav-target#survey
           h2.post-section__header
             | Every great framework deserves a great conference.
           p.post-section__paragraph
