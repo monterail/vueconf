@@ -15,13 +15,13 @@ html(lang="en")
     meta(name="format-detection" content="telephone=no")
     link(rel="stylesheet" type="text/css" href="styles/style.css")
     link(rel="icon" href="images/logo.png" type="image/x-icon")
-  body
+  body: .paralax-root
     input#burger-target(type="checkbox")
     include _partials/navbar
     .container
       include _partials/hero-banner
 
-    .container
+    .container.container--white
       .container__inner
         .section.post-section
           .nav-target#survey

@@ -2,9 +2,7 @@
   height: 560px
   text-align: center
   position: relative
-  background-repeat: no-repeat
-  background-position: -170px center
-  background-image: url('../images/hero-banner.jpg')
+
   transform: translateZ(0)
 
   @media #{$medium-up}
@@ -22,7 +20,13 @@
   .post-section__button
     margin: 25px 0
 
+.hero-banner__background
+  background-repeat: no-repeat
+  background-position: -170px center
+  background-image: url('../images/hero-banner.jpg')
+
 .hero-banner__content
+  position: relative
   padding-top: 100px
 
   @media #{$large-up}

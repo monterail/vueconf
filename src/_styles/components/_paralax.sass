@@ -1,0 +1,26 @@
+.paralax-root
+  perspective: 1000px
+  position: absolute
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  overflow-x: hidden
+  overflow-y: auto
+
+.paralax__group
+  transform-style: preserve-3d
+  transition: transform 0.5s
+
+
+.paralax--head
+  position: absolute
+  z-index: -1
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+
+  transform: translateZ(-1500px) scale(2.55)
+  @media screen and (max-width: 1023px)
+    transform: translateY(-50px) translateZ(-1500px) scale(2.55)
