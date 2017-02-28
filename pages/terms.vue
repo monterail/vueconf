@@ -10,3 +10,14 @@ export default {
   }
 }
 </script>
+
+<style lang="sass" scoped>
+h1, h2, h3
+  text-align: center
+
+h1, h2
+  margin-bottom: 0
+
+h3
+  margin-top: 0
+</style>
