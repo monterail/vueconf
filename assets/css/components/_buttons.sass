@@ -1,0 +1,33 @@
+.button
+  display: inline-block
+  vertical-align: middle
+  padding: 10px 33px
+  background-color: $color-green--dark
+  color: $color-white
+  font-family: $font
+  font-weight: 300
+  font-size: 20px
+  line-height: 1.25
+  text-align: center
+  white-space: nowrap
+  cursor: pointer
+  user-select: none
+  border: 0
+  border-radius: 20px
+  letter-spacing: 0.5px
+  text-decoration: none
+  transition: background-color 0.3s ease
+
+  @media #{$medium-up}
+    font-size: 22px
+
+  &:hover
+    background-color: darken($color-green--dark, 10%)
+
+.button--dark
+  font-size: 20px
+  background-color: $color-text
+  border-radius: 50px
+
+  &:hover
+    background-color: lighten($color-text, 10%)
