@@ -2,9 +2,6 @@
 .navbar
   .navbar__container
     nuxt-link.navbar__logo(to="/")
-      span
-        | VUE
-      | CONF
 
     label#burger(for="burger-target")
         .bar
@@ -18,8 +15,8 @@
             | Speakers
 
         li.navbar-nav__item
-          nuxt-link(to="/venue")
-            | Venue
+          nuxt-link(to="/schedule")
+            | Schedule
 
         li.navbar-nav__item
           a(href="#apply")
@@ -54,14 +51,11 @@
     justify-content: space-between
 
   .navbar__logo
-    font-family: $font
-    font-size: 22px
-    font-weight: 700
-    letter-spacing: 5px
-    white-space: nowrap
-
-    span
-      color: $color-green--dark
+    background-image: url('~assets/vueconf_logo.svg')
+    background-size: contain
+    background-repeat: no-repeat
+    width: 260px
+    height: 40px
 
   .navbar__logo,
   .navbar-nav__item a

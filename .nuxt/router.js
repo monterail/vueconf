@@ -8,11 +8,11 @@ Vue.use(Router)
 
 const _3668c528 = process.BROWSER_BUILD ? () => System.import('/Users/damiandulisz/code/monterail/vueconf/pages/index.vue') : require('/Users/damiandulisz/code/monterail/vueconf/pages/index.vue')
 
-const _1eca6eee = process.BROWSER_BUILD ? () => System.import('/Users/damiandulisz/code/monterail/vueconf/pages/venue.vue') : require('/Users/damiandulisz/code/monterail/vueconf/pages/venue.vue')
+const _e26d48be = process.BROWSER_BUILD ? () => System.import('/Users/damiandulisz/code/monterail/vueconf/pages/terms.vue') : require('/Users/damiandulisz/code/monterail/vueconf/pages/terms.vue')
+
+const _5f60af6d = process.BROWSER_BUILD ? () => System.import('/Users/damiandulisz/code/monterail/vueconf/pages/schedule.vue') : require('/Users/damiandulisz/code/monterail/vueconf/pages/schedule.vue')
 
 const _54d696aa = process.BROWSER_BUILD ? () => System.import('/Users/damiandulisz/code/monterail/vueconf/pages/speakers.vue') : require('/Users/damiandulisz/code/monterail/vueconf/pages/speakers.vue')
-
-const _e26d48be = process.BROWSER_BUILD ? () => System.import('/Users/damiandulisz/code/monterail/vueconf/pages/terms.vue') : require('/Users/damiandulisz/code/monterail/vueconf/pages/terms.vue')
 
 
 
@@ -52,19 +52,19 @@ export default new Router({
 			name: "index"
 		},
 		{
-			path: "/venue",
-			component: _1eca6eee,
-			name: "venue"
+			path: "/terms",
+			component: _e26d48be,
+			name: "terms"
+		},
+		{
+			path: "/schedule",
+			component: _5f60af6d,
+			name: "schedule"
 		},
 		{
 			path: "/speakers",
 			component: _54d696aa,
 			name: "speakers"
-		},
-		{
-			path: "/terms",
-			component: _e26d48be,
-			name: "terms"
 		}
   ]
 })

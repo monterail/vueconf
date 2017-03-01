@@ -1,6 +1,7 @@
 <template lang="pug">
-  .container__inner
-    img(src="~assets/img/kinonh.jpg")
+.container
+  .container__inner.center
+    h1 To be announced...
 </template>
 <script>
 export default {

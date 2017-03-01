@@ -9,7 +9,7 @@
     h2
       | More announcements soon!
 
-    .section.post-section.center.cfp-section
+    .post-section.center.cfp-section
 
       include:markdown-it ../content/speakers/cfp.md
 
@@ -43,6 +43,9 @@ export default {
 <style lang="sass" scoped>
 @import ~assets/css/base/helpers
 
+h2
+  margin: 60px 0 100px
+
 .container__inner
   text-align: center
   z-index: 2
@@ -54,4 +57,5 @@ export default {
 
 .cfp-section
   border-top: 1px solid #ddd
+  padding-top: 60px
 </style>

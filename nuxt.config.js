@@ -18,10 +18,12 @@ module.exports = {
       { property: 'twitter:image', content: 'images/logo.png' },
       { property: 'twitter:title', content: 'VueConf 2017 | Vue.js Conference' },
       { property: 'twitter:description', content: 'First worldwide conference by Monterail and Evan You about Vue.js - the progressive JavaScript framework. Inspiring talks and workshops led by world experts.' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { name: 'format-detection', content: 'telephone=no' },
+      { name: 'theme-color', content: '#3EB882' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: 'favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: 'img/logo-48.png' },
+      { rel: 'manifest', href: '/manifest.json' }
     ]
   },
   /*

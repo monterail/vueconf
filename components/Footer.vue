@@ -31,9 +31,11 @@ footer.footer
   padding-bottom: 30px
 
 .footer__top
-  display: flex
-  justify-content: space-around
   padding-bottom: 40px
+
+  @media #{$medium-up}
+    display: flex
+    justify-content: space-around
 
 .footer__logo
   display: inline-block

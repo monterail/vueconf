@@ -18,19 +18,19 @@
         blockquote.speaker__quote(v-if="speaker.quote")
           | {{ speaker.quote }}
           cite {{ speaker.name }}
-  .speaker
+  .speaker(@click="modalVisible = true")
     img.speaker__image(:src="speaker.img", :alt="speaker.name", @click="modalVisible = true")
     .speaker__aside
-      .speaker__title(@click="modalVisible = true")
+      .speaker__title
         | {{ speaker.name }}
       .speaker__subtitle
         | {{ speaker.title }}
       .speaker__social
-        a.icon.icon--gitlab(v-if="speaker.gitlab", :href="speaker.gitlab" target="_blank")
-        a.icon.icon--github(v-if="speaker.github", :href="speaker.github" target="_blank")
-        a.icon.icon--twitter(v-if="speaker.twitter", :href="speaker.twitter" target="_blank")
+        a.icon.icon--gitlab(@click.stop="", v-if="speaker.gitlab", :href="speaker.gitlab" target="_blank")
+        a.icon.icon--github(@click.stop="", v-if="speaker.github", :href="speaker.github" target="_blank")
+        a.icon.icon--twitter(@click.stop="", v-if="speaker.twitter", :href="speaker.twitter" target="_blank")
 
-      button.button-secondary(@click="modalVisible = true") Read more
+      button.button-secondary(@click="modalVisible = true") Learn more
 </template>
 
 <script>
@@ -106,7 +106,7 @@ export default {
 .speaker__title
   margin-top: 12px
   font-size: 14px
-  letter-spacing: 0.5px
+  letter-spacing: 0.8px
   font-weight: 600
   color: $color-text
   text-transform: uppercase
@@ -147,7 +147,7 @@ export default {
   margin-top: 20px
   font-size: 16px
   font-weight: 300
-  color: #8795a9
+  color: #495669
 
   @media #{$medium-up}
     font-size: 18px
@@ -176,7 +176,6 @@ export default {
     bottom: 10px
 
   .button-secondary,
-  .speaker__social
     display: none
 
     @media #{$medium-up}

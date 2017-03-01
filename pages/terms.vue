@@ -1,10 +1,20 @@
 <template lang="pug">
 .container
+  pre.
+    | {{ data[0].user }}
   .container__inner
     include:markdown-it ../content/terms.md
 </template>
 <script>
+import axios from 'axios'
+
 export default {
+  async data () {
+    let { data } = await axios.get('https://api.github.com/repos/monterail/vue-multiselect/issues?state=open')
+    return {
+      data
+    }
+  },
   head: {
     title: 'VueConf 2017 | Terms & Conditions'
   }

@@ -8,7 +8,7 @@ div
       speakers-list(:speakers="speakers", :limit="speakerLimit")
       .center
         nuxt-link(to="/speakers")
-          button.button View all speakers
+          button.button.speaker-button View all speakers
     tickets-section
     //- intro-section(:is-client="isClient")
     newsletter-section
@@ -42,7 +42,7 @@ export default {
   data ({ isClient }) {
     return {
       isClient: isClient,
-      speakerLimit: 4,
+      speakerLimit: 7,
       speakers
     }
   }
@@ -52,6 +52,8 @@ export default {
 <style lang="sass" scoped>
   @import ~assets/css/base/helpers
 
+  .speaker-button
+    margin: 40px 0 10px
   .container
     padding-top: 50px
 

@@ -18,11 +18,10 @@ export default {
 }
 </script>
 
-<style lang="sass">
+<style lang="sass" scoped>
   @import ~assets/css/base/helpers
 
   .newsletter__paragraph
-    padding: 0 15px
     line-height: 1.4
     font:
       size: 20px
@@ -37,8 +36,10 @@ export default {
     display: inline-block
     width: 100%
     vertical-align: middle
+    text-align: center
 
     @media #{$medium-up}
+      text-align: left
       margin-left: 50px
       width: 55%
 

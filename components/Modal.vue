@@ -22,6 +22,8 @@ export default {
 </script>
 
 <style lang="sass" scoped>
+@import ~assets/css/base/helpers
+
 .modal-mask
   position: fixed
   z-index: 9998
@@ -29,7 +31,7 @@ export default {
   left: 0
   width: 100%
   height: 100%
-  background-color: rgba(#fff, 0.5)
+  background-color: rgba(#000, 0.3)
   display: table
   transition: opacity .3s ease
 
@@ -50,6 +52,9 @@ export default {
   border-radius: 5px
   box-shadow: 0 18px 35px rgba(50,50,93,.1), 0 8px 15px rgba(0,0,0,.07)
   transition: all .3s ease
+
+  @media #{$medium-up}
+    padding: 40px
 
 .modal-footer
   text-align: right
