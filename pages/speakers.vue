@@ -4,7 +4,7 @@
     h1
       | Speakers
 
-    speakers-list(:speakers="speakers")
+    speakers-list(:speakers="speakers", :adjust-img-url="true")
 
     h2
       | More announcements soon!

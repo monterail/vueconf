@@ -12,8 +12,8 @@ footer.footer
     ul.footer__list.footer__list--small
       h3.footer__header Useful links
       li: nuxt-link(to="/speakers") Speakers
-      li: nuxt-link(to="/terms-and-conditions") Terms & Conditions
-      li: nuxt-link(to="/code-of-conduct") Code of Conduct
+      li: nuxt-link(to="/terms") Terms & Conditions
+      li: nuxt-link(to="/codeofconduct") Code of Conduct
 
   .footer__bottom
     | Proudly supported by

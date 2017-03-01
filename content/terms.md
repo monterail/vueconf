@@ -112,4 +112,4 @@ To use the Website you need (1) a computer, a laptop or other multimedia device 
 
 3. Monterail reserves the right to amend the provisions of these Terms of Use at any time due to important reasons, in particular economic, technical or legal, without the obligation to justify these reasons.
 
-4. The current version of Terms of Use is available at any time at [https://conf.vuejs.org/terms](https://conf.vuejs.org/terms-and-conditions), also in a downloadable form.
+4. The current version of Terms of Use is available at any time at [https://conf.vuejs.org/terms](https://conf.vuejs.org/terms), also in a downloadable form.

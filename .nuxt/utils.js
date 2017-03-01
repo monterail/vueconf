@@ -28,7 +28,7 @@ export function getContext (context) {
   let ctx = {
     isServer: !!context.isServer,
     isClient: !!context.isClient,
-    isDev: false,
+    isDev: true,
     
     route: (context.to ? context.to : context.route),
     error: context.error,

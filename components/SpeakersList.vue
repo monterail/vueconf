@@ -1,7 +1,7 @@
 <template lang="pug">
 div
   transition-group(name="fade", tag="div")
-    speaker.fade(v-for="speaker of speakersList", :speaker="speaker", :key="speaker")
+    speaker.fade(v-for="speaker of speakersList", :speaker="speaker", :key="speaker", :adjust-img-url="adjustImgUrl")
 </template>
 
 <script>
@@ -17,6 +17,10 @@ export default {
     speakers: {
       type: Array,
       required: true
+    },
+    adjustImgUrl: {
+      type: Boolean,
+      default: false
     }
   },
   computed: {

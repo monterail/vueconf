@@ -3,7 +3,7 @@
   modal(v-if="modalVisible", @close="modalVisible = false")
     div(slot="body")
       .speaker__large
-        img.speaker__image(:src="speaker.img", :alt="speaker.name")
+        img.speaker__image(:src="image", :alt="speaker.name")
         .speaker__aside
           .speaker__title
             | {{ speaker.name }}
@@ -19,7 +19,7 @@
           | {{ speaker.quote }}
           cite {{ speaker.name }}
   .speaker(@click="modalVisible = true")
-    img.speaker__image(:src="speaker.img", :alt="speaker.name", @click="modalVisible = true")
+    img.speaker__image(:src="image", :alt="speaker.name", @click="modalVisible = true")
     .speaker__aside
       .speaker__title
         | {{ speaker.name }}
@@ -42,11 +42,22 @@ export default {
     speaker: {
       type: Object,
       required: true
+    },
+    adjustImgUrl: {
+      type: Boolean,
+      default: false
     }
   },
   data () {
     return {
       modalVisible: false
+    }
+  },
+  computed: {
+    image () {
+      return this.adjustImgUrl
+        ? `/../${this.speaker.img}`
+        : this.speaker.img
     }
   }
 }
