@@ -13,7 +13,8 @@
     "start": "nuxt start",
     "generate": "nuxt generate"
   },
-  "devDependencies": {
+  "dependencies": {
+    "nuxt": "latest",
     "jstransformer-markdown-it": "^2.0.0",
     "markdown-it": "^8.2.2",
     "node-sass": "^4.3.0",

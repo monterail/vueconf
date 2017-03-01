@@ -7,7 +7,6 @@
       span.ticket__name {{ ticket.name }}
         span.ticket__date {{ ticket.date }}
       a.button.button--dark.ticket__price(
-        disabled,
         :href="ticket.url"
       )
         | {{ ticket.price }}

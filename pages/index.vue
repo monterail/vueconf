@@ -5,13 +5,11 @@ div
   .container
     .container__inner.section.post-section
       h1 Speakers
-      speakers-list(:speakers="speakers", :limit="speakerLimit")
+      speakers-list(:speakers="speakers")
       .center
         nuxt-link(to="/speakers")
           button.button.speaker-button View all speakers
     tickets-section#tickets
-    //- schedule-section
-    //- sponsors-section
     newsletter-section
 
     organizers-section
@@ -23,8 +21,6 @@ import HeroSection from '~components/Hero'
 import IntroSection from '~components/Intro'
 import NewsletterSection from '~components/Newsletter'
 import OrganizersSection from '~components/Organizers'
-import SponsorsSection from '~components/Sponsors'
-import ScheduleSection from '~components/Schedule'
 import SubmitTalks from '~components/SubmitTalks'
 import TicketsSection from '~components/Tickets'
 import speakers from '../content/speakers/speaker-list'
@@ -37,17 +33,13 @@ export default {
     OrganizersSection,
     SpeakersList,
     SubmitTalks,
-    TicketsSection,
-    SponsorsSection,
-    ScheduleSection
+    TicketsSection
   },
   head: {
     title: 'VueConf 2017'
   },
-  data ({ isClient }) {
+  data () {
     return {
-      isClient: isClient,
-      speakerLimit: 7,
       speakers
     }
   }
@@ -59,6 +51,7 @@ export default {
 
   .speaker-button
     margin: 40px 0 10px
+
   .container
     padding-top: 50px
 

@@ -12,14 +12,14 @@ footer.footer
     ul.footer__list.footer__list--small
       h3.footer__header Useful links
       li: nuxt-link(to="/speakers") Speakers
-      li: nuxt-link(to="/terms") Terms & Conditions
+      li: a(href="https://conf.vuejs.org/terms") Terms & Conditions
       li: nuxt-link(to="/codeofconduct") Code of Conduct
 
   .footer__bottom
     | Proudly supported by
     strong  Evan You
     |  and
-    strong.footer__logo
+    a(href="https://monterail.com"): strong.footer__logo
     .footer__copyright
       | Copyright 2016-2017 Monterail. All rights reserved.
 </template>

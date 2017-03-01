@@ -1,12 +1,14 @@
-<template lang="pug">
-div
-  input#burger-target(type="checkbox")
-  navbar
+<template>
+<div>
+  <input id="burger-target" type="checkbox"/>
+  <navbar></navbar>
 
-  nuxt
+  <nuxt></nuxt>
 
-  .container__inner
-    footer-section
+  <div class="container__inner">
+    <footer-section></footer-section>
+  </div>
+</div>
 </template>
 
 <script>
