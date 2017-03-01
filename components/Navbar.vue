@@ -15,16 +15,8 @@
             | Speakers
 
         li.navbar-nav__item
-          nuxt-link(to="/schedule")
-            | Schedule
-
-        li.navbar-nav__item
-          a(href="#apply")
+          a(href="/speakers#apply")
             | Apply as a speaker
-
-        li.navbar-nav__item
-          a.button(href="#apply")
-            | Buy tickets!
 </template>
 
 <style lang="sass">

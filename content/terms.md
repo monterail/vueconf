@@ -8,7 +8,7 @@ Whenever used in these Terms and Conditions (T&C), the following terms shall hav
 
 1. **Conference** – VueConf 2017 and / or accompanying workshops.
 
-2. **Monterail** – Monterail.com Sp. z o.o. with its registered office in Wrocław, at 27-29 Oławska street, 50-123 Wrocław, Poland, registered with the Register of Entrepreneurs of the National Court Register maintained by the District Court of Wrocław-Fabryczna in Wrocław, VI Commercial Division of the National Court Register, under entry number KRS 0000357415, NIP [taxpayer ID] 778-147-18-20, REGON [enterprise ID] 301447685, share capital 5.000 PLN, e-mail vueconf@monterail.com.
+2. **Monterail** – Monterail.com Sp. z o.o. with its registered office in Wrocław, at 27-29 Oławska street, 50-123 Wrocław, Poland, registered with the Register of Entrepreneurs of the National Court Register maintained by the District Court of Wrocław-Fabryczna in Wrocław, VI Commercial Division of the National Court Register, under entry number KRS 0000357415, NIP 778-147-18-20, REGON 301447685, share capital 5.000 PLN, e-mail vueconf@monterail.com.
 
 3. **Website** – documents authorizing to participate in the Conference or an accompanying workshops, depending on the Ticket type.
 
@@ -17,7 +17,7 @@ Whenever used in these Terms and Conditions (T&C), the following terms shall hav
 ## § 2
 ### SALE OF TICKETS
 
-1. Monterail offers different types of Tickets, specified at [___]. Tickets represent different price categories depending on the time of their sale (Early Bird, Superpromo, Regular) and their scope (authorizing to participate in the Conference, in the workshops accompanying the Conference, or in both).
+1. Monterail offers different types of Tickets, specified at [https://events.zippydesk.com/vueconf-2017/register](https://events.zippydesk.com/vueconf-2017/register). Tickets represent different price categories depending on the time of their sale (Early Bird, Superpromo, Regular) and their scope (authorizing to participate in the Conference, in the workshops accompanying the Conference, or in both).
 
 2. The displayed Ticket prices are given in a Polish zloty (PLN) or Euro (EUR) and include taxes. At the time of making the declaration of intent to be bound by a sale agreement, you will be informed of a total price including taxes.
 
@@ -50,7 +50,7 @@ Whenever used in these Terms and Conditions (T&C), the following terms shall hav
 
 4. Monterail will take efforts to admit people being late to the Conference during a break, however the admission cannot be guaranteed.
 
-5. Any unauthorized use of photographic or recording equipment is prohibited, as well as dogs (except for guide dogs) and foods and beverages brought by attendees.jl
+5. Any unauthorized use of photographic or recording equipment is prohibited, as well as dogs (except for guide dogs) and foods and beverages brought by attendees.
 
 6. All forms of harassment, misconduct, or disruptive behavior will not be tolerated. Harassment includes any form of physical or verbal forms of misconduct, including but not limited to: offensive comments or actions related to gender, gender identity, sexual orientation, disability, physical appearance, body size, ethnicity, race, or religion.
 
@@ -61,9 +61,9 @@ Whenever used in these Terms and Conditions (T&C), the following terms shall hav
 
 1. The consumer’s right to withdraw from the agreement is excluded according with the art. 38 point 12 of the Act of May 30, 2014 on Consumer Rights (Journal of Laws of 2014, item 827, as amended).
 
-2. The Tickets are not returnable as a rule, however you can return the Regular Tickets, as specified at [___], no later than [___] days before the Conference takes place – in such case a handling fee in the amount of [___] % of price of each returned Ticket will be deducted.
+2. The Tickets are not returnable as a rule, however you can return the Regular Tickets, as specified at [https://events.zippydesk.com/vueconf-2017/register](https://events.zippydesk.com/vueconf-2017/register), no later than 30 days before the Conference takes place – in such case a handling fee in the amount of 50% of price of each returned Ticket will be deducted.
 
-3. If you wish to return your Ticket according to the § 4(2), contact Monterail at [___] providing your details and bank account number the amount should be transferred to. The transfer will be made within 14 days as of receipt of such request.
+3. If you wish to return your Ticket according to the § 4(2), contact Monterail at [vueconf@monterail.com](vueconf@monterail.com) providing your details and bank account number the amount should be transferred to. The transfer will be made within 14 days as of receipt of such request.
 
 4. If the Conference is canceled under decision of Monterail, you will be refunded in full. In an e-mail informing you about the cancellation Monterail will provide further details regarding refunds procedure.
 
@@ -101,7 +101,7 @@ To use the Website you need (1) a computer, a laptop or other multimedia device 
 
 3. You may also use extrajudicial complaint and claim settlement methods. In particular you can ask consumer organizations and municipal or county consumer advocates, for further information see the website of the Competition and Consumer Protection Office www.uokik.gov.pl.
 
-4. You can also use the EU ODR platform, available at www.ec.europa.eu/odr/ and https://webgate.ec.europa.eu/odr/main/index.cfm?event=main.home.show&lng=PL.
+4. You can also use the EU ODR platform, available at [www.ec.europa.eu/odr/](www.ec.europa.eu/odr/) and [https://webgate.ec.europa.eu/odr/main/index.cfm?event=main.home.show&lng=PL](https://webgate.ec.europa.eu/odr/main/index.cfm?event=main.home.show&lng=PL).
 
 ## § 9
 ### FINAL PROVISIONS
@@ -112,4 +112,4 @@ To use the Website you need (1) a computer, a laptop or other multimedia device 
 
 3. Monterail reserves the right to amend the provisions of these Terms of Use at any time due to important reasons, in particular economic, technical or legal, without the obligation to justify these reasons.
 
-4. The current version of Terms of Use is available at any time at [_dajcie link bezpośredni do strony na której znajduje się tekst T&C_], also in a downloadable form.
+4. The current version of Terms of Use is available at any time at [https://conf.vuejs.org/terms](https://conf.vuejs.org/terms-and-conditions), also in a downloadable form.

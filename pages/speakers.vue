@@ -9,7 +9,7 @@
     h2
       | More announcements soon!
 
-    .post-section.center.cfp-section
+    .post-section.center.cfp-section#apply
 
       include:markdown-it ../content/speakers/cfp.md
 

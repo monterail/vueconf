@@ -9,7 +9,7 @@ import middleware from './middleware'
 import { app, router } from './index'
 import { getMatchedComponents, getContext, promiseSeries, promisify, urlJoin } from './utils'
 
-const isDev = true
+const isDev = false
 const _app = new Vue(app)
 
 // This exported function will be called by `bundleRenderer`.
@@ -48,7 +48,7 @@ export default context => {
   // Error function
   context.error = _app.$options._nuxt.error.bind(_app)
 
-  const s = isDev && Date.now()
+  
   const ctx = getContext(context)
   let Components = getMatchedComponents(context.route)
   
@@ -137,8 +137,6 @@ export default context => {
       
       return _app
     }
-    
-      debug('Data fetching ' + context.req.url + ': ' + (Date.now() - s) + 'ms')
     
     // datas are the first row of each
     context.nuxt.data = res.map((tab) => tab[0])

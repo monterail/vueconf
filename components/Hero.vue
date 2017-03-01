@@ -6,7 +6,7 @@
         | Wrocław, Poland • June 21-23, 2017
       h2.hero-banner__subheader.hero-banner__subheader--last
         | The first Official Vue.js Conference in the world!
-      a.post-section__button.button(href="https://docs.google.com/forms/d/e/1FAIpQLSfiRF9JIpvAcWL7EsnpODIhf_JiNX3PETA_S3XnqmtuG2foQA/viewform" target="_blank")
+      a.post-section__button.button(href="#tickets")
         | Get the tickets!
 </template>
 

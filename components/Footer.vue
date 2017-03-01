@@ -8,11 +8,12 @@ footer.footer
         a(href="https://twitter.com/vueconf" target="_blank")  @VueConf
       li
         | Email:
-        a(href="mailto:vuejs@monterail.com")  vueconf@monterail.com
+        a(href="mailto:vueconf@monterail.com")  vueconf@monterail.com
     ul.footer__list.footer__list--small
       h3.footer__header Useful links
       li: nuxt-link(to="/speakers") Speakers
-      li: nuxt-link(to="/terms") Terms & Conditions
+      li: nuxt-link(to="/terms-and-conditions") Terms & Conditions
+      li: nuxt-link(to="/code-of-conduct") Code of Conduct
 
   .footer__bottom
     | Proudly supported by

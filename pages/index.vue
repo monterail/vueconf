@@ -9,8 +9,9 @@ div
       .center
         nuxt-link(to="/speakers")
           button.button.speaker-button View all speakers
-    tickets-section
-    //- intro-section(:is-client="isClient")
+    tickets-section#tickets
+    //- schedule-section
+    //- sponsors-section
     newsletter-section
 
     organizers-section
@@ -22,6 +23,8 @@ import HeroSection from '~components/Hero'
 import IntroSection from '~components/Intro'
 import NewsletterSection from '~components/Newsletter'
 import OrganizersSection from '~components/Organizers'
+import SponsorsSection from '~components/Sponsors'
+import ScheduleSection from '~components/Schedule'
 import SubmitTalks from '~components/SubmitTalks'
 import TicketsSection from '~components/Tickets'
 import speakers from '../content/speakers/speaker-list'
@@ -34,7 +37,9 @@ export default {
     OrganizersSection,
     SpeakersList,
     SubmitTalks,
-    TicketsSection
+    TicketsSection,
+    SponsorsSection,
+    ScheduleSection
   },
   head: {
     title: 'VueConf 2017'
