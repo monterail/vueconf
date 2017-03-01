@@ -8,11 +8,11 @@ Vue.use(Router)
 
 const _3668c528 = process.BROWSER_BUILD ? () => System.import('/Users/damiandulisz/code/monterail/vueconf/pages/index.vue') : require('/Users/damiandulisz/code/monterail/vueconf/pages/index.vue')
 
-const _4e1b6aca = process.BROWSER_BUILD ? () => System.import('/Users/damiandulisz/code/monterail/vueconf/pages/terms-and-conditions.vue') : require('/Users/damiandulisz/code/monterail/vueconf/pages/terms-and-conditions.vue')
+const _e26d48be = process.BROWSER_BUILD ? () => System.import('/Users/damiandulisz/code/monterail/vueconf/pages/terms.vue') : require('/Users/damiandulisz/code/monterail/vueconf/pages/terms.vue')
 
 const _5f60af6d = process.BROWSER_BUILD ? () => System.import('/Users/damiandulisz/code/monterail/vueconf/pages/schedule.vue') : require('/Users/damiandulisz/code/monterail/vueconf/pages/schedule.vue')
 
-const _f8acd170 = process.BROWSER_BUILD ? () => System.import('/Users/damiandulisz/code/monterail/vueconf/pages/code-of-conduct.vue') : require('/Users/damiandulisz/code/monterail/vueconf/pages/code-of-conduct.vue')
+const _ce3a784c = process.BROWSER_BUILD ? () => System.import('/Users/damiandulisz/code/monterail/vueconf/pages/codeofconduct.vue') : require('/Users/damiandulisz/code/monterail/vueconf/pages/codeofconduct.vue')
 
 const _54d696aa = process.BROWSER_BUILD ? () => System.import('/Users/damiandulisz/code/monterail/vueconf/pages/speakers.vue') : require('/Users/damiandulisz/code/monterail/vueconf/pages/speakers.vue')
 
@@ -54,9 +54,9 @@ export default new Router({
 			name: "index"
 		},
 		{
-			path: "/terms-and-conditions",
-			component: _4e1b6aca,
-			name: "terms-and-conditions"
+			path: "/terms",
+			component: _e26d48be,
+			name: "terms"
 		},
 		{
 			path: "/schedule",
@@ -64,9 +64,9 @@ export default new Router({
 			name: "schedule"
 		},
 		{
-			path: "/code-of-conduct",
-			component: _f8acd170,
-			name: "code-of-conduct"
+			path: "/codeofconduct",
+			component: _ce3a784c,
+			name: "codeofconduct"
 		},
 		{
 			path: "/speakers",
