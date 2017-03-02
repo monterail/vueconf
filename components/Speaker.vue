@@ -126,9 +126,12 @@ export default {
     font-size: 18px
 
 .speaker__subtitle
-  font-size: 16px
+  font-size: 14px
   font-weight: 300
   color: #8795a9
+
+  @media #{$medium-up}
+    font-size: 16px
 
 .speaker__large
   .speaker__aside
@@ -175,7 +178,10 @@ export default {
       content: "— "
 
 .speaker__social
-  margin-top: 10px
+  margin-top: 4px
+
+  @media #{$medium-up}
+    margin-top: 10px
 
   .icon--twitter
     margin-left: 15px

@@ -11,13 +11,18 @@
 
           .modal-footer
             slot(name="footer")
-              button.button-secondary(@click="$emit('close')")
-                | Close
+        button.button-secondary.modal-button(@click="$emit('close')")
+          | Close
 </template>
 
 <script>
 export default {
-
+  mounted () {
+    document.body.style = 'overflow: hidden'
+  },
+  beforeDestroy () {
+    document.body.style = ''
+  }
 }
 </script>
 
@@ -43,10 +48,10 @@ export default {
   max-width: 650px
   position: relative
   width: 100%
-  max-height: 80vh
+  max-height: 72vh
   overflow: auto
   box-sizing: border-box
-  margin: 0px auto
+  margin: 40px auto 0
   padding: 20px
   background-color: #fff
   border-radius: 5px
@@ -71,6 +76,11 @@ export default {
 
 .modal-enter .modal-container,
 .modal-leave-active .modal-container
-  -webkit-transform: scale(1.1)
   transform: scale(1.1)
+
+.modal-button
+  background: #fff
+  margin: 20px auto
+  display: block
+  box-shadow: 0 18px 35px rgba(50,50,93,.1), 0 8px 15px rgba(0,0,0,.07)
 </style>

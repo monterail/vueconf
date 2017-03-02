@@ -17,6 +17,10 @@
         li.navbar-nav__item
           a(href="/speakers#apply")
             | Apply as a speaker
+
+        li.navbar-nav__item
+          a.button(href="/#tickets")
+            | Get tickets
 </template>
 
 <style lang="sass">
@@ -115,10 +119,16 @@
       top: 0
       li
         width: 250px
+        padding-left: 0 !important
         padding: 0
         > a
           padding: 15px 25px
           display: block
         + li
           box-shadow: 0 -10px 0 -9px #eee
+
+      .button
+        margin: 20px auto
+        display: block
+        max-width: calc(100% - 100px)
 </style>

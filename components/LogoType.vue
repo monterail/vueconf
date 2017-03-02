@@ -1,5 +1,5 @@
 <template>
-  <svg width="100%" height="50vh" viewBox="0 0 331 259" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.5;">
+  <svg class="vueconf-logo" width="100%" height="100%" viewBox="0 0 331 259" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.5;">
       <g transform="matrix(1,0,0,1,-3163.82,-1347.75)">
           <g id="vue-conflogo" transform="matrix(0.258594,0,0,0.32375,3163.82,1347.75)">
               <rect x="0" y="0" width="1280" height="800" style="fill:white;"/>
