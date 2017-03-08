@@ -19,10 +19,11 @@ module.exports = {
       { property: 'twitter:title', content: 'VueConf 2017 – June 21–23, 2017 in Wrocław, Poland | Vue.js Conference' },
       { property: 'twitter:description', content: 'First worldwide conference by Monterail and Evan You about Vue.js - the progressive JavaScript framework. Inspiring talks and workshops led by world experts.' },
       { name: 'format-detection', content: 'telephone=no' },
-      { name: 'theme-color', content: '#3EB882' }
+      { name: 'theme-color', content: '#3EB882' },
+      { name: 'google-site-verification', content: '3g_qNjTnnxEZT8bWnHtnybJOZ5A4yhB1KFV5si3hP-o' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: 'img/logo-48.png' },
+      { rel: 'icon', type: 'image/x-icon', href: '/img/logo-48.png' },
       { rel: 'manifest', href: '/manifest.json' }
     ]
   },
