@@ -18,7 +18,6 @@ div
 <script>
 import SpeakersList from '~components/SpeakersList'
 import HeroSection from '~components/Hero'
-import IntroSection from '~components/Intro'
 import NewsletterSection from '~components/Newsletter'
 import OrganizersSection from '~components/Organizers'
 import SubmitTalks from '~components/SubmitTalks'
@@ -28,7 +27,6 @@ import speakers from '../content/speakers/speaker-list'
 export default {
   components: {
     HeroSection,
-    IntroSection,
     NewsletterSection,
     OrganizersSection,
     SpeakersList,
@@ -36,7 +34,7 @@ export default {
     TicketsSection
   },
   head: {
-    title: 'VueConf 2017'
+    title: 'VueConf 2017 – 21–23 June, 2017 in Wrocław, Poland'
   },
   data () {
     return {

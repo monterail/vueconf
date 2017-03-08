@@ -8,15 +8,17 @@
   <div class="container__inner">
     <footer-section></footer-section>
   </div>
+  <cookies/>
 </div>
 </template>
 
 <script>
 import Navbar from '~components/Navbar'
 import FooterSection from '~components/Footer'
+import Cookies from '~components/Cookies'
 
 export default {
-  components: { Navbar, FooterSection },
+  components: { Navbar, FooterSection, Cookies },
   head: {
     meta: [
       { charset: 'utf-8' },

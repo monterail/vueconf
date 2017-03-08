@@ -7,7 +7,13 @@
     .newsletter-section__input-wrapper(id="revue-embed")
       form(action="https://www.getrevue.co/profile/vuenewsletter/add_subscriber" method="post" id="revue-form" name="revue-form"  target="_blank")
         input.form__input(placeholder="Your email address..." type="email" name="member[email]" id="member_email" autocomplete="off" required)
-        input.button.button--dark(type="submit" value="Subscribe" name="member[subscribe]" id="member_submit")
+        input.button.button--dark(
+          type="submit",
+          value="Subscribe",
+          name="member[subscribe]",
+          id="member_submit",
+          @click="trackNewsletterEvent"
+        )
 
     p.newsletter__paragraph
       | Subscribe to the Vue.js Newsletter to receive weekly updates on everything Vue-related! Conference included.
@@ -15,6 +21,15 @@
 
 <script>
 export default {
+  methods: {
+    trackNewsletterEvent (event) {
+      ga('send', 'event', {
+        eventAction: 'click',
+        eventCategory: 'Newsletter sub',
+        transport: 'beacon'
+      })
+    }
+  }
 }
 </script>
 

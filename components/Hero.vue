@@ -1,12 +1,12 @@
 <template lang="pug">
   .hero-banner
     .hero-banner__content
-      logo-type(:is-client="isClient")
+      logo-type
       h2.hero-banner__subheader
         | Wrocław, Poland • June 21-23, 2017
       h2.hero-banner__subheader.hero-banner__subheader--last
         | The first Official Vue.js Conference in the world!
-      a.post-section__button.button(href="#tickets")
+      a.post-section__button.button(href="https://events.zippydesk.com/vueconf-2017/register", @click="trackTicketsEvent")
         | Get the tickets!
 </template>
 
@@ -15,10 +15,14 @@ import LogoType from './LogoType.vue'
 
 export default {
   components: { LogoType },
-  props: {
-    isClient: {
-      type: Boolean,
-      default: false
+  methods: {
+    trackTicketsEvent (event) {
+      ga('send', 'event', {
+        eventAction: 'click',
+        eventLabel: event.target.href,
+        eventCategory: 'Tickets link - hero',
+        transport: 'beacon'
+      })
     }
   }
 }

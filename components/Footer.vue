@@ -14,6 +14,7 @@ footer.footer
       li: nuxt-link(to="/speakers") Speakers
       li: a(href="https://conf.vuejs.org/terms") Terms & Conditions
       li: nuxt-link(to="/codeofconduct") Code of Conduct
+      li: nuxt-link(to="/privatepolicy") Private Policy
 
   .footer__bottom
     | Proudly supported by

@@ -19,9 +19,27 @@
             | Apply as a speaker
 
         li.navbar-nav__item
-          a.button(href="/#tickets")
+          a.button(
+            href="https://events.zippydesk.com/vueconf-2017/register",
+            @click="trackTicketsEvent"
+          )
             | Get tickets
 </template>
+
+<script>
+  export default {
+    methods: {
+      trackTicketsEvent (event) {
+        ga('send', 'event', {
+          eventAction: 'click',
+          eventLabel: event.target.href,
+          eventCategory: 'Tickets link',
+          transport: 'beacon'
+        })
+      }
+    }
+  }
+</script>
 
 <style lang="sass">
   @import ~assets/css/base/helpers

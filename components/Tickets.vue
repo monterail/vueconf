@@ -7,7 +7,8 @@
       span.ticket__name {{ ticket.name }}
         span.ticket__date {{ ticket.date }}
       a.button.button--dark.ticket__price(
-        :href="ticket.url"
+        href="https://events.zippydesk.com/vueconf-2017/register",
+        @click="trackTicketsEvent"
       )
         | {{ ticket.price }}
         //- | €{{ ticket.price }} + 23% VAT
@@ -20,6 +21,16 @@ export default {
   data () {
     return {
       tickets
+    }
+  },
+  methods: {
+    trackTicketsEvent (event) {
+      ga('send', 'event', {
+        eventAction: 'click',
+        eventLabel: event.target.href,
+        eventCategory: 'Tickets link',
+        transport: 'beacon'
+      })
     }
   }
 }

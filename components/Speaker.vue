@@ -18,8 +18,8 @@
         blockquote.speaker__quote(v-if="speaker.quote")
           | {{ speaker.quote }}
           cite {{ speaker.name }}
-  .speaker(@click="modalVisible = true")
-    img.speaker__image(:src="image", :alt="speaker.name", @click="modalVisible = true")
+  .speaker(@click="showDetails")
+    img.speaker__image(:src="image", :alt="speaker.name")
     .speaker__aside
       .speaker__title
         | {{ speaker.name }}
@@ -30,7 +30,7 @@
         a.icon.icon--github(@click.stop="", v-if="speaker.github", :href="speaker.github" target="_blank")
         a.icon.icon--twitter(@click.stop="", v-if="speaker.twitter", :href="speaker.twitter" target="_blank")
 
-      button.button-secondary(@click="modalVisible = true") Learn more
+      button.button-secondary(@click.stop="showDetails") Learn more
 </template>
 
 <script>
@@ -51,6 +51,15 @@ export default {
   data () {
     return {
       modalVisible: false
+    }
+  },
+  methods: {
+    showDetails () {
+      this.modalVisible = true
+      ga('send', 'event', {
+        eventAction: 'click',
+        eventCategory: `Speaker details ${this.speaker.name}`
+      })
     }
   },
   computed: {
