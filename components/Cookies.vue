@@ -1,11 +1,13 @@
 <template lang="pug">
 .cookies__container(v-show="!cookiesAccepted")
-  p.cookies__message
-    | We use cookies to provide you with better user experience and for statistical purposes. You can block cookies by adjusting settings on your browser. If you do not block cookies, you give your consent to use them and store them in the memory of your device. For more information see our
-    = " "
-    a.cookie__link(href="https://conf.vuejs.org/privatepolicy") Privacy Policy
-    | .
-  button.button(type="button", @click="acceptCookies") Accept
+  .container__inner
+    p.cookies__message
+      | We use cookies to provide you with better user experience and for statistical purposes. You can block cookies by adjusting settings on your browser. If you do not block cookies, you give your consent to use them and store them in the memory of your device. For more information see our
+      = " "
+      a.cookie__link(href="https://conf.vuejs.org/privatepolicy") Privacy Policy
+      | .
+    button.button(type="button", @click="acceptCookies") Accept
+    button.button.button--dark(type="button", @click="cookiesAccepted = true") Close
 </template>
 
 <script>
@@ -38,7 +40,7 @@ export default {
   left: 0
   right: 0
   background: #fff
-  padding: 20px
+  padding: 10px 0
 
 .cookies__message
   font-size: 16px
@@ -46,7 +48,7 @@ export default {
   margin: 0
 
   @media #{$medium-up}
-    max-width: calc(100% - 100px)
+    max-width: calc(100% - 180px)
 
 .button
   padding: 8px 15px
@@ -54,4 +56,8 @@ export default {
   float: right
   display: inline-block
   margin-top: 10px
+
+.button--dark
+  background: none
+  color: $color-text
 </style>
