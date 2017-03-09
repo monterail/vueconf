@@ -12,6 +12,7 @@
       )
         | {{ ticket.price }}
         //- | €{{ ticket.price }} + 23% VAT
+    h3.tickets__info Tickets will be available on March 9th, 2017, 3 PM CET
 </template>
 
 <script>
@@ -74,6 +75,11 @@ export default {
   padding-right: 20px
   line-height: 43px
   font-size: 22px
+
+.tickets__info
+  color: #fff
+  margin-top: 10px
+  font-weight: 300
 
 .ticket__date
   padding-left: 10px
