@@ -11,8 +11,6 @@
         @click="trackTicketsEvent"
       )
         | {{ ticket.price }}
-        //- | €{{ ticket.price }} + 23% VAT
-    h3.tickets__info Tickets will be available on March 9th, 2017, 3 PM CET
 </template>
 
 <script>
