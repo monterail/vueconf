@@ -2,7 +2,7 @@ module.exports = {
   build: {
     filenames: {
       // TMP: Increment this each time when doing a release to bust the cache
-      app: 'app.3.js'
+      app: 'app.4.js'
     }
   },
   /*
