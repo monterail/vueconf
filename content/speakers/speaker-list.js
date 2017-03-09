@@ -33,15 +33,15 @@ export default [
     "bio": "Software Engineer at Sainsbury’s and core Vue.js team member. Helping to build a sustainable and scalable Front-end architectures within Sainsbury’s. Encouraging use of Vue.js while promoting maintainable, functional and modularised code.",
     "quote": "Keeping code and architecture quality high, maintainable and performant is evident. Despite this, it should also be highly adaptable and cope with change and is often ignored. Thus one of my core principles is to enable Sacrificial Architecture to ensure highly flexible and scalable front-end architecture."
   },
-  // {
-  //   "name": "Sean Larkin",
-  //   "title": "webpack Maintainer",
-  //   "img": "img/sean.jpg",
-  //   "github": "https://github.com/blake-newman",
-  //   "twitter": "https://twitter.com/blakenewman",
-  //   "bio": "Sean Larkin is a User Experience Developer at Mutual of Omaha. He is a former technical support representative turned renegade software engineer and web developer, driven by the need to help people through the code he writes. Sean is a member of the webpack core team, Angular team and Angular-CLI core team. Sean has given talks on Ruby, DAMP programming, AngularJS, and webpack. He lives to teach others about the world of Web Development.",
-  //   "quote": "webpack is JavaScript module bundler that has taken the world by storm. However wealth of boilerplates and a black box perception about the tool has led to many people using it, but not understanding it. \n\n I'm going to break down the 4 concepts everyone should know when using webpack so you can break away from the boilerplate and make it your own. \n\n At the end of this talk, you’ll set fire to every Gulpfile and Gruntfile you’ve ever written, destroy all those extra style and script tags in your browser, and possess the tools needed to make the best modern web apps, without sacrificing developer experience. \n\n Join me in webpacking ALL the things."
-  // },
+  {
+    "name": "Sean Larkin",
+    "title": "webpack Maintainer",
+    "img": "img/sean.jpg",
+    "github": "https://github.com/TheLarkInn",
+    "twitter": "https://twitter.com/TheLarkInn",
+    "bio": "Sean Larkin is a User Experience Developer at Mutual of Omaha. He is a former technical support representative turned renegade software engineer and web developer, driven by the need to help people through the code he writes. Sean is a member of the webpack core team, Angular team and Angular-CLI core team. Sean has given talks on Ruby, DAMP programming, AngularJS, and webpack. He lives to teach others about the world of Web Development.",
+    "quote": "webpack is JavaScript module bundler that has taken the world by storm. However wealth of boilerplates and a black box perception about the tool has led to many people using it, but not understanding it. \n\n I'm going to break down the 4 concepts everyone should know when using webpack so you can break away from the boilerplate and make it your own. \n\n At the end of this talk, you’ll set fire to every Gulpfile and Gruntfile you’ve ever written, destroy all those extra style and script tags in your browser, and possess the tools needed to make the best modern web apps, without sacrificing developer experience. \n\n Join me in webpacking ALL the things."
+  },
   // {
   //   "name": "Alexandre Chopin",
   //   "title": "Nuxt.js Co-author",
