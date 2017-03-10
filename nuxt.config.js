@@ -23,7 +23,7 @@ module.exports = {
       { property: 'og:image', content: 'img/cover.png' },
       { property: 'twitter:card', content: 'summary_large_image' },
       { property: 'twitter:site', content: '@vueconf' },
-      { property: 'twitter:image', content: 'img/cover.png' },
+      { property: 'twitter:image', content: 'http://conf.vuejs.org/img/cover.png' },
       { property: 'twitter:title', content: 'VueConf 2017 – June 21–23, 2017 in Wrocław, Poland | Vue.js Conference' },
       { property: 'twitter:description', content: 'First worldwide conference by Monterail and Evan You about Vue.js - the progressive JavaScript framework. Inspiring talks and workshops led by world experts.' },
       { name: 'format-detection', content: 'telephone=no' },
