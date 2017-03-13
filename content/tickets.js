@@ -1,14 +1,8 @@
 export default [
-  // {
-  //   name: 'Super Early Bird',
-  //   date: 'Conference 22-23 June',
-  //   price: '€199 + 23% VAT',
-  //   url: 'https://events.zippydesk.com/vueconf-2017/register'
-  // },
   {
-    name: 'Early Bird',
+    name: 'Regular Ticket',
     date: 'Conference 22-23 June',
-    price: '€249 + 23% VAT',
+    price: '€299 + 23% VAT',
     url: 'https://events.zippydesk.com/vueconf-2017/register'
   },
   {
