@@ -36,6 +36,7 @@
           eventCategory: 'Tickets link',
           transport: 'beacon'
         })
+        _pq.push(['track', 'GoToTickets'])
       }
     }
   }

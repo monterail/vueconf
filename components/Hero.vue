@@ -23,6 +23,7 @@ export default {
         eventCategory: 'Tickets link - hero',
         transport: 'beacon'
       })
+      _pq.push(['track', 'GoToTickets'])
     }
   }
 }
