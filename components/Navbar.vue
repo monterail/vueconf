@@ -13,7 +13,9 @@
         li.navbar-nav__item
           nuxt-link(to="/speakers")
             | Speakers
-
+        li.navbar-nav__item
+          nuxt-link(to="/agenda")
+            | Agenda
         li.navbar-nav__item
           a(href="/speakers#apply")
             | Apply as a speaker

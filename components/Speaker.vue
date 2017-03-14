@@ -74,6 +74,7 @@ export default {
 
 <style lang="sass">
 @import ~assets/css/base/helpers
+@import ~assets/css/components/card
 
 .speaker__container
   width: calc(100% - 20px)
@@ -89,18 +90,8 @@ export default {
 
 .speaker
   position: absolute
-  background: #fff
   width: 100%
-  border-radius: 5px
-  text-align: left
-  box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07)
-  transform: translateY(0px)
-  cursor: pointer
-  transition: all 0.15s ease
-
-  &:hover
-    transform: translateY(-2px)
-    box-shadow: 0 18px 35px rgba(50,50,93,.1), 0 8px 15px rgba(0,0,0,.07)
+  @include card
 
 .speaker__image
   max-width: 100px
