@@ -42,22 +42,22 @@ export default [
     "bio": "Sean Larkin is a User Experience Developer at Mutual of Omaha. He is a former technical support representative turned renegade software engineer and web developer, driven by the need to help people through the code he writes. Sean is a member of the webpack core team, Angular team and Angular-CLI core team. Sean has given talks on Ruby, DAMP programming, AngularJS, and webpack. He lives to teach others about the world of Web Development.",
     "quote": "webpack is JavaScript module bundler that has taken the world by storm. However wealth of boilerplates and a black box perception about the tool has led to many people using it, but not understanding it. \n\n I'm going to break down the 4 concepts everyone should know when using webpack so you can break away from the boilerplate and make it your own. \n\n At the end of this talk, you’ll set fire to every Gulpfile and Gruntfile you’ve ever written, destroy all those extra style and script tags in your browser, and possess the tools needed to make the best modern web apps, without sacrificing developer experience. \n\n Join me in webpacking ALL the things."
   },
-  // {
-  //   "name": "Alexandre Chopin",
-  //   "title": "Nuxt.js Co-author",
-  //   "img": "img/alex.jpg",
-  //   "github": "https://github.com/alexchopin",
-  //   "twitter": "https://twitter.com/ChopinAlexandre",
-  //   "bio": "Consultant, Lead Developer JavaScript and co-founder of Nuxt.js. He is passionate by Web Development since 10 years. He loves building new projects and make them simple to use",
-  //   "quote": "Vue is extremely powerful and simple to use, however server rendered a Vue application can be a daunting task. Together with my brother we will talk about how Nuxt.js helps you to build a Production-ready Universal Vue application."
-  // },
-  // {
-  //   "name": "Sébastien Chopin",
-  //   "title": "Nuxt.js Co-author",
-  //   "img": "img/sebestien.jpg",
-  //   "github": "https://github.com/Atinux",
-  //   "twitter": "https://twitter.com/Atinux",
-  //   "bio": "Web developer since the age of 14. He has been using node.js for the last 6 years and since then he only writes JavaScript. He co-founded Nuxt.js to make universal application an easy task",
-  //   "quote": "Vue.js is my favourite front-end framework for many reasons. After Next.js launched for React, I couldn’t sleep, I had to create the same framework for Vue, that’s how Nuxt.js was born. Together with my brother we will talk about how Nuxt.js helps you to build a Production-ready Universal Vue application."
-  // }
+  {
+    "name": "Alexandre Chopin",
+    "title": "Nuxt.js Co-author",
+    "img": "img/alex.jpg",
+    "github": "https://github.com/alexchopin",
+    "twitter": "https://twitter.com/ChopinAlexandre",
+    "bio": "Consultant, Lead Developer JavaScript and co-founder of Nuxt.js. He is passionate by Web Development since 10 years. He loves building new projects and make them simple to use",
+    "quote": "Vue is extremely powerful and simple to use, however server rendered a Vue application can be a daunting task. Together with my brother we will talk about how Nuxt.js helps you to build a Production-ready Universal Vue application."
+  },
+  {
+    "name": "Sébastien Chopin",
+    "title": "Nuxt.js Co-author",
+    "img": "img/sebastien.jpg",
+    "github": "https://github.com/Atinux",
+    "twitter": "https://twitter.com/Atinux",
+    "bio": "Web developer since the age of 14. He has been using node.js for the last 6 years and since then he only writes JavaScript. He co-founded Nuxt.js to make universal application an easy task",
+    "quote": "Vue.js is my favourite front-end framework for many reasons. After Next.js launched for React, I couldn’t sleep, I had to create the same framework for Vue, that’s how Nuxt.js was born. Together with my brother we will talk about how Nuxt.js helps you to build a Production-ready Universal Vue application."
+  }
 ]
