@@ -49,7 +49,8 @@
     display: block
     position: fixed
     z-index: 10
-    background: white
+    background: rgba(#fff, 0.8)
+    border-bottom: 1px solid #efefef
     width: 100%
     padding: 20px 0
     align-items: center

@@ -46,14 +46,12 @@ export default {
 h2
   margin: 60px 0 100px
 
+.container
+  padding-top: 130px
+
 .container__inner
   text-align: center
   z-index: 2
-
-.container
-  position: relative
-  overflow: hidden
-  z-index: 0
 
 .cfp-section
   border-top: 1px solid #ddd

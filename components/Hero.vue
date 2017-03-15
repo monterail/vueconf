@@ -62,10 +62,10 @@ export default {
   width: 167px
 
 .hero-banner__header
-  font-family: $font--secondary
+  font-family: $font
   font-size: 40px
   color: $color-white
-  font-weight: 400
+  font-weight: 300
   display: inline-block
   position: relative
   margin:
@@ -86,10 +86,10 @@ export default {
     right: 15px
 
 .hero-banner__subheader
-  font-family: $font--secondary
+  font-family: $font
   font-size: 18px
   color: $color-text
-  font-weight: 400
+  font-weight: 300
   letter-spacing: 1pt
   text-transform: uppercase
   margin-top: 0
