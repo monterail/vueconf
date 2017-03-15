@@ -10,9 +10,8 @@
       .talk__author-info {{ talk.authorInfo }}
     .talk__description
       h2.talk__topic {{ talk.topic }}
-      .talk__description-intro {{ talk.descriptionIntro }}
-      div {{ talk.description }}
-
+      p.talk__description-intro {{ talk.descriptionIntro }}
+      p {{ talk.description }}
 </template>
 
 <script>
@@ -34,6 +33,7 @@ export default {
   justify-content: space-around
   flex-direction: column
   @include card
+  cursor: auto
 
   @media #{$medium-up}
     flex-direction: row
@@ -46,6 +46,9 @@ export default {
   justify-content: flex-start
   height: 100%
   padding: 0 15px
+
+  p
+    font-size: 18px
 
 .talk__description-intro
   padding-bottom: 10px
@@ -81,7 +84,7 @@ export default {
   text-align: center
 
   @media #{$medium-up}
-    margin: 5px 0 15px
+    margin: 5px 0 0
     text-align: left
 
 .talk__author

@@ -85,7 +85,7 @@ export default {
   text-align: left
 
   @media #{$medium-up}
-    width: 45%
+    width: calc(50% - 20px)
     height: 145px
 
 .speaker

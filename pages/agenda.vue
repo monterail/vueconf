@@ -1,10 +1,14 @@
 <template lang="pug">
 .container
-  .agenda
-    talk(
-      v-for="talk in this.talks",
-      :talk="talk"
-    )
+  .container__inner.post-section
+    h1
+      | Agenda
+
+    .agenda
+      talk(
+        v-for="talk of talks",
+        :talk="talk"
+      )
 </template>
 
 <script>
@@ -26,13 +30,6 @@ export default {
 
 <style lang="sass" scoped>
 @import ~assets/css/base/helpers
-
-.agenda
-  margin: 0 10px
-  max-width: 700px
-  position: relative
-  @media #{$medium-up}
-    margin: 0 auto
 
 .agenda__card
   height: 100px
