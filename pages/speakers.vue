@@ -7,7 +7,7 @@
     speakers-list(:speakers="speakers", :adjust-img-url="true")
 
     .center
-      nuxt-link(to="/agenda")
+      nuxt-link(to="/program")
         button.button.speaker-button Read about the talks
 
     h2
