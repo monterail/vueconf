@@ -48,6 +48,9 @@ export default {
   justify-content: space-between
   flex-wrap: wrap
 
+.section.organizers-section
+  padding-bottom: 0
+
 .organizer
   width: 100%
   margin: 10px 0 40px 0
@@ -79,9 +82,6 @@ export default {
 
   .icon--twitter
     margin-left: 15px
-
-.organizers-section
-  background-color: $color-section
 
 .organizer__company
   width: 100%

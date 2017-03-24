@@ -1,5 +1,5 @@
 <template lang="pug">
-div
+.speakers-list
   transition-group(name="fade", tag="div")
     speaker.fade(v-for="speaker of speakersList", :speaker="speaker", :key="speaker", :adjust-img-url="adjustImgUrl")
 </template>
@@ -31,14 +31,17 @@ export default {
 }
 </script>
 
-<style lang="css">
-.fade {
-  opacity: 1;
-  transition: opacity 0.2s ease-in-out;
-}
+<style lang="sass">
+@import ~assets/css/base/helpers
+
+.speakers-list
+  margin: 0 -10px
+  
+.fade
+  opacity: 1
+  transition: opacity 0.2s ease-in-out
 
 .fade-enter-active,
-.fade-leave-active {
+.fade-leave-active
   opacity: 0
-}
 </style>

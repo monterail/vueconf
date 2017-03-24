@@ -2,7 +2,7 @@
   <svg class="vueconf-logo" width="100%" height="100%" viewBox="0 0 331 259" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.5;">
       <g transform="matrix(1,0,0,1,-3163.82,-1347.75)">
           <g id="vue-conflogo" transform="matrix(0.258594,0,0,0.32375,3163.82,1347.75)">
-              <rect x="0" y="0" width="1280" height="800" style="fill:white;"/>
+              <rect x="0" y="0" width="1280" height="800" style="fill:#f9f9f9;"/>
               <g transform="matrix(5.59153,0,0,4.46621,-2926.01,-1446.34)">
                   <g transform="matrix(1,0,0,0.735586,-1366.36,111.03)">
                       <rect x="1946" :y="421 - treeBase_1" width="1.569" :height="treeBase_1" style="fill:rgb(52,73,95);"/>

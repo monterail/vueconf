@@ -1,36 +1,40 @@
 <template lang="pug">
 footer.footer
-  .footer__top
-    ul.footer__list
-      h3.footer__header Contact
-      li
-        | Twitter:
-        a(href="https://twitter.com/vueconf" target="_blank")  @VueConf
-      li
-        | Email:
-        a(href="mailto:vueconf@monterail.com")  vueconf@monterail.com
-    ul.footer__list.footer__list--small
-      h3.footer__header Useful links
-      li: nuxt-link(to="/speakers") Speakers
-      li: a(href="https://conf.vuejs.org/terms") Terms & Conditions
-      li: nuxt-link(to="/codeofconduct") Code of Conduct
-      li: nuxt-link(to="/privatepolicy") Private Policy
+  .container__inner
+    .footer__top
+      ul.footer__list
+        h3.footer__header Contact
+        li
+          | Twitter:
+          a(href="https://twitter.com/vueconf" target="_blank")  @VueConf
+        li
+          | Email:
+          a(href="mailto:vueconf@monterail.com")  vueconf@monterail.com
+      ul.footer__list.footer__list--small
+        h3.footer__header Useful links
+        li: nuxt-link(to="/speakers") Speakers
+        li: a(href="https://conf.vuejs.org/terms") Terms & Conditions
+        li: nuxt-link(to="/codeofconduct") Code of Conduct
+        li: nuxt-link(to="/privatepolicy") Private Policy
 
-  .footer__bottom
-    | Proudly supported by
-    strong  Evan You
-    |  and
-    a(href="https://monterail.com"): strong.footer__logo
-    .footer__copyright
-      | Copyright 2016-2017 Monterail. All rights reserved.
+    .footer__bottom
+      | Proudly supported by
+      strong  Evan You
+      |  and
+      a(href="https://monterail.com"): strong.footer__logo
+      .footer__copyright
+        | Copyright 2016-2017 Monterail. All rights reserved.
 </template>
 
 <style lang="sass">
 @import ~assets/css/base/helpers
 
 .footer
+  margin-top: 80px
   padding-top: 70px
   padding-bottom: 30px
+  background: #fff
+  border-top: 1px solid #e6e6e6
 
 .footer__top
   padding-bottom: 40px

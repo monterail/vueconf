@@ -46,9 +46,6 @@ export default {
 h2
   margin: 60px 0 100px
 
-.container
-  padding-top: 130px
-
 .container__inner
   text-align: center
   z-index: 2

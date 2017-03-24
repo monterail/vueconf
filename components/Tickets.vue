@@ -45,6 +45,7 @@ export default {
 
   h1
     color: #fff
+    margin-top: 0
 
 .button[disabled]
   background: #ddd
