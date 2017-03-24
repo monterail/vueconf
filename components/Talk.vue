@@ -2,12 +2,15 @@
 .talk__container
   .talk
     .talk__image-container
-      img.talk__image(:src="talk.img", :alt="talk.author")
+      .talk__images
+        img.talk__image(v-for="image of images", :src="image", :alt="talk.author")
       .talk__author {{ talk.author }}
-      .talk__social
-        a.icon.icon--github(v-if="talk.github", :href="talk.github" target="_blank")
-        a.icon.icon--twitter(v-if="talk.twitter", :href="talk.twitter" target="_blank")
       .talk__author-info {{ talk.authorInfo }}
+      .talk__social__container
+        .talk__social(v-for="social of talk.social")
+          a.icon.icon--github(v-if="social.github", :href="social.github" target="_blank")
+          a.icon.icon--gitlab(v-if="social.gitlab", :href="social.gitlab" target="_blank")
+          a.icon.icon--twitter(v-if="social.twitter", :href="social.twitter" target="_blank")
     .talk__description
       h2.talk__topic {{ talk.topic }}
       p.talk__description-intro {{ talk.descriptionIntro }}
@@ -17,13 +20,21 @@
 <script>
 export default {
   name: 'Talk',
-  props: ['talk']
+  props: ['talk'],
+  computed: {
+    images () {
+      return Array.isArray(this.talk.img) ? this.talk.img : [this.talk.img]
+    }
+  }
 }
 </script>
 
 <style lang="sass" scoped>
 @import ~assets/css/base/helpers
 @import ~assets/css/components/card
+
+.talk__container
+  margin-bottom: 40px
 
 .talk
   display: flex
@@ -40,7 +51,7 @@ export default {
     padding: 40px
 
 .talk__description
-  flex: 2
+  flex: 5
   display: flex
   flex-direction: column
   justify-content: flex-start
@@ -54,15 +65,19 @@ export default {
   padding-bottom: 10px
 
 .talk__image-container
-  flex: 1
+  flex: 3
   display: flex
   flex-direction: column
   align-items: center
   justify-content: space-between
 
+.talk__images
+  flex-direction: row
+  display: flex
+
 .talk__image
   display: block
-  margin: 0 auto
+  margin: 0 -10px
   height: 70px
   width: 70px
   border-radius: 50%
@@ -72,8 +87,12 @@ export default {
     height: 150px
     width: 150px
 
+.talk__social__container
+  display: flex
+  flex-direction: row
+
 .talk__social
-  margin-bottom: 10px
+  margin: 10px 20px 0
 
   .icon:not(:last-child)
     padding-right: 10px
@@ -94,7 +113,6 @@ export default {
 
   @media #{$medium-up}
     font-size: 24px
-    padding-bottom: 10px
 
 .talk__author-info
   text-align: center

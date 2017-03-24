@@ -1,8 +1,7 @@
 <template lang="pug">
 .container
   .container__inner.post-section
-    h1
-      | Agenda
+    h1 Agenda
 
     .agenda
       talk(
@@ -20,7 +19,7 @@ export default {
     title: 'VueConf 2017 | Agenda'
   },
   components: { Talk },
-  data() {
+  data () {
     return {
       talks
     }

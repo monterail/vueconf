@@ -5,9 +5,7 @@
 
   <nuxt></nuxt>
 
-  <div class="container__inner">
-    <footer-section></footer-section>
-  </div>
+  <footer-section></footer-section>
   <cookies/>
 </div>
 </template>
