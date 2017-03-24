@@ -13,6 +13,7 @@ footer.footer
       ul.footer__list.footer__list--small
         h3.footer__header Useful links
         li: nuxt-link(to="/speakers") Speakers
+        li: nuxt-link(to="/agenda") Agenda
         li: a(href="https://conf.vuejs.org/terms") Terms & Conditions
         li: nuxt-link(to="/codeofconduct") Code of Conduct
         li: nuxt-link(to="/privatepolicy") Private Policy

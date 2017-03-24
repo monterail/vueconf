@@ -6,6 +6,10 @@
 
     speakers-list(:speakers="speakers", :adjust-img-url="true")
 
+    .center
+      nuxt-link(to="/agenda")
+        button.button.speaker-button Read about the talks
+
     h2
       | More announcements soon!
 
@@ -53,4 +57,7 @@ h2
 .cfp-section
   border-top: 1px solid #ddd
   padding-top: 60px
+
+.speaker-button
+  margin-top: 30px
 </style>
