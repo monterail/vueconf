@@ -6,10 +6,13 @@ footer.footer
         h3.footer__header Contact
         li
           | Twitter:
-          a(href="https://twitter.com/vueconf" target="_blank")  @VueConf
+          = ' '
+          a(href="https://twitter.com/vueconf" target="_blank")
+            span.at VueConf
         li
           | Email:
-          a(href="mailto:vueconf@monterail.com")  vueconf@monterail.com
+          a  vueconf
+            span.at monterail.com
       ul.footer__list.footer__list--small
         h3.footer__header Useful links
         li: nuxt-link(to="/speakers") Speakers
@@ -104,4 +107,7 @@ footer.footer
   font-size: 13px
   margin-top: 0
   color: #9D9D9D
+
+span.at:before
+  content: '@'
 </style>
