@@ -3,7 +3,9 @@
   .container__inner.post-section
     h1.agenda__header Program
     p.subheader__description
-      | The complete schedule will be published once all speakers are announced!
+      strong June 22-23
+      br
+      | The final schedule will be published once all speakers are announced!
     .agenda
       talk(
         v-for="talk of talks",
@@ -17,7 +19,7 @@ import talks from '../content/agenda'
 
 export default {
   head: {
-    title: 'VueConf 2017 | Agenda'
+    title: 'VueConf 2017 | Talks'
   },
   components: { Talk },
   data () {

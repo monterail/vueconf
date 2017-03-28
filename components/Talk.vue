@@ -13,8 +13,10 @@
           a.icon.icon--twitter(v-if="social.twitter", :href="social.twitter" target="_blank")
     .talk__description
       h2.talk__topic {{ talk.topic }}
-      p.talk__description-intro {{ talk.descriptionIntro }}
-      p {{ talk.description }}
+      slot
+        p {{ talk.description }}
+      div.center
+        slot(name="ticket")
 </template>
 
 <script>
@@ -56,13 +58,15 @@ export default {
   flex-direction: column
   justify-content: flex-start
   height: 100%
+  white-space: pre-line
   padding: 0 15px
 
-  p
+  p, ul, li
     font-size: 18px
 
-.talk__description-intro
-  padding-bottom: 10px
+  ul
+    margin: 0
+    padding-left: 30px
 
 .talk__image-container
   flex: 3
@@ -117,4 +121,11 @@ export default {
 .talk__author-info
   text-align: center
 
+.center
+  margin-top: 30px
+
+.button
+  text-transform: uppercase
+  font-size: 16px
+  font-weight: normal
 </style>

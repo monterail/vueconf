@@ -17,6 +17,9 @@
           nuxt-link(to="/program")
             | Program
         li.navbar-nav__item
+          nuxt-link(to="/workshops")
+            | Workshops
+        li.navbar-nav__item
           a(href="/speakers#apply")
             | Apply as a speaker
 

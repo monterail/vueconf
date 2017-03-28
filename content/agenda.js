@@ -6,8 +6,8 @@ export default [
     author: "Evan You",
     social: [
       {
-        github: "https://github.com/sdras",
-        twitter: "https://twitter.com/sarah_edo"
+        github: "https://github.com/yyx990803",
+        twitter: "https://twitter.com/youyuxi"
       }
     ],
     authorInfo: "Vue.js Author",
@@ -25,8 +25,7 @@ export default [
       }
     ],
     authorInfo: "Consultant",
-    descriptionIntro: "As superfluous as something like animation may initially seem, you can tell a lot about framework by the way that it handles the concept of time. Idiosyncrasies and race conditions in rendering reveal themselves, pauses in DOM and virtual DOM diffing can be exposed.",
-    description: "This is one of the ways Vue shows itself to be uniquely capable and elegant as a framework. In this session, we'll cover how to use the <transition> component and some of its offerings to create fluid effects in the browser. We'll move on to watchers and transitioning state. Finally, we'll talk about lifecycle methods, asynchronous updates, and pushing our animations to the next level."
+    description: "As superfluous as something like animation may initially seem, you can tell a lot about framework by the way that it handles the concept of time. Idiosyncrasies and race conditions in rendering reveal themselves, pauses in DOM and virtual DOM diffing can be exposed. \n\n This is one of the ways Vue shows itself to be uniquely capable and elegant as a framework. In this session, we'll cover how to use the <transition> component and some of its offerings to create fluid effects in the browser. We'll move on to watchers and transitioning state. Finally, we'll talk about lifecycle methods, asynchronous updates, and pushing our animations to the next level."
   },
   {
     type: "talk",
@@ -40,8 +39,7 @@ export default [
       }
     ],
     authorInfo: "Software Engineer at Sainsbury’s",
-    descriptionIntro: "We will take a look at how Vue.js can work as a PWA (Progressive Web Application). PWA's are boring now, right? Everyone is doing a talk about them, everyone is raving about them. Well let's do something crazy and different! Lets make it realtime.",
-    description: "We will take a look at the best patterns when creating an application, and how the Vue.js ecosystem can power a PWA. Extending the PWA platform we will look how Sockets and Service Workers can coexist together. Creating a PRA (Progressive Realtime Application), allowing platforms to improve the user experience without affecting the critical download chain."
+    description: "We will take a look at how Vue.js can work as a PWA (Progressive Web Application). PWA's are boring now, right? Everyone is doing a talk about them, everyone is raving about them. Well let's do something crazy and different! Lets make it realtime. \n\n We will take a look at the best patterns when creating an application, and how the Vue.js ecosystem can power a PWA. Extending the PWA platform we will look how Sockets and Service Workers can coexist together. Creating a PRA (Progressive Realtime Application), allowing platforms to improve the user experience without affecting the critical download chain."
   },
   {
     type: "talk",
@@ -55,7 +53,7 @@ export default [
       }
     ],
     authorInfo: "Front-end Lead at GitLab",
-    descriptionIntro: "How we switched from Coffeescript to ES6, from jQuery to Vue, from the asset pipeline to webpack, from static to realtime, all while adding new features, without refactoring and delivering to 1 million+ users and tons of clients."
+    description: "How we switched from Coffeescript to ES6, from jQuery to Vue, from the asset pipeline to webpack, from static to realtime, all while adding new features, without refactoring and delivering to 1 million+ users and tons of clients."
   },
   {
     type: "talk",
@@ -69,7 +67,7 @@ export default [
       }
     ],
     authorInfo: "webpack Core Team Member",
-    descriptionIntro: "Coming soon..."
+    description: "Coming soon..."
   },
   {
     type: "talk",
@@ -87,6 +85,6 @@ export default [
       }
     ],
     authorInfo: "Nuxt.js Authors",
-    descriptionIntro: "Server side rendering offers instant feedback and improves the user experience and SEO. Making Isomorphic application with vue.js might be a daunting task. We are going to see in this talk how Nuxt.js simplify the process to create universal vue application and PWA."
+    description: "Server side rendering offers instant feedback and improves the user experience and SEO. Making Isomorphic application with vue.js might be a daunting task. We are going to see in this talk how Nuxt.js simplify the process to create universal vue application and PWA."
   }
 ]

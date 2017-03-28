@@ -17,6 +17,7 @@ footer.footer
         h3.footer__header Useful links
         li: nuxt-link(to="/speakers") Speakers
         li: nuxt-link(to="/program") Program
+        li: nuxt-link(to="/workshops") Workshops
         li: a(href="https://conf.vuejs.org/terms") Terms & Conditions
         li: nuxt-link(to="/codeofconduct") Code of Conduct
         li: nuxt-link(to="/privatepolicy") Private Policy
