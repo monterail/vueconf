@@ -6,7 +6,7 @@
       strong June 21
     .agenda
       talk(:talk="evanWorkshop")
-        a.button(slot="ticket", href="https://events.zippydesk.com/vueconf-2017/register") Get the ticket (€299 + VAT)
+        a.button(slot="ticket", href="https://events.zippydesk.com/vueconf-2017/register") Coming soon...
       talk(:talk="blakeWorkshop")
         :markdown-it
           As an application grows, you will notice that components will share common code and state. Eventually as the application grows it can become more important to manage this state carefully, to improve maintainability, predictability and application flow.
@@ -21,7 +21,7 @@
           - Modularising a store
           - Composing actions (Promises and Async/Await)
           - Avoiding common pitfalls
-        a.button(slot="ticket", href="https://events.zippydesk.com/vueconf-2017/register") Get the ticket (€299 + VAT)
+        a.button(slot="ticket", href="https://events.zippydesk.com/vueconf-2017/register") Coming soon...
 </template>
 
 <script>
