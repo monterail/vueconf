@@ -48,7 +48,7 @@ export default {
         type: "talk",
         img: "/img/evan.jpg",
         topic: "Advanced Features from the Ground Up",
-        author: "Blake Newman",
+        author: "Evan You",
         social: [
           {
             github: "https://github.com/yyx990803",
