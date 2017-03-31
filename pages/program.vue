@@ -1,9 +1,12 @@
 <template lang="pug">
 .container
   .container__inner.post-section
-    h1.agenda__header Program
+    h1.agenda__header Conference program
     p.subheader__description
-      strong June 22-23
+      strong DAY 2–3 (22–23 June) 9:00 – 18:00
+      br
+      br
+      | Meet our speakers and discover their awesome talks.
       br
       | The final schedule will be published once all speakers are announced!
     .agenda

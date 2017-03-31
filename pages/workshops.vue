@@ -3,11 +3,21 @@
   .container__inner.post-section
     h1.agenda__header Workshops
     p.subheader__description
-      strong June 21
+      strong DAY 1 (21 June) 9:00 – 17:00
+      br
+      br
+      | Theory is not enough.
+      br
+      | Join our intensive,
+      strong  8-hour long workshops
+      |  with world-class Vue.js experts.
+      br
+      br
+      | Workshops and conference tickets are sold separately.
     .agenda
-      talk(:talk="evanWorkshop")
-        a.button(slot="ticket", href="https://events.zippydesk.com/vueconf-2017/register") Coming soon...
-      talk(:talk="blakeWorkshop")
+      talk(:talk="evanWorkshop", :desc-flex="7")
+        button.button.disabled(slot="ticket" disabled) Tickets coming soon...
+      talk(:talk="blakeWorkshop", :desc-flex="7")
         :markdown-it
           As an application grows, you will notice that components will share common code and state. Eventually as the application grows it can become more important to manage this state carefully, to improve maintainability, predictability and application flow.
 
@@ -21,7 +31,7 @@
           - Modularising a store
           - Composing actions (Promises and Async/Await)
           - Avoiding common pitfalls
-        a.button(slot="ticket", href="https://events.zippydesk.com/vueconf-2017/register") Coming soon...
+        button.button.disabled(slot="ticket" disabled) Tickets coming soon...
 </template>
 
 <script>
@@ -51,7 +61,7 @@ export default {
       blakeWorkshop: {
         type: "talk",
         img: "/img/blake.jpg",
-        topic: "Dealing with application state with Vuex",
+        topic: "Application state with Vuex",
         author: "Blake Newman",
         social: [
           {

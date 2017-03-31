@@ -11,7 +11,7 @@
           a.icon.icon--github(v-if="social.github", :href="social.github" target="_blank")
           a.icon.icon--gitlab(v-if="social.gitlab", :href="social.gitlab" target="_blank")
           a.icon.icon--twitter(v-if="social.twitter", :href="social.twitter" target="_blank")
-    .talk__description
+    .talk__description(:style="{ flex: descFlex }")
       h2.talk__topic {{ talk.topic }}
       slot
         p {{ talk.description }}
@@ -22,7 +22,7 @@
 <script>
 export default {
   name: 'Talk',
-  props: ['talk'],
+  props: ['talk', 'descFlex'],
   computed: {
     images () {
       return Array.isArray(this.talk.img) ? this.talk.img : [this.talk.img]

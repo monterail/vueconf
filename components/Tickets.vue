@@ -3,10 +3,15 @@
   .container__inner
     .nav-target#tickets
     h1 Tickets
+    p
+      | First come first served!
+      br
+      | The number of tickets is limited - save your seat today and join the first Vue.js community conference in the world.
     .ticket(v-for="ticket in tickets")
       span.ticket__name {{ ticket.name }}
         span.ticket__date {{ ticket.date }}
       a.button.button--dark.ticket__price(
+        :disabled="ticket.disabled"
         href="https://events.zippydesk.com/vueconf-2017/register",
         @click="trackTicketsEvent"
       )
@@ -43,12 +48,17 @@ export default {
   background-color: $color-green--dark
   text-align: center
 
-  h1
+  h1, p
     color: #fff
     margin-top: 0
+    margin-bottom: 30px
+
+  p
+    font-size: 24px
+    margin-bottom: 40px
 
 .button[disabled]
-  background: #ddd
+  background: #8c9caf
   pointer-events: none
 
 .ticket
