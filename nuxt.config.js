@@ -32,7 +32,7 @@ module.exports = {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/img/logo-48.png' },
       { rel: 'manifest', href: '/manifest.json' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600&amp;subset=latin-ext' },
     ]
   },
   /*
