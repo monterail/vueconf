@@ -14,9 +14,11 @@
       br
       br
       | Workshops and conference tickets are sold separately.
+      br
+      | Only 20 tickets per workshop.
     .agenda
       talk(:talk="evanWorkshop", :desc-flex="7")
-        button.button.disabled(slot="ticket" disabled) Tickets coming soon...
+        a.button(slot="ticket", href="https://events.zippydesk.com/vueconf-2017/register") Get the ticket
       talk(:talk="blakeWorkshop", :desc-flex="7")
         :markdown-it
           As an application grows, you will notice that components will share common code and state. Eventually as the application grows it can become more important to manage this state carefully, to improve maintainability, predictability and application flow.
@@ -31,7 +33,7 @@
           - Modularising a store
           - Composing actions (Promises and Async/Await)
           - Avoiding common pitfalls
-        button.button.disabled(slot="ticket" disabled) Tickets coming soon...
+        a.button(slot="ticket", href="https://events.zippydesk.com/vueconf-2017/register") Get the ticket
 </template>
 
 <script>
