@@ -1,6 +1,5 @@
 <template>
 <div>
-  <!--email_off-->
   <input id="burger-target" type="checkbox"/>
   <navbar></navbar>
 
@@ -8,7 +7,6 @@
 
   <footer-section></footer-section>
   <cookies/>
-  <!--/email_off-->
 </div>
 </template>
 

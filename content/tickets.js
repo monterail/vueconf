@@ -9,8 +9,8 @@ export default [
   {
     name: 'Workshop Ticket',
     date: 'Workshop 21 June',
-    price: 'Coming soon',
-    disabled: true,
+    price: '€299 + 23% VAT',
+    disabled: false,
     url: 'https://events.zippydesk.com/vueconf-2017/register'
   }
 ]
