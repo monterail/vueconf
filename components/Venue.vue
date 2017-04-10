@@ -32,13 +32,16 @@ export default {
 
   .half
     display: inline-block
-    max-width: calc(50% - 40px)
+    max-width: 100%
     vertical-align: middle
     text-align: left
     padding: 0 20px
 
     img
       max-width: 100%
+
+    @media #{$medium-up}
+      max-width: calc(50% - 40px)
 
   .button
     margin-top: 20px
