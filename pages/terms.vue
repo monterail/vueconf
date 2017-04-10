@@ -121,7 +121,7 @@
 <script>
 export default {
   head: {
-    title: 'VueConf 2017 | Private Policy'
+    title: 'VueConf 2017 | Terms & Conditions'
   }
 }
 </script>

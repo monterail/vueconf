@@ -10,6 +10,7 @@ div
         nuxt-link(to="/program")
           button.button.speaker-button Read the program
     tickets-section#tickets
+    venue-section
     newsletter-section
 
     organizers-section
@@ -22,6 +23,7 @@ import NewsletterSection from '~components/Newsletter'
 import OrganizersSection from '~components/Organizers'
 import SubmitTalks from '~components/SubmitTalks'
 import TicketsSection from '~components/Tickets'
+import VenueSection from '~components/Venue'
 import speakers from '../content/speakers/speaker-list'
 
 export default {
@@ -31,7 +33,8 @@ export default {
     OrganizersSection,
     SpeakersList,
     SubmitTalks,
-    TicketsSection
+    TicketsSection,
+    VenueSection
   },
   head: {
     title: 'VueConf 2017 – 21–23 June, 2017 in Wrocław, Poland'

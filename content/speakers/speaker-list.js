@@ -59,5 +59,14 @@ export default [
     "twitter": "https://twitter.com/Atinux",
     "bio": "Web developer since the age of 14. He has been using node.js for the last 6 years and since then he only writes JavaScript. He co-founded Nuxt.js to make universal application an easy task",
     "quote": "Vue.js is my favourite front-end framework for many reasons. After Next.js launched for React, I couldn’t sleep, I had to create the same framework for Vue, that’s how Nuxt.js was born. Together with my brother we will talk about how Nuxt.js helps you to build a Production-ready Universal Vue application."
+  },
+  {
+    "name": "Roman Kuba",
+    "title": "Lead Frontend Scientist at Codeship",
+    "img": "img/roman.jpg",
+    "github": "https://github.com/codebryo",
+    "twitter": "https://twitter.com/Codebryo",
+    "bio": "Roman is a active member of the Viennese developer community, in giving talks at various meetups, conferences and teaching classes at University. Sharing knowledge and enabling others in writing great software, has always been big motivator in pursuing this. After being a self-employed full-stack engineer and working with international clients early on, he joined Codeship in 2014 as lead Frontend Scientist. Roman started to introduce Vuejs positively to the company as solution for existing architectural and performance related problems.",
+    "quote": "Working at a Continuous Integration and Delivery company we end up shipping code to production several times a day. As many people work on the same product, legacy code exists and side effects could potentially happen all the time. So, testing is fundamental to success. Also, keeping testing in mind dramatically changes the approach writing code, so I love to release production code with confidence."
   }
 ]

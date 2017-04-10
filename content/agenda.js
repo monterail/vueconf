@@ -86,5 +86,19 @@ export default [
     ],
     authorInfo: "Nuxt.js Authors",
     description: "Server side rendering offers instant feedback and improves the user experience and SEO. Making Isomorphic application with vue.js might be a daunting task. We are going to see in this talk how Nuxt.js simplify the process to create universal vue application and PWA."
+  },
+  {
+    type: "talk",
+    img: "/img/roman.jpg",
+    topic: "Testing Vue components with Jest",
+    author: "Roman Kuba",
+    social: [
+      {
+        github: "https://github.com/codebryo",
+        twitter: "https://twitter.com/Codebryo"
+      }
+    ],
+    authorInfo: "Lead Frontend Scientist at Codeship",
+    description: "The necessity of testing is still often seen as a burden when writing code, yet when done right, it will dramatically change how code gets written.\n\n What makes Vue special in this regards, it’s quite convenient to test for it’s approach in simplicity and leveraged functions and objects wherever possible.\n\n In this talk we will look at what makes up a good practice in testing and how jest works. We’ll continue to test some simple Vue Components and see how we can effectively test and store the rendered output with snapshots.\n\n Well conclude by looking at a component that heavily relies on Vuex for it’s state management and peek into the possible directions from there."
   }
 ]

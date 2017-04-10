@@ -55,7 +55,7 @@
 
       Monterail reserves the right to amend the provisions of this Privacy Policy at any time due to important reasons, in particular economic, technical or legal, without the obligation to justify these reasons.
 
-      The current version of this Privacy Policy is available at any time at [conf.vuejs.org/privatepolicy](https://conf.vuejs.org/privatepolicy), also in a downloadable form.
+      The current version of this Privacy Policy is available at any time at [conf.vuejs.org/privacypolicy](https://conf.vuejs.org/privacypolicy), also in a downloadable [form](https://conf.vuejs.org/privacypolicy.pdf).
 
       ## § 5
       ### CONTACT
