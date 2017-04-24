@@ -68,5 +68,13 @@ export default [
     "twitter": "https://twitter.com/Codebryo",
     "bio": "Roman is a active member of the Viennese developer community, in giving talks at various meetups, conferences and teaching classes at University. Sharing knowledge and enabling others in writing great software, has always been big motivator in pursuing this. After being a self-employed full-stack engineer and working with international clients early on, he joined Codeship in 2014 as lead Frontend Scientist. Roman started to introduce Vuejs positively to the company as solution for existing architectural and performance related problems.",
     "quote": "Working at a Continuous Integration and Delivery company we end up shipping code to production several times a day. As many people work on the same product, legacy code exists and side effects could potentially happen all the time. So, testing is fundamental to success. Also, keeping testing in mind dramatically changes the approach writing code, so I love to release production code with confidence."
+  },
+  {
+    "name": "Eduardo San Martin Morote",
+    "title": "Vue.js Core Team Member",
+    "img": "img/ed.jpg",
+    "github": "https://github.com/posva",
+    "twitter": "https://twitter.com/posva",
+    "bio": "Eduardo is a Freelance in Front End development who loves Open source. He has been contributing to Open source since he started crafting applications. He mostly maintains Vue.js related projects as Vue itself, vuefire and vue-router but he sometimes helps out somewhere else, to make the web move forward. \n\n When he develops applications, he likes to focus on UX, and always in a pragmatic way. He tends to reduce waste as much as possible by applying Lean wherever he can. \n\n He also trains people in web development, being patient and adapting to different levels."
   }
 ]

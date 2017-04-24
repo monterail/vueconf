@@ -100,5 +100,19 @@ export default [
     ],
     authorInfo: "Lead Frontend Scientist at Codeship",
     description: "The necessity of testing is still often seen as a burden when writing code, yet when done right, it will dramatically change how code gets written.\n\n What makes Vue special in this regards, it’s quite convenient to test for it’s approach in simplicity and leveraged functions and objects wherever possible.\n\n In this talk we will look at what makes up a good practice in testing and how jest works. We’ll continue to test some simple Vue Components and see how we can effectively test and store the rendered output with snapshots.\n\n Well conclude by looking at a component that heavily relies on Vuex for it’s state management and peek into the possible directions from there."
+  },
+  {
+    type: "talk",
+    img: "/img/ed.jpg",
+    topic: "Make your Apps Realtime with Firebase and Vue",
+    author: "Eduardo San Martin Morote",
+    social: [
+      {
+        github: "https://github.com/posva",
+        twitter: "https://twitter.com/posva"
+      }
+    ],
+    authorInfo: "Vue.js Core Team Member",
+    description: "Vue has brought elegant and accessible reactivity to interfaces making it easy to keep the view updated with the local data. On the other hand, Firebase makes it easy to sync the local data with a database, so… what if we combine them to create a super efficient workflow? \n\n During this talk, I’ll explain how a real time database like Firebase can make your application even better and why it works so well with Vue. We will understand when and how to integrate Firebase with Vue to create real time applications."
   }
 ]
