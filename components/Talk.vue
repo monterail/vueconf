@@ -1,6 +1,6 @@
 <template lang="pug">
 .talk__container
-  .talk
+  .talk(:id="id")
     .talk__image-container
       .talk__images
         img.talk__image(v-for="image of images", :src="image", :alt="talk.author")
@@ -26,6 +26,9 @@ export default {
   computed: {
     images () {
       return Array.isArray(this.talk.img) ? this.talk.img : [this.talk.img]
+    },
+    id () {
+      return this.talk.author.toLowerCase().split(' ').join('-')
     }
   }
 }

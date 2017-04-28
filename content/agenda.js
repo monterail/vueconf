@@ -17,7 +17,7 @@ export default [
     type: "talk",
     img: "/img/sarah.jpg",
     topic: "Animating Vue",
-    author: "Sarah Drazner",
+    author: "Sarah Drasner",
     social: [
       {
         github: "https://github.com/sdras",
@@ -114,5 +114,19 @@ export default [
     ],
     authorInfo: "Vue.js Core Team Member",
     description: "Vue has brought elegant and accessible reactivity to interfaces making it easy to keep the view updated with the local data. On the other hand, Firebase makes it easy to sync the local data with a database, so… what if we combine them to create a super efficient workflow? \n\n During this talk, I’ll explain how a real time database like Firebase can make your application even better and why it works so well with Vue. We will understand when and how to integrate Firebase with Vue to create real time applications."
+  },
+  {
+    type: "talk",
+    img: "/img/guillaume.jpg",
+    topic: "GraphQL made easy with Apollo and Vue",
+    author: "Guillaume Chau",
+    social: [
+      {
+        github: "https://github.com/akryum",
+        twitter: "https://twitter.com/akryum"
+      }
+    ],
+    authorInfo: "Vue.js Core Team Member",
+    description: "GraphQL is a new way of building client-server interactions that is gaining a lot of traction lately, thanks to the clear advantages it brings to the Web Service world. As an emerging standard, GraphQL needs the community to back the adoption and to create tools so more developers can enjoy it.\n\n Apollo is one the most popular GraphQL community project, launched by the Meteor Development Group. The Apollo Client has a very good support of the current spec and which features everything you need to use the full power of GraphQL in your apps on multiple platforms.\n\n During this talk, we will learn how Apollo can help us start using GraphQL today and how some integrations in our Vue components and Vuex stores will make our lives easier."
   }
 ]

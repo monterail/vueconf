@@ -76,5 +76,14 @@ export default [
     "github": "https://github.com/posva",
     "twitter": "https://twitter.com/posva",
     "bio": "Eduardo is a Freelance in Front End development who loves Open source. He has been contributing to Open source since he started crafting applications. He mostly maintains Vue.js related projects as Vue itself, vuefire and vue-router but he sometimes helps out somewhere else, to make the web move forward. \n\n When he develops applications, he likes to focus on UX, and always in a pragmatic way. He tends to reduce waste as much as possible by applying Lean wherever he can. \n\n He also trains people in web development, being patient and adapting to different levels."
+  },
+  {
+    "name": "Guillaume Chau",
+    "title": "Vue.js Core Team Member",
+    "img": "img/guillaume.jpg",
+    "github": "https://github.com/akryum",
+    "twitter": "https://twitter.com/akryum",
+    "bio": "Guillaume is the creator of the integrations with Meteor (vue-meteor) and Apollo GraphQL (vue-apollo) to help developer build highly interactive and realtime Vue-powered apps. He also created the vue-curated app that helps you to discover great packages and he contributes to the ecosystem with tools like vue-virtual-scroller and vue-supply. He is now building a customer portal app for a big energy company with large data sets and performance challenges.",
+    "quote": "With its state-of-the-art API and strong sense of simplicity and elegance, Vue is easily my favorite Frontend JavaScript library. So naturally I wanted to help fellow Meteor and Apollo developers access this wonderful piece of technology!"
   }
 ]
