@@ -18,7 +18,7 @@
       | Only 20 tickets per workshop.
     .agenda
       talk(:talk="evanWorkshop", :desc-flex="7")
-        a.button(slot="ticket", href="https://events.zippydesk.com/vueconf-2017/register") Get the ticket
+        a.button(slot="ticket", disabled) Sold out
       talk(:talk="blakeWorkshop", :desc-flex="7")
         :markdown-it
           As an application grows, you will notice that components will share common code and state. Eventually as the application grows it can become more important to manage this state carefully, to improve maintainability, predictability and application flow.
@@ -33,6 +33,10 @@
           - Modularising a store
           - Composing actions (Promises and Async/Await)
           - Avoiding common pitfalls
+        a.button(slot="ticket", href="https://events.zippydesk.com/vueconf-2017/register") Get the ticket
+      talk(:talk="sarahWorkshop", :desc-flex="7")
+        :markdown-it
+          #### Detailed description will be published soon
         a.button(slot="ticket", href="https://events.zippydesk.com/vueconf-2017/register") Get the ticket
 </template>
 
@@ -72,6 +76,19 @@ export default {
           }
         ],
         authorInfo: "Software Engineer at Sainsbury’s",
+      },
+      sarahWorkshop: {
+        type: "talk",
+        img: "/img/sarah.jpg",
+        topic: "Animated Interfaces with Vue.js",
+        author: "Sarah Drasner",
+        social: [
+          {
+            github: "https://github.com/sdras",
+            twitter: "https://twitter.com/sarah_edo"
+          }
+        ],
+        authorInfo: "Consultant",
       }
     }
   }
