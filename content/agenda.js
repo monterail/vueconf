@@ -128,5 +128,19 @@ export default [
     ],
     authorInfo: "Vue.js Core Team Member",
     description: "GraphQL is a new way of building client-server interactions that is gaining a lot of traction lately, thanks to the clear advantages it brings to the Web Service world. As an emerging standard, GraphQL needs the community to back the adoption and to create tools so more developers can enjoy it.\n\n Apollo is one the most popular GraphQL community project, launched by the Meteor Development Group. The Apollo Client has a very good support of the current spec and features everything you need to use the full power of GraphQL in your apps on multiple platforms.\n\n During this talk, we will learn how Apollo can help us start using GraphQL today and how some integrations in our Vue components and Vuex stores will make our lives easier."
+  },
+  {
+    type: "talk",
+    img: "/img/callum.jpg",
+    topic: "Accessibility In Vue",
+    author: "Callum Macrae",
+    social: [
+      {
+        github: "https://github.com/callumacrae",
+        twitter: "https://twitter.com/callumacrae"
+      }
+    ],
+    authorInfo: "Front-End Developer at SamKnows",
+    description: "As developers, we have a responsibility to make sure that as many people as possible can use the websites and applications that we create. But with a new generation of websites—single page applications—come a new set of challenges for users with disabilities, and the assistive technology they use to browse the web. Client-side routing, custom input elements, and shiny animated content: all things that screen readers can struggle with if the developer who implemented it didn't consider accessibility.\n\n During this talk, I'll explain what we as developers can do to ensure that our single page applications are usable by everyone, including people who might not use a keyboard, mouse and screen like the majority of us do. I'll show how some assistive technology is used, and demonstrate how some common mistakes we make affect people using that assistive technology."
   }
 ]

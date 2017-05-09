@@ -85,5 +85,13 @@ export default [
     "twitter": "https://twitter.com/akryum",
     "bio": "Guillaume is the creator of the integrations with Meteor (vue-meteor) and Apollo GraphQL (vue-apollo) to help developer build highly interactive and realtime Vue-powered apps. He also created the vue-curated app that helps you to discover great packages and he contributes to the ecosystem with tools like vue-virtual-scroller and vue-supply. He is now building a customer portal app for a big energy company with large data sets and performance challenges.",
     "quote": "With its state-of-the-art API and strong sense of simplicity and elegance, Vue is easily my favorite Frontend JavaScript library. So naturally I wanted to help fellow Meteor and Apollo developers access this wonderful piece of technology!"
+  },
+  {
+    "name": "Callum Macrae",
+    "title": "Front-End Developer at SamKnows",
+    "img": "img/callum.jpg",
+    "github": "https://github.com/callumacrae",
+    "twitter": "https://twitter.com/callumacrae",
+    "bio": "Callum Macrae is a JavaScript developer and occasional musician based in London, UK, working at SamKnows to make the internet faster for everyone. He regularly contributes to open source projects including gulp and his own projects and is the author of Learning from jQuery, a book about writing JavaScript without using jQuery."
   }
 ]
