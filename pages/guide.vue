@@ -43,17 +43,23 @@ div
     .container__inner
       h2: strong Why Wrocław?
       p.
-        We chose Wroclaw as the venue for VueConf because the city has a well-developed IT sector - the best in Poland. Due to its uniqueness, it became the European Capital of Culture in 2016. Wroclaw itself is a magical, picturesque place with a long history and has about 100 bridges. You can easily get to Wroclaw from every corner of the world, because of its great location (Central Europe). To break the hard set schedule, plan a few extra days after the conference and explore the city, visit various nightclubs and taste Polish cuisine - there are plenty of restaurants to choose from. There are also many options for walking tours: search for famous dwarves (small figures spread around the city), follow fantastic murals or taste a diverse array of beer brands. Meet Wroclaw before you leave!
+        We chose Wroclaw as the venue for VueConf because the city has a well-developed IT sector - the best in Poland. Due to its uniqueness, it became the European Capital of Culture in 2016. Wroclaw itself is a magical, picturesque place with a long history and has about 100 bridges.
+      p.
+        To break the hard set schedule, plan a few extra days after the conference and explore the city, visit various nightclubs and taste Polish cuisine - there are plenty of restaurants to choose from. There are also many options for walking tours: search for famous dwarves (small figures spread around the city), follow fantastic murals or taste a diverse array of beer brands. Meet Wroclaw before you leave!
     wroclaw-video
     .container__inner
-      h2: strong Hotels recommendations
+      h2: strong Hotel recommendations
       p.
         Here you can find helpful info that will make your stay in Wroclaw easier and more entertaining. We chose several places and attractions that are certainly worth your attention. Check out these special conference discounts and extras:
 
       attraction(v-for="hotel of hotels", :attraction="hotel")
-      h2: strong Restaurants recommendations
+      h2: strong Restaurant recommendations
+      p.
+        A list of our favorite places to eat and drink. Show your VueConf badge and get special discounts!
 
       attraction(v-for="restaurant of restaurants", :attraction="restaurant")
+
+      h2.more-info More information to come...
 </template>
 
 <script>
@@ -119,4 +125,8 @@ export default {
     margin-top: 20px
     font-weight: 400
     font-size: 16px
+
+  .more-info
+    margin-top: 60px
+    text-align: center
 </style>
