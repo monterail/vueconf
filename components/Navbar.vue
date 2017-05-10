@@ -19,6 +19,9 @@
         li.navbar-nav__item
           nuxt-link(to="/program")
             | Program
+        li.navbar-nav__item
+          nuxt-link(to="/guide")
+            | Guide
 
         li.navbar-nav__item
           a.button(
