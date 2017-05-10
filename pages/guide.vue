@@ -34,7 +34,7 @@ div
         .half.text-left
           h2: strong The location
           p.
-            It was one of the most important criteria for picking the venue  – just next to the city centre and old town. This means it’s a perfect oportunitty for all the attendees to explore Wrocław, one of the most beautiful cities in Poland.
+            It was one of the most important criteria for picking the venue  – just next to the city centre and old town. This means it’s a perfect opportunity for all the attendees to explore Wrocław, one of the most beautiful cities in Poland.
           p.
             Secondly, there are multiple hotels and hostels nearby, meaning no need to use the public transportation to reach the venue and back, as well as tons of restaurants and pubs to go after the conference.
         .half
