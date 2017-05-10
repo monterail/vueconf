@@ -35,12 +35,12 @@ export default {
     max-width: 100%
     vertical-align: middle
     text-align: left
-    padding: 0 20px
 
     img
       max-width: 100%
 
     @media #{$medium-up}
+      padding: 0 20px
       max-width: calc(50% - 40px)
 
   .button

@@ -1,5 +1,5 @@
 export default [
-    {
+  {
     type: "talk",
     img: "/img/evan.jpg",
     topic: "Keynote",
