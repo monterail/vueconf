@@ -132,7 +132,7 @@ export default [
   {
     type: "talk",
     img: "/img/callum.jpg",
-    topic: "Accessibility In Vue",
+    topic: "Accessibility in Single Page Apps",
     author: "Callum Macrae",
     social: [
       {
@@ -142,5 +142,18 @@ export default [
     ],
     authorInfo: "Front-End Developer at SamKnows",
     description: "As developers, we have a responsibility to make sure that as many people as possible can use the websites and applications that we create. But with a new generation of websites—single page applications—come a new set of challenges for users with disabilities, and the assistive technology they use to browse the web. Client-side routing, custom input elements, and shiny animated content: all things that screen readers can struggle with if the developer who implemented it didn't consider accessibility.\n\n During this talk, I'll explain what we as developers can do to ensure that our single page applications are usable by everyone, including people who might not use a keyboard, mouse and screen like the majority of us do. I'll show how some assistive technology is used, and demonstrate how some common mistakes we make affect people using that assistive technology."
+  },
+  {
+    type: "talk",
+    img: "/img/masa.jpg",
+    topic: "Best Practices for Hybrid Mobile Apps with Vue.js and Onsen UI",
+    author: "Masahiro Tanaka",
+    social: [
+      {
+        github: "https://github.com/masahirotanaka"
+      }
+    ],
+    authorInfo: "Founder & CEO, Monaca",
+    description: "Native apps require specific stacks, which are commonly unknown to web developers, whereas  web apps are limited when dealing with native features in mobile devices. On the other hand, hybrid apps combine the power of native and web apps to get the benefits of both sides. It allows creating native-like apps with web technologies such as Vue.js or any other tool that web developers already know and love. \n\n Onsen UI is a library of UI components and utilities to help you create beautiful hybrid apps very quickly. Implemented on top of Web Components, Onsen UI is framework agnostic and can easily be combined with Vue.js to bootstrap your apps. It provides a Vue-like API to make its usage very simple and straightforward. Apart from that, Onsen UI’s ecosystem tools manage all jobs related to publishing or updating apps to stores, notifications, device debugging and more."
   }
 ]

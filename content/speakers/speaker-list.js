@@ -93,5 +93,12 @@ export default [
     "github": "https://github.com/callumacrae",
     "twitter": "https://twitter.com/callumacrae",
     "bio": "Callum Macrae is a JavaScript developer and occasional musician based in London, UK, working at SamKnows to make the internet faster for everyone. He regularly contributes to open source projects including gulp and his own projects and is the author of Learning from jQuery, a book about writing JavaScript without using jQuery."
+  },
+  {
+    "name": "Masahiro Tanaka",
+    "title": "Founder & CEO, Monaca",
+    "img": "img/masa.jpg",
+    "github": "https://github.com/masahirotanaka",
+    "bio": "Masa is the CEO of Monaca Corporation, the company behind Japan's #1 hybrid app development tools, Monaca and Onsen UI. He started his company as a pioneer in web and mobile communities in Japan, writing numerous PHP books and initiating Cordova meetups. Masa still maintains a leadership role within mobile and IoT communities in Japan and overseas as a hybrid app development vanguard and framework trendsetter."
   }
 ]
