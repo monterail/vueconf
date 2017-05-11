@@ -9,7 +9,7 @@
     .half.text-left
       h2: strong New Horizons Cinema
       p
-        | The conference (Juen 22–23) will take place in the
+        | The conference (June 22–23) will take place in the
         strong  New Horizons Cinema
         | , the largest art-cinema in Poland.
 
