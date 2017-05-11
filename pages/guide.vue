@@ -58,22 +58,34 @@ div
         A list of our favorite places to eat and drink. Show your VueConf badge and get special discounts!
 
       attraction(v-for="restaurant of restaurants", :attraction="restaurant")
+      h2: strong Good to know
+      p.
+        A bit more key information to make your stay comfortable!
 
-      h2.more-info More information to come...
+      hint(v-for="hint of hints", :hint="hint")
+      h2: strong Attractions
+      p.
+        Wrocław is full of beautiful and interesting places you must see being here. We created a short list of the most important ones to help you plan your trip around this astonishing city!
+
+      attraction(v-for="sight of sights", :attraction="sight")
 </template>
 
 <script>
 import VenueSection from '~components/Venue'
 import WroclawVideo from '~components/WroclawVideo'
 import Attraction from '~components/Attraction'
+import Hint from '~components/Hint'
 import hotels from '~/content/hotels'
 import restaurants from '~/content/restaurants'
+import hints from '~/content/hints'
+import sights from '~/content/sights'
 
 export default {
   components: {
     VenueSection,
     WroclawVideo,
-    Attraction
+    Attraction,
+    Hint
   },
   head: {
     title: 'VueConf 2017 | Guide'
@@ -81,7 +93,9 @@ export default {
   data () {
     return {
       hotels,
-      restaurants
+      restaurants,
+      hints,
+      sights
     }
   }
 }
