@@ -10,18 +10,15 @@
     img.attraction__image(v-if="image", :src="image")
     .attraction__description
       p {{ attraction.description }}
-      p.attraction__offer {{ attraction.offer }}
-      p(v-html="attraction.instruction")
-      a.button.button--small(:href="attraction.link" target="BLANK") WEBPAGE
+      p.attraction__offer(v-if="attraction.offer") {{ attraction.offer }}
+      p(v-if="attraction.instruction" v-html="attraction.instruction")
+      a.button.button--small(v-if="attraction.link" :href="attraction.link" target="BLANK") WEBPAGE
       a.button.button--small.button--dark(v-if="attraction.formLink", target="BLANK", :href="attraction.formLink") DOWNLOAD BOOKING FORM
       a.button.button--small.button--dark(v-if="attraction.mapLink", target="BLANK", :href="attraction.mapLink") LOCATION
 </template>
 
 <script>
-import Speaker from './Speaker'
-
 export default {
-  components: { Speaker },
   props: {
     attraction: {
       type: Object
