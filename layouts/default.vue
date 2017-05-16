@@ -1,6 +1,5 @@
 <template>
 <div>
-  <input id="burger-target" type="checkbox"/>
   <navbar></navbar>
 
   <nuxt></nuxt>
