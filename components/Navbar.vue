@@ -1,15 +1,15 @@
 <template lang="pug">
-.navbar
+.navbar(:class="isOpen && 'open'")
   .navbar__container
     nuxt-link.navbar__logo(to="/")
 
-    label#burger(for="burger-target")
+    button.navbar__burger(type="button", @click="toggle")
         .bar
         .bar
         .bar
 
     nav
-      ul.navbar-nav
+      ul.navbar-nav(@click="toggle")
         li.navbar-nav__item
           nuxt-link(to="/speakers")
             | Speakers
@@ -33,7 +33,15 @@
 
 <script>
   export default {
+    data () {
+      return {
+        isOpen: false
+      }
+    },
     methods: {
+      toggle () {
+        this.isOpen = !this.isOpen
+      },
       trackTicketsEvent (event) {
         ga('send', 'event', {
           eventAction: 'click',
@@ -102,46 +110,32 @@
       font-size: 15px
       font-weight: normal
 
-  #burger
-    display: none
-
-  #burger-target
-    position: fixed
-    left: -99999px
+  .navbar__burger
     display: none
 
   @media screen and (max-width:639px)
-    #burger
+    .navbar__burger
       display: block
-      align-self: center
       border: 1px solid #ccc
       border-radius: 5px
-      display: flex
-      flex-direction: column
-      align-items: stretch
-      justify-content: space-between
       height: 30px
       width: 40px
       box-sizing: border-box
       padding: 8px 8px
+      background: none
 
       .bar
+        position: relative
         height: 2px
+        margin-bottom: 3px
         background: #ccc
-
-    #burger-target
-      display: inline-block
-
-    #burger-target ~ *
-      transition: transform 0.3s ease
-
-    #burger-target:focus ~ *
-      transform: translateX(-250px)
+        transition: opacity 0.5s ease, transform 0.5s ease
 
     nav
       position: absolute
       left: 100%
       top: 0
+
       li
         width: 250px
         padding-left: 0 !important
@@ -156,4 +150,29 @@
         margin: 20px auto
         display: block
         max-width: calc(100% - 100px)
+
+    .navbar, .navbar ~ *
+      transition: transform 0.3s ease
+
+    .navbar.open, .navbar.open ~ *
+      transform: translateX(-250px)
+
+    .navbar.open
+      .navbar__burger
+        .bar:nth-child(1), .bar:nth-child(3)
+          opacity: 0
+
+        .bar:nth-child(2)
+          transform: rotate(45deg) scale(0.7, 0.7)
+
+        .bar:nth-child(2)::before
+          content: ' '
+          display: block
+          position: absolute
+          top: 0
+          left: 0
+          right: 0
+          bottom: 0
+          background: #ccc
+          transform: rotate(90deg)
 </style>
