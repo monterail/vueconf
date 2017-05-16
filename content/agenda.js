@@ -155,5 +155,19 @@ export default [
     ],
     authorInfo: "Founder & CEO, Monaca",
     description: "Native apps require specific stacks, which are commonly unknown to web developers, whereas  web apps are limited when dealing with native features in mobile devices. On the other hand, hybrid apps combine the power of native and web apps to get the benefits of both sides. It allows creating native-like apps with web technologies such as Vue.js or any other tool that web developers already know and love. \n\n Onsen UI is a library of UI components and utilities to help you create beautiful hybrid apps very quickly. Implemented on top of Web Components, Onsen UI is framework agnostic and can easily be combined with Vue.js to bootstrap your apps. It provides a Vue-like API to make its usage very simple and straightforward. Apart from that, Onsen UI’s ecosystem tools manage all jobs related to publishing or updating apps to stores, notifications, device debugging and more."
+  },
+  {
+    type: "talk",
+    img: "/img/eric.jpg",
+    topic: "The Evolution of API Design: From RPC to GraphQL",
+    author: "Eric Baer",
+    social: [
+      {
+        "github": "https://github.com/baer",
+        "twitter": "https://twitter.com/ebaerbaerbaer"
+      }
+    ],
+    authorInfo: "Lead Software Engineer at Formidable",
+    description: "Over the last 60 years, API designs have changed to respond to everything from new network topologies and new language designs, to the pressures of managing ever larger code bases. Today’s most popular API pattern, REST, was developed in a time where the cost of making API requests were plummeting. At the time, bandwidth was getting cheaper, latency was dropping, and the computing power of devices was still tracking Moore’s Law. Mobile turned this on its head. The environments in which apps and APIs need to perform today have effectively regressed a decade.\n\n This talk will explore some of the new client-server interaction models that address today’s pressures and use history to understand the tradeoffs that we made at the transition between the previous designs. I will introduce major tools that are attempting to change the API landscape including GraphQL and Falcor. Since GraphQL is the dominant technology in this space, I will examine some of it’s functionality, touch on some of its syntax and present a live coding demo that shows off a GraphQL server from 0 to 1. Demonstrating a complete implementation in under 10 minutes will give a strong sense of what’s possible, and what kind of complexity burden a tool like this would impose.\n Spoiler: There is no silver bullet."
   }
 ]

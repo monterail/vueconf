@@ -12,19 +12,6 @@
 
     h2
       | More announcements soon!
-
-    .post-section.center.cfp-section#apply
-
-      include:markdown-it ../content/speakers/cfp.md
-
-      a.post-section__button.button(
-        href="https://docs.google.com/forms/d/e/1FAIpQLSdtbxBpV0j_zCnELXQuIkeGH8x6gaOWE0J8tTsAdpa0O5MYOw/viewform"
-        target="_blank"
-      )
-        | Apply as a speaker
-
-      p.post-section__paragraph
-        | We will come back to you within a few days.
 </template>
 
 <script>
