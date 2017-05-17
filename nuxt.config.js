@@ -33,6 +33,9 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/img/logo-48.png' },
       { rel: 'manifest', href: '/manifest.json' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600&amp;subset=latin-ext' },
+    ],
+    script: [
+      { type: 'text/javascript', src: '/sw.js' }
     ]
   },
   /*
@@ -45,6 +48,7 @@ module.exports = {
   loading: { color: '#3B8070' },
   plugins: [
     '~plugins/analytics',
-    '~plugins/cookies'
+    '~plugins/cookies',
+    { src: '~plugins/offline.js', ssr: false }
   ]
 }
