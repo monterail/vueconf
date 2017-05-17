@@ -8,7 +8,7 @@ div
 
     .container__inner
       .content
-        .half
+        .half.half--left
           img.venue-image(src="~assets/img/knh-front.jpg" alt="New Horizons Cinema, Wrocław")
         .half.text-left
           h2
@@ -37,7 +37,7 @@ div
             It was one of the most important criteria for picking the venue  – just next to the city centre and old town. This means it’s a perfect opportunity for all the attendees to explore Wrocław, one of the most beautiful cities in Poland.
           p.
             Secondly, there are multiple hotels and hostels nearby, meaning no need to use the public transportation to reach the venue and back, as well as tons of restaurants and pubs to go after the conference.
-        .half
+        .half.half--right
           img(src="~assets/img/knh-inner.jpg" alt="New Horizons Cinema, Wrocław")
 
     .container__inner
@@ -58,22 +58,34 @@ div
         A list of our favorite places to eat and drink. Show your VueConf badge and get special discounts!
 
       attraction(v-for="restaurant of restaurants", :attraction="restaurant")
+      h2: strong Good to know
+      p.
+        A bit more key information to make your stay comfortable!
 
-      h2.more-info More information to come...
+      hint(v-for="hint of hints", :hint="hint")
+      h2: strong Attractions
+      p.
+        Wrocław is full of beautiful and interesting places you must see being here. We created a short list of the most important ones to help you plan your trip around this astonishing city!
+
+      attraction(v-for="sight of sights", :attraction="sight")
 </template>
 
 <script>
 import VenueSection from '~components/Venue'
 import WroclawVideo from '~components/WroclawVideo'
 import Attraction from '~components/Attraction'
+import Hint from '~components/Hint'
 import hotels from '~/content/hotels'
 import restaurants from '~/content/restaurants'
+import hints from '~/content/hints'
+import sights from '~/content/sights'
 
 export default {
   components: {
     VenueSection,
     WroclawVideo,
-    Attraction
+    Attraction,
+    Hint
   },
   head: {
     title: 'VueConf 2017 | Guide'
@@ -81,7 +93,9 @@ export default {
   data () {
     return {
       hotels,
-      restaurants
+      restaurants,
+      hints,
+      sights
     }
   }
 }
@@ -120,6 +134,11 @@ export default {
     @media #{$medium-up}
       width: 100%
       max-width: calc(50% - 40px)
+
+  .half--right
+    img
+      @media #{$medium-up}
+        left: 20px
 
   .button
     margin-top: 20px

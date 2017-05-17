@@ -6,7 +6,7 @@ export default [
     instruction: 'Fill the booking form (typing a password: vuesome2017) and send it to the hotel’s e-mail address: <a href="mailto:monopol.wroclaw@hotel.com.pl">monopol.wroclaw@hotel.com.pl</a>',
     link: 'https://monopolwroclaw.hotel.com.pl/en/',
     formLink: '/forms/monopol_form.pdf',
-    mapLink: '',
+    mapLink: 'https://www.google.pl/maps/place/Hotel+Monopol/@51.1060701,17.0286756,17z/data=!3m1!4b1!4m5!3m4!1s0x470fc273f2c6fc87:0x8066ea5308a08d7b!8m2!3d51.1060668!4d17.0308643',
     image: '/attractions/monopol_hotel.jpg'
   },
   {
@@ -15,7 +15,7 @@ export default [
     offer: 'Single room (breakfast included) 440 PLN / Double room (breakfast included) 520 PLN',
     instruction: 'Click the link to the hotel’s offer subpage: <a target="BLANK" href="http://bit.ly/VUESOME2017">http://bit.ly/VUESOME2017</a>',
     link: 'https://www.qubushotel.com/en/hotels/wroclaw/4/',
-    mapLink: '',
+    mapLink: 'https://www.google.pl/maps/place/Qubus+Hotel+Wroclaw/@51.1090719,17.0329714,17z/data=!3m1!4b1!4m5!3m4!1s0x470fc2767bff1f49:0x572b16c57e8b6a16!8m2!3d51.1090686!4d17.0351601',
     image: '/attractions/qubus_hotel.jpg'
   },
   {
@@ -25,7 +25,7 @@ export default [
     instruction: 'Offer expires on May 17th! Fill the booking form and send it to the hotel’s e-mail address: <a href="mailto:dos@granaryhotel.com">mailto:dos@granaryhotel.com</a>',
     link: 'http://www.thegranaryhotel.com/en/default.html',
     formLink: '/forms/granary_form.pdf',
-    mapLink: '',
+    mapLink: 'https://www.google.pl/maps/place/THE+GRANARY+LA+SUITE+HOTEL/@51.106189,17.0325518,17z/data=!3m1!4b1!4m5!3m4!1s0x470fc2712d490715:0x905812639a984339!8m2!3d51.1061857!4d17.0347405',
     image: '/attractions/granary_hotel.jpg'
   },
   {
@@ -35,7 +35,7 @@ export default [
     instruction: 'Fill out the booking form and send it to the hotel’s e-mail address: <a href="mailto:m.setecka@europeum.com">m.setecka@europeum.com</a>',
     link: 'http://europeum.pl/en/',
     formLink: '/forms/europeum_form.pdf',
-    mapLink: '',
+    mapLink: 'https://www.google.pl/maps/place/Hotel+Europeum/@51.1081575,17.0253191,17z/data=!3m1!4b1!4m5!3m4!1s0x470fc274bdfc4e91:0x922304234e97f36d!8m2!3d51.1081542!4d17.0275078',
     image: '/attractions/europeum_hotel.jpg'
   },
   {
@@ -45,7 +45,7 @@ export default [
     instruction: 'Fill the booking form (typing a password: vuesome2017) and send it to the hotel’s e-mail address: <a href="mailto:wroclaw@hotelbb.com">wroclaw@hotelbb.com</a>',
     link: 'https://www.hotelbb.pl/en/portal/hotels/overview.html?id=5003&type=hotel',
     formLink: '/forms/bb_form.pdf',
-    mapLink: '',
+    mapLink: 'https://www.google.pl/maps/place/B%26B+Hotel+Wroc%C5%82aw+Centrum/@51.1065263,17.0363983,17z/data=!3m1!4b1!4m5!3m4!1s0x470fc27739d42501:0x8d72e19ff20d158c!8m2!3d51.106523!4d17.038587',
     image: '/attractions/bb_hotel.jpg'
   }
 ]
