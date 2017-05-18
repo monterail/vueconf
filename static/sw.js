@@ -88,8 +88,17 @@ if(typeof CACHE_NAME !== 'string') {
 	throw new Error('Cache Name cannot be empty');
 }
 
+self.addEventListener('install', function(event) {
+  console.log('The service worker is being installed.');
+  event.waitUntil(precache());
+});
+
 self.addEventListener('fetch', function(event) {
 
+  if (event.request.method !== 'GET') {
+    // Fetch event ignored
+    return;
+  }
 	// Clone the request for fetch and cache
 	// A request is a stream and can be consumed only once.
 	var fetchRequest = event.request.clone(),
@@ -147,3 +156,51 @@ self.addEventListener('activate', function(event) {
 	event.waitUntil(caches.delete(CACHE_NAME));
 
 });
+
+function precache() {
+  return caches.open(CACHE_NAME).then(function (cache) {
+    return cache.addAll([
+      '/attractions/barbara.jpg',
+      '/attractions/bb_hotel.jpg',
+      '/attractions/europeum_hotel.jpg',
+      '/attractions/granary_hotel.jpg',
+      '/attractions/karavan.jpg',
+      '/attractions/la_maddalena.jpg',
+      '/attractions/mama_manousch.jpg',
+      '/attractions/market_hall.jpg',
+      '/attractions/market_square.jpg',
+      '/attractions/monopol_hotel.jpg',
+      '/attractions/national_museum.jpg',
+      '/attractions/ostrow_tumski.jpg',
+      '/attractions/papa_bar.jpg',
+      '/attractions/pergola.jpg',
+      '/attractions/pod-papugami.jpg',
+      '/attractions/poster_gallery.jpg',
+      '/attractions/puro_hotel.jpg',
+      '/attractions/qubus_hotel.jpg',
+      '/attractions/sakana_sushi.jpg',
+      '/attractions/sky_tower.jpg',
+      '/attractions/szajba.jpg',
+      '/attractions/szajnochy_11.jpg',
+      '/attractions/zyzna.jpg',
+      'img/alex.jpg',
+      'img/blake.jpg',
+      'img/callum.jpg',
+      'img/cover.png',
+      'img/ed.jpg',
+      'img/evan.jpg',
+      'img/guillaume.jpg',
+      'img/jacob.jpg',
+      'img/logo-120.png',
+      'img/logo-144.png',
+      'img/logo-152.png',
+      'img/logo-192.png',
+      'img/logo-384.png',
+      'img/logo-48.png',
+      'img/roman.jpg',
+      'img/sarah.jpg',
+      'img/sean.jpg',
+      'img/sebastien.jpg',
+    ]);
+  });
+}
