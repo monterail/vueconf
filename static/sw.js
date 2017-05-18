@@ -90,6 +90,10 @@ if(typeof CACHE_NAME !== 'string') {
 
 self.addEventListener('fetch', function(event) {
 
+  if (event.request.method !== 'GET') {
+    // Fetch event ignored
+    return;
+  }
 	// Clone the request for fetch and cache
 	// A request is a stream and can be consumed only once.
 	var fetchRequest = event.request.clone(),
