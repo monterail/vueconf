@@ -108,5 +108,13 @@ export default [
     "github": "https://github.com/baer",
     "twitter": "https://twitter.com/ebaerbaerbaer",
     "bio": "Eric has been developing software for over 10 years ranging from embedded systems in C++ to high traffic APIs in Java and JavaScript. For the past five years Eric has developed a deep specialization in JavaScript and the associated ecosystem. In his current role, Eric is a lead engineer at Formidable in Seattle where he is driving large projects, and writing software around Babel, GraphQL, and i18n."
+  },
+  {
+    "name": "Jacob Lee",
+    "title": "Software Engineer at StdLib",
+    "img": "img/jacoblee.jpg",
+    "github": "https://github.com/jacoblee93",
+    "twitter": "https://twitter.com/Hacubu",
+    "bio": "Jacob is a software engineer at StdLib, where he is creating a package manager for APIs. He is interested in the applications of 'serverless' technology, and previously worked for Google as a frontend web developer on Google Photos, where he worked mostly on sharing features and gained experience building scalable systems.\n\n He is also an avid squash player, and enjoys talking about himself in the third person."
   }
 ]

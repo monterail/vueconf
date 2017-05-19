@@ -47,8 +47,8 @@ module.exports = {
   */
   loading: { color: '#3B8070' },
   plugins: [
-    '~plugins/analytics',
-    '~plugins/cookies',
+    { src: '~plugins/analytics', ssr: false },
+    { src: '~plugins/cookies', ssr: false },
     { src: '~plugins/offline.js', ssr: false }
   ]
 }

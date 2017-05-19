@@ -169,5 +169,19 @@ export default [
     ],
     authorInfo: "Lead Software Engineer at Formidable",
     description: "Over the last 60 years, API designs have changed to respond to everything from new network topologies and new language designs, to the pressures of managing ever larger code bases. Today’s most popular API pattern, REST, was developed in a time where the cost of making API requests were plummeting. At the time, bandwidth was getting cheaper, latency was dropping, and the computing power of devices was still tracking Moore’s Law. Mobile turned this on its head. The environments in which apps and APIs need to perform today have effectively regressed a decade.\n\n This talk will explore some of the new client-server interaction models that address today’s pressures and use history to understand the tradeoffs that we made at the transition between the previous designs. I will introduce major tools that are attempting to change the API landscape including GraphQL and Falcor. Since GraphQL is the dominant technology in this space, I will examine some of it’s functionality, touch on some of its syntax and present a live coding demo that shows off a GraphQL server from 0 to 1. Demonstrating a complete implementation in under 10 minutes will give a strong sense of what’s possible, and what kind of complexity burden a tool like this would impose.\n Spoiler: There is no silver bullet."
+  },
+  {
+    type: "talk",
+    img: "/img/jacoblee.jpg",
+    topic: "Using Serverless Technology to Ship Vue Apps That Scale",
+    author: "Jacob Lee",
+    social: [
+      {
+        "github": "https://github.com/jacoblee93",
+        "twitter": "https://twitter.com/Hacubu"
+      }
+    ],
+    authorInfo: "Software Engineer at StdLib",
+    description: "'Serverless' is the new flavor of the week in software development, but what does it mean, where did the servers go (spoiler: they're still around!), and how can we leverage this technology to make frontend development easier?\n\n In this talk we'll cover the basics of serverless technology, how what we're building at StdLib helps you harness this type of architecture, and ultimately, how you can use this knowledge to ship Vue apps in record time, without configuration and infrastructure management woes."
   }
 ]
