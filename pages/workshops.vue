@@ -33,7 +33,7 @@
           - Modularising a store
           - Composing actions (Promises and Async/Await)
           - Avoiding common pitfalls
-        a.button(slot="ticket", href="https://events.zippydesk.com/vueconf-2017/register") Get the ticket
+        a.button(slot="ticket", href="https://events.zippydesk.com/vueconf-2017/register", @click="trackTicketsEvent") Get the ticket
       talk(:talk="sarahWorkshop", :desc-flex="7")
         :markdown-it
           In one day of training, attendees will go from knowing nothing (or very little) about animating in Vue to creating complex effects in performant and visually stunning patterns. The web is more than a document reader, and Vue has unique offerings that make animations not only possible, but possible to do in an organized and state-managed manner.
@@ -45,7 +45,7 @@
           - Using Vue <transition> hooks for external javascript libraries
           - Interpolating state for data visualization with watchers
           - Integration of animation with routers for page transition
-        a.button(slot="ticket", href="https://events.zippydesk.com/vueconf-2017/register") Get the ticket
+        a.button(slot="ticket", href="https://events.zippydesk.com/vueconf-2017/register", @click="trackTicketsEvent") Get the ticket
 </template>
 
 <script>
@@ -98,6 +98,13 @@ export default {
         ],
         authorInfo: "Consultant",
       }
+    }
+  },
+  methods: {
+    trackTicketsEvent (event) {
+      fbq('track', 'AddToCart', {
+        from: 'workshops'
+      });
     }
   }
 }

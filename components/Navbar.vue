@@ -50,6 +50,9 @@
           transport: 'beacon'
         })
         _pq.push(['track', 'GoToTickets'])
+        fbq('track', 'AddToCart', {
+          from: 'navbar'
+        });
       }
     }
   }

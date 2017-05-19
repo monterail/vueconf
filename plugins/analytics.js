@@ -1,4 +1,5 @@
 if (process.BROWSER_BUILD) {
+  // google
   (function(h,o,t,j,a,r){
       h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
       h._hjSettings={hjid:371563,hjsv:5};
@@ -29,4 +30,20 @@ if (process.BROWSER_BUILD) {
     })
   })
 
+  // fb
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '376973119176791'); // Insert your pixel ID here.
+  fbq('track', 'PageView');
+
+  window.onNuxtReady((app) => {
+    app.$nuxt.$on('routeChanged', (to, from) => {
+      fbq('track', 'PageView', {
+        page: to.fullPath
+      })
+    })
+  })
 }

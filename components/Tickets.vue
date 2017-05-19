@@ -36,6 +36,10 @@ export default {
         transport: 'beacon'
       })
       _pq.push(['track', 'GoToTickets'])
+
+      fbq('track', 'AddToCart', {
+        from: 'home'
+      });
     }
   }
 }
