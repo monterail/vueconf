@@ -13,6 +13,7 @@ div
     venue-section
     newsletter-section
 
+    sponsors-section
     organizers-section
 </template>
 
@@ -20,6 +21,7 @@ div
 import SpeakersList from '~components/SpeakersList'
 import HeroSection from '~components/Hero'
 import NewsletterSection from '~components/Newsletter'
+import SponsorsSection from '~components/Sponsors'
 import OrganizersSection from '~components/Organizers'
 import SubmitTalks from '~components/SubmitTalks'
 import TicketsSection from '~components/Tickets'
@@ -31,6 +33,7 @@ export default {
     HeroSection,
     NewsletterSection,
     OrganizersSection,
+    SponsorsSection,
     SpeakersList,
     SubmitTalks,
     TicketsSection,

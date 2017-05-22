@@ -3,9 +3,8 @@
   .container__inner
     h1 Sponsors
 
-    p We’re still looking for sponsors.
     p Help us make it the best possible conference for the community.
-    a.button(href="mailto:vuejs@monterail.com") Contact us
+    a.button(href="mailto:support@vueconf.eu") Become a Partner
 </template>
 
 <script>
@@ -16,8 +15,8 @@ export default {
 <style lang="sass" scoped>
 @import ~assets/css/base/helpers
 .sponsors-section
-  background-color: $color-section
+  background-color: $color-white
 
 .button
-  margin-top: 40px
+  margin: 40px 0
 </style>
