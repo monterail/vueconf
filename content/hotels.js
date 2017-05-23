@@ -22,7 +22,7 @@ export default [
     title: 'Granary Hotel *****',
     description: '“Home away from home” - quotes the hotel about its amazing atmosphere. Complimentary broadband Internet and WiFi at any place in the hotel – ensured. Your own tea and coffee making facility, and private mini bar. In Granary you find coziness combined with unique historical ambience and modernity. 10 minutes to the venue',
     offer: 'Single room (breakfast included) 540 PLN / Double room (breakfast included) 610 PLN',
-    instruction: 'Offer expires on May 17th! Fill the booking form and send it to the hotel’s e-mail address: <a href="mailto:dos@granaryhotel.com">mailto:dos@granaryhotel.com</a>',
+    instruction: 'Offer expires on June 2nd! Fill the booking form and send it to the hotel’s e-mail address: <a href="mailto:dos@granaryhotel.com">mailto:dos@granaryhotel.com</a>',
     link: 'http://www.thegranaryhotel.com/en/default.html',
     formLink: '/forms/granary_form.pdf',
     mapLink: 'https://www.google.pl/maps/place/THE+GRANARY+LA+SUITE+HOTEL/@51.106189,17.0325518,17z/data=!3m1!4b1!4m5!3m4!1s0x470fc2712d490715:0x905812639a984339!8m2!3d51.1061857!4d17.0347405',
