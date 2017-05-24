@@ -183,5 +183,19 @@ export default [
     ],
     authorInfo: "Software Engineer at StdLib",
     description: "'Serverless' is the new flavor of the week in software development, but what does it mean, where did the servers go (spoiler: they're still around!), and how can we leverage this technology to make frontend development easier?\n\n In this talk we'll cover the basics of serverless technology, how what we're building at StdLib helps you harness this type of architecture, and ultimately, how you can use this knowledge to ship Vue apps in record time, without configuration and infrastructure management woes."
+  },
+  {
+    type: "talk",
+    img: "/img/chris.jpg",
+    topic: "Avoiding an awkward fit: how to best introduce Vue into your app and team",
+    author: "Chris Fritz",
+    social: [
+      {
+        "github": "https://github.com/chrisvfritz",
+        "twitter": "https://twitter.com/chrisvfritz"
+      }
+    ],
+    authorInfo: "Consultant. Vue.js Core Team Member",
+    description: "Vue is versatile. It can be dropped into a page like jQuery, or power an entirely independent frontend. These are the well-known extremes, but for many apps and teams, a lesser-known shade in between would be a better fit.\n\n In this talk, we’ll explore the entire spectrum of integration strategies, including varieties at the extremes. For every kind of app, you’ll learn what’s worked for others and what’s held them back, including specific code examples you can adapt for your own apps."
   }
 ]
