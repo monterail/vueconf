@@ -11,11 +11,8 @@
       .div
         img.partner__image(src="~assets/img/logo_vue-newsletter.png")
 
-<<<<<<< HEAD
     p Help us make it the best possible conference for the community.
     a.button(href="mailto:support@vueconf.eu") Become a Partner
-=======
->>>>>>> add Sponsors component
 </template>
 
 <script>
@@ -25,13 +22,12 @@ export default {
 
 <style lang="sass" scoped>
 @import ~assets/css/base/helpers
-.sponsors-section
-  background-color: $color-white
-<<<<<<< HEAD
 
 .button
-  margin: 40px 0
-=======
+  margin-top: 40px
+
+.sponsors-section
+  background-color: $color-white
 
   h1
     margin-bottom: 40px
@@ -53,9 +49,7 @@ export default {
 
 .partner__image
   display: block
-  max-width: 80%
   width: 210px
   height: auto
   margin: 0 12px 20px 12px
->>>>>>> add Sponsors component
 </style>
