@@ -116,5 +116,13 @@ export default [
     "github": "https://github.com/jacoblee93",
     "twitter": "https://twitter.com/Hacubu",
     "bio": "Jacob is a software engineer at StdLib, where he is creating a package manager for APIs. He is interested in the applications of 'serverless' technology, and previously worked for Google as a frontend web developer on Google Photos, where he worked mostly on sharing features and gained experience building scalable systems.\n\n He is also an avid squash player, and enjoys talking about himself in the third person."
+  },
+  {
+    "name": "Chris Fritz",
+    "title": "Consultant, Vue.js Core Team Member",
+    "img": "img/chris.jpg",
+    "github": "https://github.com/chrisvfritz",
+    "twitter": "https://twitter.com/chrisvfritz",
+    "bio": "Educator/hacker working to make web dev simpler. Vue core team member and curator of our docs."
   }
 ]
