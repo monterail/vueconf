@@ -4,12 +4,16 @@
     h1 Sponsors
     .sponsors__container
       .div
-        img.sponsor__image(src="~assets/img/logo_codeship_colour.svg")
+        a(href="https://codeship.com/", target="_BLANK")
+          img.sponsor__image(src="~assets/img/logo_codeship_colour.svg")
 
     h2 Media partners
     .sponsors__container
       .div
-        img.partner__image(src="~assets/img/logo_vue-newsletter.png")
+        a(href="http://vue-newsletter.com/", target="_BLANK")
+          img.partner__image(src="~assets/img/logo_vue-newsletter.png")
+        a(href="https://vuejsfeed.com/", target="_BLANK")
+          img.partner__image(src="~assets/img/vuejsfeed-logo.png")
 
     p Help us make it the best possible conference for the community.
     a.button(href="mailto:support@vueconf.eu") Become a Partner
@@ -48,8 +52,9 @@ export default {
   margin: 0 20px 20px 20px
 
 .partner__image
-  display: block
-  width: 210px
+  display: inline-block
+  vertical-align: middle
+  max-width: 210px
   height: auto
   margin: 0 12px 20px 12px
 </style>
