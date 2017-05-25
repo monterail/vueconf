@@ -1,7 +1,11 @@
 <template lang="pug">
 .event__container
   .event__time 12:00
-  .event-card(:id="id")
+  .event-card(
+    :id="id",
+    :class="isOpen && 'event-card--expanded'",
+    @click="toggle"
+  )
     .event__header
       .event__images-container
         img.event__image(v-for="image of images", :src="image", :alt="event.author")
@@ -17,6 +21,10 @@
               a.icon.icon--twitter(v-if="social.twitter", :href="social.twitter" target="_blank")
         h2.event__topic {{ event.topic }} 
           small (1h)
+    .event__accordion
+      .event__description(v-if="event.description")
+        slot
+          p {{ event.description }}
 
 </template>
 
@@ -24,6 +32,16 @@
 export default {
   name: 'Event',
   props: ['event', 'descFlex'],
+  data () {
+    return {
+      isOpen: false
+    }
+  },
+  methods: {
+    toggle () {
+      this.isOpen = !this.isOpen
+    }
+  },
   computed: {
     images () {
       return Array.isArray(this.event.img) ? this.event.img : [this.event.img]
@@ -121,13 +139,10 @@ export default {
     height: 65px
 
 .event__description
-  flex: 5
   display: flex
-  flex-direction: column
-  justify-content: flex-start
   height: 100%
   white-space: pre-line
-  padding: 0 15px 0 100px
+  padding: 0 15px 10px 15px
 
   p, ul, li
     font-size: 18px
@@ -136,6 +151,25 @@ export default {
   ul
     margin: 0
     padding-left: 30px
+  
+  @media #{$medium-up}
+    padding-left: 100px
+
+.event__accordion
+  overflow: hidden
+  max-height: 0
+  transition: max-height 0.6s ease-in-out
+
+  @media #{$medium-up}
+    transition: max-height 0.2s ease-in-out
+
+.event-card--expanded
+  .event__accordion
+    max-height: 1200px
+
+    @media #{$medium-up}
+      max-height: 600px
+
 
 .event__header
   display: flex
