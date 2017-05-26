@@ -10,7 +10,7 @@
       .event__images-container
         img.event__image(v-for="image of images", :src="image", :alt="event.author")
       .event__header-content
-        .event__author-container
+        .event__author-container(v-if="event.author")
           div
             .event__author {{ event.author }}
             .event__author-info {{ event.authorInfo }}
@@ -19,7 +19,7 @@
               a.icon.icon--github(v-if="social.github", :href="social.github" target="_blank")
               a.icon.icon--gitlab(v-if="social.gitlab", :href="social.gitlab" target="_blank")
               a.icon.icon--twitter(v-if="social.twitter", :href="social.twitter" target="_blank")
-        h2.event__topic {{ event.topic }} 
+        h2.event__topic(:class="event.type=='break' && 'event__topic--break'") {{ event.topic }} 
           small (1h)
     .event__accordion
       .event__description(v-if="event.description")
@@ -47,7 +47,10 @@ export default {
       return Array.isArray(this.event.img) ? this.event.img : [this.event.img]
     },
     id () {
-      return this.event.author.toLowerCase().split(' ').join('-')
+      if(this.event.author) {
+        return this.event.author.toLowerCase().split(' ').join('-')
+      }
+      return this.event.topic.toLowerCase().split(' ').join('-')
     }
   }
 }
@@ -72,7 +75,7 @@ export default {
     left: 0
     top: 16px
     width: 120px
-    padding-top: 30px
+    padding-top: 35px
 
 .event__time:after
   content: ""
@@ -87,7 +90,7 @@ export default {
 
   @media #{$medium-up}
     display: block
-    top: calc(50% - 5px)
+    top: calc(50% - 2px)
     right: -7px
 
 .event__container:first-child .event__time:after
@@ -132,11 +135,11 @@ export default {
 
 @media #{$medium-up}
   .event__container:first-child .event-card:before
-    top: 65px
+    top: 70px
 
   .event__container:last-child .event-card:before
     bottom: auto
-    height: 65px
+    height: 70px
 
 .event__description
   display: flex
@@ -194,6 +197,7 @@ export default {
     margin-left: 0
     margin-right: 20px
     margin-top: -20px
+    padding-bottom: 0
     &:first-child
       margin-top: 0
 
@@ -213,7 +217,7 @@ export default {
 
 .event__topic
   color: $color-vue-green
-  margin: 0 15px 10px 0
+  margin: 10px 0
   text-align: center
   font-weight: 600
   font-size: 22px
@@ -232,6 +236,9 @@ export default {
     font-size: 28px
     small
       font-size: 28px
+
+.event__topic--break
+  color: $color-text
 
 .event__author-container
   display: flex
