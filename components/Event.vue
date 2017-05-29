@@ -1,12 +1,12 @@
 <template lang="pug">
 .event__container
-  .event__time 12:00
   .event-card(
     :id="id",
     :class="isOpen && 'event-card--expanded'",
     @click="toggle"
   )
     .event__header
+      .event__time 12:00
       .event__images-container
         img.event__image(v-for="image of images", :src="image", :alt="event.author")
       .event__header-content
@@ -68,14 +68,15 @@ export default {
   text-align: center
   font-weight: 600
   font-size: 28px
-  padding-bottom: 30px
+  line-height: 28px
+  padding-bottom: 20px
 
   @media #{$medium-up}
     position: absolute
-    left: 0
-    top: 16px
+    left: -174px
+    top: calc(50% - 14px)
     width: 120px
-    padding-top: 35px
+    padding-bottom: 0
 
 .event__time:after
   content: ""
@@ -90,11 +91,8 @@ export default {
 
   @media #{$medium-up}
     display: block
-    top: calc(50% - 2px)
+    top: calc(50% - 5px)
     right: -7px
-
-.event__container:first-child .event__time:after
-  display: block
 
 .event-card
   padding: 20px 14px
@@ -108,8 +106,8 @@ export default {
   position: absolute
   width: 3px
   background-color: #ddd
-  top: 45px
-  height: 21px
+  bottom: 0px
+  height: 40px
   left: calc(50% - 2px)
 
   @media #{$medium-up}
@@ -119,18 +117,17 @@ export default {
     left: 120px
 
 .event-card:after
-  content: ""
   position: absolute
   width: 3px
   background-color: #ddd
   bottom: 4px
-  height: 36px
+  height: 40px
   left: calc(50% - 2px)
   
   @media #{$medium-up}
     display: none
 
-.event__container:last-child .event-card:after
+.event__container:last-child .event-card:before
   display: none
 
 @media #{$medium-up}
@@ -138,8 +135,9 @@ export default {
     top: 70px
 
   .event__container:last-child .event-card:before
+    display: block
     bottom: auto
-    height: 70px
+    height: calc(50% - 20px)
 
 .event__description
   display: flex
@@ -175,6 +173,7 @@ export default {
 
 
 .event__header
+  position: relative
   display: flex
   flex-direction: column
   align-items: center
