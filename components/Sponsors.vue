@@ -7,9 +7,12 @@
         a(href="https://codeship.com/", target="_BLANK")
           img.sponsor__image(src="~assets/img/logo_codeship_colour.svg")
 
-    h2 Media partners
+    h2 Partners
     .sponsors__container
-      .div
+      div
+        a(href="https://www.kinonh.pl/", target="_BLANK")
+          img.partner__image.partner__image--special(src="~assets/img/knh-logo.svg")
+      div
         a(href="http://vue-newsletter.com/", target="_BLANK")
           img.partner__image(src="~assets/img/logo_vue-newsletter.png")
         a(href="https://vuejsfeed.com/", target="_BLANK")
@@ -40,9 +43,6 @@ export default {
     margin-bottom: 40px
 
 .sponsors__container
-  display: flex
-  flex-wrap: wrap
-  justify-content: center
   margin: 60px 0
 
 .sponsor__image
@@ -54,7 +54,12 @@ export default {
 .partner__image
   display: inline-block
   vertical-align: middle
-  max-width: 210px
+  max-width: 90%
+  width: 210px
   height: auto
   margin: 0 12px 20px 12px
+
+.partner__image--special
+  width: 320px
+  margin-bottom: 50px
 </style>
