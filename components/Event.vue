@@ -6,7 +6,7 @@
     @click="toggle"
   )
     .event__header
-      .event__time 12:00
+      .event__time {{ event.startTime }}
       .event__images-container
         img.event__image(v-for="image of images", :src="image", :alt="event.author")
       .event__header-content
@@ -19,8 +19,8 @@
               a.icon.icon--github(v-if="social.github", :href="social.github" target="_blank")
               a.icon.icon--gitlab(v-if="social.gitlab", :href="social.gitlab" target="_blank")
               a.icon.icon--twitter(v-if="social.twitter", :href="social.twitter" target="_blank")
-        h2.event__topic(:class="event.type=='break' && 'event__topic--break'") {{ event.topic }} 
-          small (1h)
+        h2.event__topic(:class="event.type=='other' && 'event__topic--other'") {{ event.topic }} 
+          small(v-if="event.duration") ({{ event.duration }})
     .event__accordion
       .event__description(v-if="event.description")
         slot
@@ -132,7 +132,7 @@ export default {
 
 @media #{$medium-up}
   .event__container:first-child .event-card:before
-    top: 70px
+    top: calc(50% - 20px)
 
   .event__container:last-child .event-card:before
     display: block
@@ -188,6 +188,7 @@ export default {
   border-radius: 50%
   margin-left: -20px
   padding-bottom: 10px
+  background-color: #efefef
   &:first-child
     margin-left: 0
 
@@ -236,7 +237,7 @@ export default {
     small
       font-size: 28px
 
-.event__topic--break
+.event__topic--other
   color: $color-text
 
 .event__author-container

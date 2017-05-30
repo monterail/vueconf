@@ -3,22 +3,25 @@
   .container__inner.post-section
     h1.agenda__header Conference program
     p.subheader__description
-      strong DAY 2–3 (22–23 June) 9:00 – 18:00
-      br
-      br
-      | Meet our speakers and discover their awesome talks.
-      br
-      | The final schedule will be published once all speakers are announced!
+      strong DAY 1 (22 June) 9:00 – 18:00
     .agenda
       event(
-        v-for="event of events",
+        v-for="event of eventsDay1",
+        :event="event"
+      )
+    p.subheader__description
+      strong DAY 2 (23 June) 9:00 – 18:00
+    .agenda
+      event(
+        v-for="event of eventsDay2",
         :event="event"
       )
 </template>
 
 <script>
 import Event from '../components/Event'
-import events from '../content/agenda'
+import eventsDay1 from '../content/scheduleDay1'
+import eventsDay2 from '../content/scheduleDay2'
 
 export default {
   head: {
@@ -27,7 +30,8 @@ export default {
   components: { Event },
   data () {
     return {
-      events
+      eventsDay1,
+      eventsDay2
     }
   }
 }
@@ -40,7 +44,7 @@ export default {
   margin-bottom: 20px
 
 .subheader__description
-  margin: 0 0 80px
+  margin: 80px 0
 
 .agenda
   position: relative

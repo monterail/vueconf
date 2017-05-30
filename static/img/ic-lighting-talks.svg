@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="-17 -17 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>ic-lighting-talks</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic-lighting-talks" fill-rule="nonzero" fill="#3C5369">
+            <path d="M33.1314829,18 L25,18 C24.2145645,18 23.7357217,17.1360491 24.1520017,16.4700011 L33.1957524,2 L19.7807764,2 L14.2807764,24 L21,24 C21.6593734,24 22.1382564,24.6269778 21.9647638,25.2631174 L17.5861663,41.3179749 L33.1314829,18 Z M35,16 C35.7986954,16 36.2750868,16.8901455 35.8320503,17.5547002 L15.8320503,47.5547002 C15.2027956,48.4985823 13.7367545,47.8313156 14.0352362,46.7368826 L19.6907496,26 L13,26 C12.3494288,26 11.8720708,25.3886111 12.0298575,24.7574644 L18.0298575,0.757464375 C18.1411493,0.312297374 18.5411324,0 19,0 L35,0 C35.7854355,0 36.2642783,0.863950934 35.8479983,1.52999894 L26.8042476,16 L35,16 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>
