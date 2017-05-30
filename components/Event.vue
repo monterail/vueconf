@@ -2,7 +2,7 @@
 .event__container
   .event-card(
     :id="id",
-    :class="isOpen && 'event-card--expanded'",
+    :class="{ 'event-card--expanded': isOpen, 'event-card--not-expandable': isNotExpandable }",
     @click="toggle"
   )
     .event__header
@@ -51,6 +51,9 @@ export default {
         return this.event.author.toLowerCase().split(' ').join('-')
       }
       return this.event.topic.toLowerCase().split(' ').join('-')
+    },
+    isNotExpandable () {
+      return !this.event.description
     }
   }
 }
@@ -101,6 +104,11 @@ export default {
   @media #{$medium-up}
     margin-left: 160px
 
+.event-card--not-expandable
+  cursor: auto
+  &:hover
+    box-shadow: 0 15px 35px rgba(50, 50, 93, 0.03), 0 5px 15px rgba(0, 0, 0, 0.06)
+
 .event-card:before
   content: ""
   position: absolute
@@ -131,8 +139,19 @@ export default {
   display: none
 
 @media #{$medium-up}
-  .event__container:first-child .event-card:before
-    top: calc(50% - 20px)
+  .event__container:first-child
+
+    .event-card:before
+      display: none
+
+    .event__header:before
+      content: ""
+      position: absolute
+      left: -54px
+      top: calc(50%)
+      bottom: -900px
+      width: 3px
+      background-color: #ddd
 
   .event__container:last-child .event-card:before
     display: block
