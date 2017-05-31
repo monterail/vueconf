@@ -4,7 +4,7 @@ export default [
     img: "/img/ic-happy.svg",
     topic: "Welcome Speech",
     startTime: "9:00",
-    duration: "15min"
+    duration: "10min"
   },
   {
     type: "talk",
@@ -18,7 +18,7 @@ export default [
       }
     ],
     authorInfo: "Vue.js Author",
-    startTime: "9:15",
+    startTime: "9:10",
     duration: "30min"
   },
   {
@@ -46,17 +46,21 @@ export default [
   },
   {
     type: "talk",
-    img: "/img/jacob.jpg",
-    topic: "No Time to Refactor, How we made the Frontend Awesome At GitLab With Vue.",
-    author: "Jacob Schatz",
+    img: ["/img/alex.jpg", "/img/sebastien.jpg"],
+    topic: "Server side rendering in Vue.js",
+    author: "Alex & Sebastien Chopin",
     social: [
       {
-        gitlab: "https://gitlab.com/jschatz1",
-        twitter: "https://twitter.com/jakecodes"
+        github: "https://github.com/alexchopin",
+        twitter: "https://twitter.com/ChopinAlexandre"
+      },
+      {
+        github: "https://github.com/Atinux",
+        twitter: "https://twitter.com/Atinux"
       }
     ],
-    authorInfo: "Front-end Lead at GitLab",
-    description: "How we switched from Coffeescript to ES6, from jQuery to Vue, from the asset pipeline to webpack, from static to realtime, all while adding new features, without refactoring and delivering to 1 million+ users and tons of clients.",
+    authorInfo: "Nuxt.js Authors",
+    description: "Server side rendering offers instant feedback and improves the user experience and SEO. Making Isomorphic application with vue.js might be a daunting task. We are going to see in this talk how Nuxt.js simplify the process to create universal vue application and PWA.",
     startTime: "10:35",
     duration: "30min"
   },
@@ -73,45 +77,45 @@ export default [
     ],
     authorInfo: "Front-End Developer at SamKnows",
     description: "As developers, we have a responsibility to make sure that as many people as possible can use the websites and applications that we create. But with a new generation of websites—single page applications—come a new set of challenges for users with disabilities, and the assistive technology they use to browse the web. Client-side routing, custom input elements, and shiny animated content: all things that screen readers can struggle with if the developer who implemented it didn't consider accessibility.\n\n During this talk, I'll explain what we as developers can do to ensure that our single page applications are usable by everyone, including people who might not use a keyboard, mouse and screen like the majority of us do. I'll show how some assistive technology is used, and demonstrate how some common mistakes we make affect people using that assistive technology.",
-    startTime: "11:05",
+    startTime: "11:10",
     duration: "30min"
   },
   {
     type: "other",
     img: "/img/ic-coffee-break.svg",
     topic: "Coffee break",
-    startTime: "11:35",
+    startTime: "11:40",
+    duration: "20min"
+  },
+  {
+    type: "talk",
+    img: "/img/pine-wu.jpg",
+    topic: "Building modern editor support for Vue",
+    author: "Pine Wu",
+    social: [
+      {
+        github: "https://github.com/",
+        twitter: "https://twitter.com/"
+      }
+    ],
+    authorInfo: "",
+    description: "",
+    startTime: "12:00",
     duration: "30min"
   },
   {
     type: "talk",
-    img: "/img/ed.jpg",
-    topic: "Make your Apps Realtime with Firebase and Vue",
-    author: "Eduardo San Martin Morote",
+    img: "/img/sean.jpg",
+    topic: "Code splitting patterns in Vue.js",
+    author: "Sean Larkin",
     social: [
       {
-        github: "https://github.com/posva",
-        twitter: "https://twitter.com/posva"
+        github: "https://github.com/TheLarkInn",
+        twitter: "https://twitter.com/TheLarkInn"
       }
     ],
-    authorInfo: "Vue.js Core Team Member",
-    description: "Vue has brought elegant and accessible reactivity to interfaces making it easy to keep the view updated with the local data. On the other hand, Firebase makes it easy to sync the local data with a database, so… what if we combine them to create a super efficient workflow? \n\n During this talk, I’ll explain how a real time database like Firebase can make your application even better and why it works so well with Vue. We will understand when and how to integrate Firebase with Vue to create real time applications.",
-    startTime: "12:05",
-    duration: "30min"
-  },
-  {
-    type: "talk",
-    img: "/img/jacoblee.jpg",
-    topic: "Using Serverless Technology to Ship Vue Apps That Scale",
-    author: "Jacob Lee",
-    social: [
-      {
-        "github": "https://github.com/jacoblee93",
-        "twitter": "https://twitter.com/Hacubu"
-      }
-    ],
-    authorInfo: "Software Engineer at StdLib",
-    description: "'Serverless' is the new flavor of the week in software development, but what does it mean, where did the servers go (spoiler: they're still around!), and how can we leverage this technology to make frontend development easier?\n\n In this talk we'll cover the basics of serverless technology, how what we're building at StdLib helps you harness this type of architecture, and ultimately, how you can use this knowledge to ship Vue apps in record time, without configuration and infrastructure management woes.",
+    authorInfo: "webpack Core Team Member",
+    description: "Vue champions developer experience. It's a bit of Angular on top with React on the bottom. No matter what your preference is, the flexibility baked into the library makes it perfect for anyone. But what about web performance? Can this flexibility still allow us to split code into asynchronous chunks?\n\nAs a maintainer of webpack, Vue.js was love at first sight for me! Because everything is a Component, everything can also be a Async Component!! This is the ultimate flexibility. Join me while we talk about all the ways to split up your Vue Application. By the time we're done, you'll walk away ready to create high performance Vue Components, Applications, and Libraries.",
     startTime: "12:35",
     duration: "30min"
   },
@@ -131,22 +135,6 @@ export default [
   },
   {
     type: "talk",
-    img: "/img/roman.jpg",
-    topic: "Testing Vue components with Jest",
-    author: "Roman Kuba",
-    social: [
-      {
-        github: "https://github.com/codebryo",
-        twitter: "https://twitter.com/Codebryo"
-      }
-    ],
-    authorInfo: "Lead Frontend Scientist at Codeship",
-    description: "The necessity of testing is still often seen as a burden when writing code, yet when done right, it will dramatically change how code gets written.\n\n What makes Vue special in this regards, it’s quite convenient to test for it’s approach in simplicity and leveraged functions and objects wherever possible.\n\n In this talk we will look at what makes up a good practice in testing and how jest works. We’ll continue to test some simple Vue Components and see how we can effectively test and store the rendered output with snapshots.\n\n Well conclude by looking at a component that heavily relies on Vuex for it’s state management and peek into the possible directions from there.",
-    startTime: "15:30",
-    duration: "30min"
-  },
-  {
-    type: "talk",
     img: "/img/pawel.jpg",
     topic: "Vue Instance",
     author: "Paweł Grabarz",
@@ -156,8 +144,24 @@ export default [
         twitter: "https://twitter.com/"
       }
     ],
-    authorInfo: "Monterail Senior Frontend Developer",
+    authorInfo: "Senior Frontend Developer at Monterail",
     description: "",
+    startTime: "15:25",
+    duration: "30min"
+  },
+  {
+    type: "talk",
+    img: "/img/jacob.jpg",
+    topic: "No Time to Refactor, How we made the Frontend Awesome At GitLab With Vue.",
+    author: "Jacob Schatz",
+    social: [
+      {
+        gitlab: "https://gitlab.com/jschatz1",
+        twitter: "https://twitter.com/jakecodes"
+      }
+    ],
+    authorInfo: "Front-end Lead at GitLab",
+    description: "How we switched from Coffeescript to ES6, from jQuery to Vue, from the asset pipeline to webpack, from static to realtime, all while adding new features, without refactoring and delivering to 1 million+ users and tons of clients.",
     startTime: "16:00",
     duration: "30min"
   },
@@ -166,6 +170,13 @@ export default [
     img: "/img/ic-coffee-break.svg",
     topic: "Coffee break",
     startTime: "16:30",
-    duration: "15min"
+    duration: "20min"
+  },
+  {
+    type: "other",
+    img: "/img/ic-discussion-panel.svg",
+    topic: "Discussion Panel",
+    startTime: "16:50",
+    duration: "45min"
   }
 ]
