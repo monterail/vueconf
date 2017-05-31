@@ -4,6 +4,8 @@
     h1.agenda__header Conference program
     p.subheader__description
       strong DAY 1 (22 June) 9:00 – 18:00
+      br
+      The schedule might still be subject to change
     .agenda
       event(
         v-for="event of eventsDay1",
