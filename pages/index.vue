@@ -7,8 +7,8 @@ div
       h1 Speakers
       speakers-list(:speakers="speakers")
       .center
-        nuxt-link(to="/program")
-          button.button.speaker-button Read the program
+        nuxt-link(to="/schedule")
+          button.button.speaker-button Check the schedule
     tickets-section#tickets
     venue-section
     newsletter-section

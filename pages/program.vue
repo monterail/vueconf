@@ -29,6 +29,9 @@ export default {
     return {
       talks
     }
+  },
+  created () {
+    this.$router.push('/schedule')
   }
 }
 </script>

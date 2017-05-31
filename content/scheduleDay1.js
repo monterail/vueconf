@@ -88,18 +88,9 @@ export default [
     duration: "20min"
   },
   {
-    type: "talk",
-    img: "/img/pine-wu.jpg",
-    topic: "Building modern editor support for Vue",
-    author: "Pine Wu",
-    social: [
-      {
-        github: "https://github.com/",
-        twitter: "https://twitter.com/"
-      }
-    ],
-    authorInfo: "",
-    description: "",
+    type: "other",
+    img: "/img/ic-tba.svg",
+    topic: "TBA",
     startTime: "12:00",
     duration: "30min"
   },
@@ -134,18 +125,9 @@ export default [
     duration: "50min"
   },
   {
-    type: "talk",
-    img: "/img/pawel.jpg",
-    topic: "Vue Instance",
-    author: "Paweł Grabarz",
-    social: [
-      {
-        github: "https://github.com/",
-        twitter: "https://twitter.com/"
-      }
-    ],
-    authorInfo: "Senior Frontend Developer at Monterail",
-    description: "",
+    type: "other",
+    img: "/img/ic-tba.svg",
+    topic: "TBA",
     startTime: "15:25",
     duration: "30min"
   },

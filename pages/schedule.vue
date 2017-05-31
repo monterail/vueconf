@@ -7,14 +7,16 @@
     .agenda
       event(
         v-for="event of eventsDay1",
-        :event="event"
+        :event="event",
+        key="index"
       )
     p.subheader__description
       strong DAY 2 (23 June) 9:00 – 18:00
     .agenda
       event(
         v-for="event of eventsDay2",
-        :event="event"
+        :event="event",
+        key="index"
       )
 </template>
 

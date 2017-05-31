@@ -19,13 +19,12 @@
               a.icon.icon--github(v-if="social.github", :href="social.github" target="_blank")
               a.icon.icon--gitlab(v-if="social.gitlab", :href="social.gitlab" target="_blank")
               a.icon.icon--twitter(v-if="social.twitter", :href="social.twitter" target="_blank")
-        h2.event__topic(:class="event.type=='other' && 'event__topic--other'") {{ event.topic }} 
-          small(v-if="event.duration") ({{ event.duration }})
+        .event__duration(v-if="event.duration") {{ event.duration }}
+        h2.event__topic(:class="event.type=='other' && 'event__topic--other'") {{ event.topic }}
     .event__accordion
       .event__description(v-if="event.description")
         slot
           p {{ event.description }}
-
 </template>
 
 <script>
@@ -98,11 +97,11 @@ export default {
     right: -7px
 
 .event-card
-  padding: 20px 14px
+  padding: 20px 20px
   @include card
 
   @media #{$medium-up}
-    margin-left: 160px
+    margin-left: 154px
 
 .event-card--not-expandable
   cursor: auto
@@ -131,7 +130,7 @@ export default {
   bottom: 4px
   height: 40px
   left: calc(50% - 2px)
-  
+
   @media #{$medium-up}
     display: none
 
@@ -171,7 +170,7 @@ export default {
   ul
     margin: 0
     padding-left: 30px
-  
+
   @media #{$medium-up}
     padding-left: 100px
 
@@ -206,8 +205,9 @@ export default {
   width: 80px
   border-radius: 50%
   margin-left: -20px
-  padding-bottom: 10px
+  margin-bottom: 10px
   background-color: #efefef
+  
   &:first-child
     margin-left: 0
 
@@ -283,4 +283,13 @@ export default {
   @media #{$medium-up}
     text-align: left
 
+.event__duration
+  position: absolute
+  right: 0
+  top: 0
+  color: #fff
+  background: $color-vue-green
+  padding: 3px 8px
+  border-radius: 5px
+  font-size: 20px
 </style>

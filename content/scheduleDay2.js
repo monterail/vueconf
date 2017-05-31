@@ -74,7 +74,7 @@ export default [
     img: "/img/ic-coffee-break.svg",
     topic: "Coffee break",
     startTime: "12:10",
-    duration: "30min"
+    duration: "20min"
   },
   {
     type: "talk",

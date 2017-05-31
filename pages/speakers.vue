@@ -7,8 +7,8 @@
     speakers-list(:speakers="speakers", :adjust-img-url="true")
 
     .center
-      nuxt-link(to="/program")
-        button.button.speaker-button Read about the talks
+      nuxt-link(to="/schedule")
+        button.button.speaker-button Check out the schedule
 
     h2
       | More announcements soon!
