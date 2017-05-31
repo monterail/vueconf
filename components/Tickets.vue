@@ -36,6 +36,7 @@ export default {
         transport: 'beacon'
       })
       _pq.push(['track', 'GoToTickets'])
+      fbq('trackCustom', 'GoToTickets', { source: 'Main page' });
     }
   }
 }
