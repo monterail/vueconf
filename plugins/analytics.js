@@ -14,6 +14,12 @@ if (process.BROWSER_BUILD) {
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
   ga('create', 'UA-89255364-1', 'auto');
   ga('send', 'pageview');
+  
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','//connect.facebook.net/en_US/fbevents.js');
 
   (function() {
     window._pa = window._pa || {};
@@ -24,8 +30,10 @@ if (process.BROWSER_BUILD) {
 
   window.onNuxtReady((app) => {
     app.$nuxt.$on('routeChanged', (to, from) => {
-      ga('set', 'page', to.fullPath)
-      ga('send', 'pageview')
+      ga('set', 'page', to.fullPath);
+      ga('send', 'pageview');
+      fbq('init', '376973119176791');
+      fbq('track', 'PageView');
     })
   })
 
