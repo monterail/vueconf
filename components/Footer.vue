@@ -16,7 +16,7 @@ footer.footer
       ul.footer__list.footer__list--small
         h3.footer__header Useful links
         li: nuxt-link(to="/speakers") Speakers
-        li: nuxt-link(to="/program") Program
+        li: nuxt-link(to="/schedule") Schedule
         li: nuxt-link(to="/workshops") Workshops
         li: nuxt-link(to="/terms") Terms & Conditions
         li: nuxt-link(to="/codeofconduct") Code of Conduct

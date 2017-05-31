@@ -17,8 +17,8 @@
           nuxt-link(to="/workshops")
             | Workshops
         li.navbar-nav__item
-          nuxt-link(to="/program")
-            | Program
+          nuxt-link(to="/schedule")
+            | Schedule
         li.navbar-nav__item
           nuxt-link(to="/guide")
             | Guide
