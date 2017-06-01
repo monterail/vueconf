@@ -120,7 +120,7 @@ export default [
     img: "/img/ic-lighting-talks.svg",
     topic: "Lightning Talks",
     startTime: "15:10",
-    duration: "50min"
+    duration: "45min"
   },
   {
     type: "talk",
@@ -135,7 +135,7 @@ export default [
     ],
     authorInfo: "Lead Frontend Scientist at Codeship",
     description: "The necessity of testing is still often seen as a burden when writing code, yet when done right, it will dramatically change how code gets written.\n\n What makes Vue special in this regards, it’s quite convenient to test for it’s approach in simplicity and leveraged functions and objects wherever possible.\n\n In this talk we will look at what makes up a good practice in testing and how jest works. We’ll continue to test some simple Vue Components and see how we can effectively test and store the rendered output with snapshots.\n\n Well conclude by looking at a component that heavily relies on Vuex for it’s state management and peek into the possible directions from there.",
-    startTime: "15:55",
+    startTime: "16:00",
     duration: "30min"
   },
   {
@@ -151,7 +151,7 @@ export default [
     ],
     authorInfo: "Consultant",
     description: "As superfluous as something like animation may initially seem, you can tell a lot about framework by the way that it handles the concept of time. Idiosyncrasies and race conditions in rendering reveal themselves, pauses in DOM and virtual DOM diffing can be exposed. \n\n This is one of the ways Vue shows itself to be uniquely capable and elegant as a framework. In this session, we'll cover how to use the <transition> component and some of its offerings to create fluid effects in the browser. We'll move on to watchers and transitioning state. Finally, we'll talk about lifecycle methods, asynchronous updates, and pushing our animations to the next level.",
-    startTime: "16:30",
+    startTime: "16:35",
     duration: "30min"
   },
   {
