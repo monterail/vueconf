@@ -6,6 +6,8 @@
       .div
         a(href="https://codeship.com/", target="_BLANK")
           img.sponsor__image(src="~assets/img/logo_codeship_colour.svg")
+        a(href="https://www.nativescript.org/", target="_BLANK")
+          img.sponsor__image(src="~assets/img/logo_native-script.svg")
 
     h2 Partners
     .sponsors__container
@@ -49,6 +51,7 @@ export default {
   max-width: 90%
   width: 360px
   height: auto
+  max-height: 100px
   margin: 0 20px 20px 20px
 
 .partner__image
