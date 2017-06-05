@@ -88,9 +88,18 @@ export default [
     duration: "20min"
   },
   {
-    type: "other",
-    img: "/img/ic-tba.svg",
-    topic: "TBA",
+    type: "talk",
+    img: "/img/pine.jpg",
+    topic: "var vetur = vscode + vue;",
+    author: "Pine Wu",
+    social: [
+      {
+        github: "https://github.com/octref",
+        twitter: "https://twitter.com/octref"
+      }
+    ],
+    authorInfo: "Software engineer at Microsoft",
+    description: "Vetur is one of the first editor extensions that aim to bring powerful IDE features to front-end frameworks. With syntax-highlighting, error-checking, linting, formatting and auto-completion, Vetur has become VSCode's default choice for editing Vue files and was demoed with TypeScript at MSBuild 2017.\n\nDuring this talk, we'll first take a look at various features that Vetur offers to provide a better Vue developement experience. Then we'll transition to a deeper dive on the implementation of Vetur's features, with special focus on Vue's language service built on top of TypeScript's language server. Finally, we'll learn about some of Vetur's exciting upcoming features, such as jump to definition, global rename and type-checking for template expressions.",
     startTime: "12:00",
     duration: "30min"
   },

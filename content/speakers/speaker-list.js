@@ -124,5 +124,13 @@ export default [
     "github": "https://github.com/chrisvfritz",
     "twitter": "https://twitter.com/chrisvfritz",
     "bio": "Educator/hacker working to make web dev simpler. Vue core team member and curator of our docs."
+  },
+  {
+    name: "Pine Wu",
+    title: "Software Engineer at Microsoft",
+    img: "/img/pine.jpg",
+    github: "https://github.com/octref",
+    twitter: "https://twitter.com/octref",
+    bio: "Pine is a software engineer at Microsoft working on Visual Studio Code, a featureful cross-platform code editor built on web technologies. During his spare time, he has built Vetur, a VSCode extension that brings powerful IDE features to Vue Single File Components. He believes that making great developer tools is a first step towards building great web applications.",
   }
 ]
