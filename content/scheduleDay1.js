@@ -142,16 +142,16 @@ export default [
   },
   {
     type: "talk",
-    img: "/img/jacob.jpg",
+    img: "/img/filipa.jpg",
     topic: "No Time to Refactor, How we made the Frontend Awesome At GitLab With Vue.",
-    author: "Jacob Schatz",
+    author: "Filipa Lacerda",
     social: [
       {
-        gitlab: "https://gitlab.com/jschatz1",
-        twitter: "https://twitter.com/jakecodes"
+        gitlab: "https://gitlab.com/filipa",
+        twitter: "https://twitter.com/filipalacerda"
       }
     ],
-    authorInfo: "Front-end Lead at GitLab",
+    authorInfo: "Frontend Engineer at GitLab",
     description: "How we switched from Coffeescript to ES6, from jQuery to Vue, from the asset pipeline to webpack, from static to realtime, all while adding new features, without refactoring and delivering to 1 million+ users and tons of clients.",
     startTime: "16:00",
     duration: "30min"

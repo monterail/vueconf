@@ -8,14 +8,6 @@ export default [
     "quote": "If something can be easy, why make it hard?"
   },
   {
-    "name": "Jacob Schatz",
-    "title": "Lead Frontend at Gitlab",
-    "img": "img/jacob.jpg",
-    "gitlab": "https://gitlab.com/jschatz1",
-    "twitter": "https://twitter.com/jakecodes",
-    "bio": "Jacob is the frontend lead at GitLab, published author and YouTuber. He likes to make stuff. Currently making another electric skateboard. With a degree in piano performance, he also likes playing concerts."
-  },
-  {
     "name": "Sarah Drasner",
     "title": "Consultant",
     "img": "img/sarah.jpg",
@@ -124,6 +116,14 @@ export default [
     "github": "https://github.com/chrisvfritz",
     "twitter": "https://twitter.com/chrisvfritz",
     "bio": "Educator/hacker working to make web dev simpler. Vue core team member and curator of our docs."
+  },
+  {
+    "name": "Filipa Lacerda",
+    "title": "Frontend Engineer at Gitlab",
+    "img": "img/filipa.jpg",
+    "gitlab": "https://gitlab.com/filipa",
+    "twitter": "https://twitter.com/filipalacerda",
+    "bio": "Filipa is a Frontend Engineer at GitLab focused on making CI/CD experience awesome. She is passionate about web development, well written code and helping people."
   },
   {
     name: "Pine Wu",
