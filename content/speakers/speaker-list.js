@@ -131,6 +131,6 @@ export default [
     img: "/img/pine.jpg",
     github: "https://github.com/octref",
     twitter: "https://twitter.com/octref",
-    bio: "Pine is a software engineer and a Visual Studio Code contributor, a featureful cross-platform code editor built on web technologies. During his spare time, he has built Vetur, a VSCode extension that brings powerful IDE features to Vue Single File Components. He believes that making great developer tools is a first step towards building great web applications.",
+    bio: ""Pine is a software engineer contributing to Visual Studio Code, a featureful cross-platform code editor built on web technologies. During his spare time, he has built Vetur, a VSCode extension that brings powerful IDE features to Vue Single File Components. He believes that making great developer tools is a first step towards building great web applications.",
   }
 ]
