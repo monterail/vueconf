@@ -18,7 +18,7 @@ export default [
   },
   {
     "name": "Blake Newman",
-    "title": "Software Engineer at Sainsbury’s",
+    "title": "Software Engineer at Attest",
     "img": "img/blake.jpg",
     "github": "https://github.com/blake-newman",
     "twitter": "https://twitter.com/blakenewman",
