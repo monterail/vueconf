@@ -1,6 +1,7 @@
 <template lang="pug">
 .event__container
   .event-card(
+    v-if="event.type!=='after-party'",
     :id="id",
     :class="{ 'event-card--expanded': isOpen, 'event-card--not-expandable': isNotExpandable }",
     @click="toggle"
@@ -25,6 +26,21 @@
               a.icon.icon--twitter(v-if="social.twitter", :href="social.twitter" target="_blank")
         .event__duration(v-if="event.duration") {{ event.duration }}
         h2.event__topic(:class="event.type=='other' && 'event__topic--other'") {{ event.topic }}
+    .event__accordion
+      .event__description(v-if="event.description")
+        slot
+          p {{ event.description }}
+
+  .event-card.event-card--not-expandable.event-card--after-party(
+    v-else,
+    :style="{backgroundImage: 'url('+ event.img+')'}"
+    )
+    .event__header
+      .event__time.event__time--after-party {{ event.startTime }}
+      .event__after-party-content
+        h1.event__after-party-title {{ event.title }}
+        h2.event__after-party-title {{ event.subtitle }}
+        .event__after-party-address {{ event.address }}
     .event__accordion
       .event__description(v-if="event.description")
         slot
@@ -75,6 +91,7 @@ export default {
   font-weight: 600
   font-size: 28px
   line-height: 28px
+  height: 28px
   padding-bottom: 20px
 
   @media #{$medium-up}
@@ -299,4 +316,28 @@ export default {
   padding: 3px 8px
   border-radius: 5px
   font-size: 20px
+
+.event-card--after-party
+  background-repeat: no-repeat
+  background-position: center center
+  background-size: cover
+
+.event__time--after-party
+  display: none
+  @media #{$medium-up}
+    display: block
+.event__after-party-content
+  text-align: center
+  color: $color-white
+  text-shadow: 0px 0px 32px #000000;
+  margin: 16px 0
+  @media #{$medium-up}
+    margin: 0 12px
+    text-align: left
+.event__after-party-title
+  color: $color-white
+  margin: 0 0 -0.2em 0
+  font-weight: 600
+.event__after-party-address
+  margin-top: 0.5em
 </style>
