@@ -171,5 +171,19 @@ export default [
     topic: "Discussion Panel",
     startTime: "16:50",
     duration: "45min"
+  },
+  {
+    type: "other",
+    img: "/img/ic-end-2.svg",
+    topic: "End of day 1",
+    startTime: "17:35"
+  },
+  {
+    type: "after-party",
+    img: "/img/afterparty.jpg",
+    title: "After party",
+    subtitle: "Korba, June 22th, 8 pm",
+    address: "św. Mikołaja 18-20",
+    startTime: "20:00"
   }
 ]
