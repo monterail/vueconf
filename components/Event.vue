@@ -8,7 +8,11 @@
     .event__header
       .event__time {{ event.startTime }}
       .event__images-container
-        img.event__image(v-for="image of images", :src="image", :alt="event.author")
+        img.event__image(
+          v-for="image of images",
+          :src="image",
+          :alt="event.author",
+          :class="{'event__image--dark': event.imgDark}")
       .event__header-content
         .event__author-container(v-if="event.author")
           div
@@ -219,6 +223,9 @@ export default {
     padding-bottom: 0
     &:first-child
       margin-top: 0
+
+.event__image--dark
+  background-color: #3c5369
 
 .event__social__container
   display: flex

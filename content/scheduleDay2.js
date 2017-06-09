@@ -118,6 +118,7 @@ export default [
   {
     type: "other",
     img: "/img/ic-lighting-talks.svg",
+    imgDark: true,
     topic: "Lightning Talks",
     startTime: "15:10",
     duration: "45min"

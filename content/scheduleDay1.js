@@ -129,6 +129,7 @@ export default [
   {
     type: "other",
     img: "/img/ic-lighting-talks.svg",
+    imgDark: true,
     topic: "Lightning Talks",
     startTime: "14:40",
     duration: "50min"
@@ -166,6 +167,7 @@ export default [
   {
     type: "other",
     img: "/img/ic-discussion-panel.svg",
+    imgDark: true,
     topic: "Discussion Panel",
     startTime: "16:50",
     duration: "45min"
