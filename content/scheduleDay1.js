@@ -143,7 +143,7 @@ export default [
     author: "Paweł Grabarz",
     social: [
       {
-        github: "https://gitlab.com/frizi",
+        github: "https://github.com/frizi",
         twitter: "https://twitter.com/frizi09"
       }
     ],
