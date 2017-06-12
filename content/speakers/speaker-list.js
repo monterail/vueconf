@@ -132,5 +132,13 @@ export default [
     github: "https://github.com/octref",
     twitter: "https://twitter.com/octref",
     bio: "Pine is a software engineer contributing to Visual Studio Code, a featureful cross-platform code editor built on web technologies. During his spare time, he has built Vetur, a VSCode extension that brings powerful IDE features to Vue Single File Components. He believes that making great developer tools is a first step towards building great web applications.",
+  },
+  {
+    name: "Paweł Grabarz",
+    title: "Frontend Developer at Monterail",
+    img: "/img/pawel.jpg",
+    github: "https://github.com/frizi",
+    twitter: "https://twitter.com/frizi09",
+    bio: "Coding addict, hacker, frontend developer, open source contributor. Co-author of Vuelidate. Likes to deeply understand tools he’s using and enjoys teaching about low level stuff.",
   }
 ]

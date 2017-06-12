@@ -135,11 +135,20 @@ export default [
     duration: "50min"
   },
   {
-    type: "other",
-    img: "/img/ic-tba.svg",
-    topic: "TBA",
+    type: "talk",
+    img: "/img/pawel.jpg",
+    topic: "new Vue() – beyond just an ordinary UI component",
     startTime: "15:25",
-    duration: "30min"
+    duration: "30min",
+    author: "Paweł Grabarz",
+    social: [
+      {
+        github: "https://gitlab.com/frizi",
+        twitter: "https://twitter.com/frizi09"
+      }
+    ],
+    authorInfo: "Frontend Engineer at Monterail",
+    description: "Vue is elegant. Its entire public API is crafted around a single extendable concept—the Vue Instance. It’s a gateway to the full potential of the framework, but we mostly use it as a UI building block. Let’s take a closer look at how it cleverly connects all the spinning gears together, while still giving you enough room to play with them separately. Learn how to access features like watchers, events or Virtual DOM diffing outside of the UI context, and discover where they can be useful. Explore existing examples in existing projects, like Vuex and Vuelidate.",
   },
   {
     type: "talk",
