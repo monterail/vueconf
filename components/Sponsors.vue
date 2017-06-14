@@ -8,6 +8,8 @@
           img.sponsor__image(src="~assets/img/logo_codeship_colour.svg")
         a(href="https://www.nativescript.org/", target="_BLANK")
           img.sponsor__image(src="~assets/img/logo_native-script.svg")
+        a(href="https://www.monaca.io/", target="_BLANK")
+          img.sponsor__image(src="~assets/img/monaca-logo.svg")
 
     h2 Partners
     .sponsors__container
@@ -49,16 +51,18 @@ export default {
 
 .sponsor__image
   max-width: 90%
-  width: 360px
+  width: 280px
   height: auto
   max-height: 100px
   margin: 0 20px 20px 20px
+  vertical-align: middle
+  display: inline-block
 
 .partner__image
   display: inline-block
   vertical-align: middle
   max-width: 90%
-  width: 210px
+  width: 180px
   height: auto
   margin: 0 12px 20px 12px
 
