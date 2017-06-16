@@ -15,7 +15,15 @@
       br
       | Workshops and conference tickets are sold separately.
       br
-      | Only 20 tickets per workshop.
+      br
+      small
+        strong Requirements:
+        br
+        | - A laptop and a charger
+        br
+        | - Dev environment ready (Node.js + npm/yarn)
+        br
+        | - Your favourite editor
     .agenda
       talk(:talk="evanWorkshop", :desc-flex="7")
         a.button(slot="ticket", disabled) Sold out
