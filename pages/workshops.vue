@@ -5,8 +5,9 @@
     p.subheader__description
       strong DAY 1 (21 June) 9:00 – 17:00
       br
-      strong Location:
-      a(href="https://goo.gl/maps/Y9MwJikkhB32", target="_BLANK")  ibis Styles Wrocław
+      strong 
+        | Location:
+        a(href="https://goo.gl/maps/Y9MwJikkhB32", target="_BLANK")  ibis Styles Wrocław
       br
       br
       | Theory is not enough.
