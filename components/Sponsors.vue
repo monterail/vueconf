@@ -8,7 +8,7 @@
           img.sponsor__image(src="~assets/img/logo_codeship_colour.svg")
         a(href="https://www.nativescript.org/", target="_BLANK")
           img.sponsor__image(src="~assets/img/logo_native-script.svg")
-        a(href="https://www.monaca.io/", target="_BLANK")
+        a(href="https://monaca.io/", target="_BLANK")
           img.sponsor__image(src="~assets/img/monaca-logo.svg")
 
     h2 Partners
