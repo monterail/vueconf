@@ -22,13 +22,6 @@
         li.navbar-nav__item
           nuxt-link(to="/guide")
             | Guide
-
-        li.navbar-nav__item
-          a.button(
-            href="https://events.zippydesk.com/vueconf-2017/register",
-            @click="trackTicketsEvent"
-          )
-            | Get tickets
 </template>
 
 <script>
