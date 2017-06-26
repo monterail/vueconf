@@ -57,7 +57,7 @@
           - Using Vue <transition> hooks for external javascript libraries
           - Interpolating state for data visualization with watchers
           - Integration of animation with routers for page transition
-        a.button(slot="ticket", href="https://events.zippydesk.com/vueconf-2017/register") Get the ticket
+        a.button(slot="ticket", disabled) Sold out
 </template>
 
 <script>
