@@ -29,6 +29,9 @@ export default {
       position: relative
       z-index: 0
       overflow: hidden
+      transform: translateZ(0)
+      backface-visibility: hidden
+      perspective: 1000
 
     .image
       width: 100%

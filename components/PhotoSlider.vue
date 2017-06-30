@@ -49,6 +49,15 @@ export default {
   },
   mounted() {
     this.startAutoPlay()
+    window.addEventListener('keyup', (ev) => {
+      if(ev.key === 'ArrowRight') {
+        this.prevPhoto()
+        this.stopAutoPlay()
+      } else if (ev.key === 'ArrowLeft') {
+        this.nextPhoto()
+        this.stopAutoPlay()
+      }
+    })
   },
   beforeDestroy() {
     this.stopAutoPlay()
@@ -88,6 +97,11 @@ export default {
       const index = this.photos.indexOf(this.selectedPhoto)
       const nextIndex = (index === this.photos.length-1) ? 0 : index + 1
       this.selectedPhoto = this.photos[nextIndex]
+    },
+    prevPhoto() {
+      const index = this.photos.indexOf(this.selectedPhoto);
+      const prevIndex = (index === 0) ? this.photos.length-1 : index - 1
+      this.selectedPhoto = this.photos[prevIndex]
     }
   }
 }
