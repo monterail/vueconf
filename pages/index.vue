@@ -9,7 +9,7 @@ div
       .center
         nuxt-link(to="/schedule")
           button.button.speaker-button Check the schedule
-    tickets-section#tickets
+    // tickets-section#tickets
     venue-section
     newsletter-section
 

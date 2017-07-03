@@ -8,8 +8,8 @@
         | Wrocław, Poland • June 21-23, 2017
       h2.hero-banner__subheader.hero-banner__subheader--last
         | The first Official Vue.js Conference in the world!
-      a.post-section__button.button(href="https://events.zippydesk.com/vueconf-2017/register", @click="trackTicketsEvent")
-        | Get the tickets!
+      a.post-section__button.button(href="https://twitter.com/vueconf")
+        | Follow us on Twitter
 </template>
 
 <script>
