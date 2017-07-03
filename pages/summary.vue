@@ -9,13 +9,16 @@
   photo-slider(:photos="photos")
   .section.videos-section
     .container__inner.post-section
-      div Here be some videas
+      h2 Talks
+      video-player(:talks="talks")
+      a.button.youtube(href="https://www.youtube.com/channel/UC9dJjbYeXjirDYYVfUD3bSw") See on YouTube
 </template>
 
 <script>
 import PhotoSlider from '../components/PhotoSlider'
+import VideoPlayer from '../components/VideoPlayer'
 
-import knh from '../assets/img/knh-front.jpg'
+import talkVideos from '../content/talkVideos.js'
 
 const importPhotos = (r) => {
   let images = {};
@@ -27,11 +30,13 @@ const photos = Object.values(importPhotos(require.context('../static/summary/pho
 
 export default {
   components: {
-    PhotoSlider
+    PhotoSlider,
+    VideoPlayer,
   },
   data() {
     return {
       photos,
+      talks: talkVideos,
     }
   },
   head: {
@@ -41,17 +46,26 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-@import ~assets/css/base/helpers
+  @import ~assets/css/base/helpers
+
+  h1
+    margin-bottom: 0
+
+  .videos-section
+    background-color: $color-vue-green
+    margin-bottom: -80px
+    padding-top: 10px
+
+    h2, p
+      color: white
 
 
-h1
-  margin-bottom: 0
-  // color: white
+    .youtube
+      background-color: white
+      color: $color-vue-green
+      font-size: 12pt
+      margin-top: 48px
 
-.desc-section
-  // background-color: $color-green--dark
-  // color: white
-
-  // h1, h2, p
-  //   color: white
+      &:hover
+        background-color: darken(white, 5)
 </style>
