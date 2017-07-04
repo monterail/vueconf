@@ -30,6 +30,9 @@ export default {
 <style lang="sass" scoped>
   @import ~assets/css/base/helpers
 
+  .section.post-section
+    background-color: white
+
   .half
     display: inline-block
     max-width: 100%
