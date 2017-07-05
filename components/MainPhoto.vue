@@ -22,9 +22,11 @@ export default {
 }
 </script>
 <style lang="sass" scoped>
+  @import ~assets/css/base/helpers
+
   .main-photo
     .image-wrapper
-      background-color: black
+      background-color: darken($color-text, 20)
       height: calc(100vh * 0.8)
       position: relative
       z-index: 0
@@ -53,9 +55,9 @@ export default {
       left: 0
       background-position: center
       background-size: cover
-      filter: blur(15px)
-      transform: translateZ(0)
-      opacity: 0.3
+      //filter: blur(2px)
+      transform: translate3d(0, 0, 0)
+      opacity: 0.1
       backface-visibility: hidden
       perspective: 1000
 </style>

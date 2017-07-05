@@ -41,12 +41,13 @@ export default {
     top: 0
     left: 0
     z-index: 2
+
+    padding: 0 20px
     width: 100%
     height: 100%
     background-color: rgba(0, 0, 0, 0.9)
 
     display: flex
-    justify-content: center
     align-items: center
 
     overflow-x: scroll
@@ -55,7 +56,6 @@ export default {
      color: white
 
   .photo-list__wrapper
-    width: 100%
     height: 520px
 
     display: flex
@@ -71,6 +71,8 @@ export default {
     background-position: 50% 20%
     margin: 16px
     box-sizing: border-box
+    border: 4px solid transparent
+    border-radius: 2px
     cursor: pointer
     transition: border 0.1s ease
     box-shadow: 0 15px 35px rgba(50, 50, 93, 0.03), 0 5px 15px rgba(0, 0, 0, 0.06)

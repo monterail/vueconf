@@ -116,12 +116,6 @@ export default {
   .main-photo-section
     transition: filter 0.2s ease
     filter: blur(0px)
-
-    // // blur performance hack
-    // -webkit-backface-visibility: hidden
-    // -webkit-perspective: 1000
-    // -webkit-transform: translate3d(0,0,0)
-    // -webkit-transform: translateZ(0)
     backface-visibility: hidden
     transform: translateZ(0)
     perspective: 1000
@@ -188,7 +182,6 @@ export default {
 
   .main-photo-enter-active, .main-photo-leave-active
     transition: opacity 1s ease, transform 1s ease
-    transform-origin: 50% 50%
 
 
 </style>
