@@ -9,13 +9,13 @@ const talks = [
     speaker: 'Chris Fritz',
     name: 'Avoiding an awkward fit: how to best introduce Vue into your app and team',
     avatar: ['/img/chris.jpg'],
-    videoUrl: ''
+    videoUrl: 'https://www.youtube.com/embed/SB_ZWr2_Bzo'
   },
   {
     speaker: 'Alex & Sebastien Chopin',
     name: 'Server side rendering in Vue.js',
     avatar: ['/img/alex.jpg', '/img/sebastien.jpg'],
-    videoUrl: ''
+    videoUrl: 'https://www.youtube.com/embed/Dkf3AwxrSjE'
   },
   {
     speaker: 'Callum Macrae',
@@ -33,7 +33,7 @@ const talks = [
     speaker: 'Sean Larkin',
     name: 'Code splitting patterns in Vue.js',
     avatar: ['/img/sean.jpg'],
-    videoUrl: ''
+    videoUrl: 'https://www.youtube.com/embed/rn97hCNQsKI'
   },
   {
     speaker: 'Paweł Grabarz',
@@ -45,7 +45,7 @@ const talks = [
     speaker: 'Filipa Lacerda',
     name: 'No Time to Refactor, How we made the Frontend Awesome At GitLab With Vue.',
     avatar: ['/img/filipa.jpg'],
-    videoUrl: ''
+    videoUrl: 'https://www.youtube.com/embed/-69tKcl1oTE'
   },
   {
     speaker: 'Discussion Panel',
@@ -81,7 +81,7 @@ const talks = [
     speaker: 'Jacob Lee',
     name: 'Using Serverless Technology to Ship Vue Apps That Scale',
     avatar: ['/img/jacoblee.jpg'],
-    videoUrl: ''
+    videoUrl: 'https://www.youtube.com/embed/eFJnMH9V6GY'
   },
   {
     speaker: 'Blake Newman',
