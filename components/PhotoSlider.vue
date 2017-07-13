@@ -1,15 +1,22 @@
 <template lang="pug">
   .photo-slider-section(@keyup.right="nextPhoto")
-    .main-photo-section()
-      transition(name="main-photo", :class="{'blur': listOpen}")
-        main-photo.main-photo(:blur="listOpen", :photo="selectedPhoto", :key="selectedPhoto.url")
-    transition(name="photo-list")
-      photo-list(v-show="listOpen", :selectedPhoto="selectedPhoto", @photo:selected="handlePhotoSelected", :photos="photos")
     .buttons-section(v-if="!listOpen")
       .auto-play-button.button(@click="toggleAutoPlay")
         img(:src="icon")
       .show-list-button.button(@click="openList")
         div Show all photos
+    .navigation
+      .button-wrap
+        .left.button(@click="prevPhoto")
+          img(:src="playIcon")
+      .button-wrap
+        .right.button(@click="nextPhoto")
+          img(:src="playIcon")
+    .main-photo-section()
+      transition(name="main-photo", :class="{'blur': listOpen}")
+        main-photo.main-photo(:blur="listOpen", :photo="selectedPhoto", :key="selectedPhoto.url")
+    transition(name="photo-list")
+      photo-list(v-show="listOpen", :selectedPhoto="selectedPhoto", @photo:selected="handlePhotoSelected", :photos="photos")
 </template>
 <script>
 import MainPhoto from './MainPhoto'
@@ -40,6 +47,7 @@ export default {
       autoPlay: false,
       selectedPhoto: this.photos[0],
       autoPlayTimeout: 0,
+      playIcon,
     }
   },
   computed: {
@@ -138,6 +146,7 @@ export default {
     color: white
     opacity: 0.7
     transition: opacity 0.2s ease
+    z-index: 2
 
     &:hover
       opacity: 1
@@ -156,6 +165,49 @@ export default {
 
     img
       padding-left: 2px
+
+  .navigation
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    z-index: 1
+    pointer-events: none
+
+    .button-wrap
+      width: 100px
+      height: 100%
+      display: flex
+      justify-content: center
+      align-items: center
+      opacity: 0.7
+      transition: opacity 0.2s ease
+      pointer-events: auto
+
+      &:hover
+        opacity: 1
+
+    .button
+      margin: 0 32px
+      width: 36px
+      height: 36px
+      padding: 0
+      display: flex
+      justify-content: center
+      align-items: center
+
+      img
+        padding-left: 2px
+
+      &.left
+        img
+          padding-bottom: 4px
+          transform: rotate(180deg)
+
 
   .photo-list-enter, .photo-list-leave-to
     opacity: 0
