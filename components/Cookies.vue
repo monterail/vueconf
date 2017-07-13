@@ -2,7 +2,9 @@
 .cookies__container(v-show="!cookiesAccepted")
   .container__inner
     p.cookies__message
-      | We use cookies to provide you with better user experience and for statistical purposes. You can block cookies by adjusting settings on your browser. If you do not block cookies, you give your consent to use them and store them in the memory of your device. For more information see our
+      | We use cookies to provide you with better user experience and for statistical purposes.
+      | You can block cookies by adjusting settings on your browser. If you do not block cookies,
+      | you give your consent to use them and store them in the memory of your device. For more information see our
       = " "
       nuxt-link(to="/privacypolicy") Privacy Policy
       | .
