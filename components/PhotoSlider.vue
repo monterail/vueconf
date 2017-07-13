@@ -59,10 +59,10 @@ export default {
     this.startAutoPlay()
     window.addEventListener('keyup', (ev) => {
       if(ev.key === 'ArrowRight') {
-        this.prevPhoto()
+        this.nextPhoto()
         this.stopAutoPlay()
       } else if (ev.key === 'ArrowLeft') {
-        this.nextPhoto()
+        this.prevPhoto()
         this.stopAutoPlay()
       }
     })
