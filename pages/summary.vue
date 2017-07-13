@@ -1,7 +1,5 @@
 <template lang="pug">
 .container
-  .container__inner.post-section
-    h1.summary__header Conference Summary
   .section.desc-section
     .container__inner.post-section
       include:markdown-it ../content/summaryText.md
@@ -53,7 +51,10 @@ export default {
   @import ~assets/css/base/helpers
 
   h1
-    margin-bottom: 0
+    margin-bottom: 64px
+
+  .desc-section
+    padding-top: 0
 
   .videos-section
     background-color: $color-vue-green

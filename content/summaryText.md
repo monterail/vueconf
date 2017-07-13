@@ -1,1 +1,4 @@
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non vulputate augue. Donec condimentum et purus at vulputate. Nunc libero nibh, pellentesque vitae lacus a, blandit vulputate urna. Praesent vitae massa a quam facilisis vulputate. Vestibulum dapibus consequat neque nec dignissim. Maecenas gravida, leo vitae tincidunt sollicitudin, tortor lorem rhoncus dolor, non auctor odio diam vitae tellus.
+# VueConf 2017
+_21-23.06.2017_
+
+Over 300 attendees from different parts of the world visited Wrocław to take part in the first international Vue-related conference organized by Monterail and Evan You. Check out the video and photo materials from the very first edition of VueConf!
