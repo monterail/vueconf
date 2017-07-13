@@ -3,15 +3,13 @@
     .photo-list__wrapper
       .photo-thumb(
         v-for="photo in photos",
-        v-bind:style="{backgroundImage: `url(${photo})`}",
+        v-bind:style="{backgroundImage: `url(${photo.thumbnail})`}",
         :class="{selected: isSelected(photo)}"
         @click="handlePhotoClick(photo)",
       )
 </template>
 
 <script>
-import hero from '../assets/img/knh-front.jpg'
-
 export default {
   props: {
     photos: {
@@ -19,7 +17,7 @@ export default {
       required: true,
     },
     selectedPhoto: {
-      type: String,
+      type: Object,
       required: true,
     }
   },

@@ -6,7 +6,7 @@
     .container__inner.post-section
       include:markdown-it ../content/summaryText.md
 
-  photo-slider(:photos="photos")
+  photo-slider(:photos="photos", :autoPlayDuration="10000")
   .section.videos-section
     .container__inner.post-section
       h2 Talks
@@ -20,13 +20,17 @@ import VideoPlayer from '../components/VideoPlayer'
 
 import talkVideos from '../content/talkVideos.js'
 
-const importPhotos = (r) => {
-  let images = {};
-  r.keys().map(item => { images[item.replace('./', '')] = r(item); });
-  return images;
-}
+const s3Base = 'https://vueconf.s3.amazonaws.com'
 
-const photos = Object.values(importPhotos(require.context('../static/summary/photos', false, /\.(png|jpe?g|svg)$/)));
+const workshopPhotos = [...Array(19).keys()].map(index => ({
+  url: `${s3Base}/workshops/workshop${index+1}.jpg`,
+  thumbnail: `${s3Base}/workshops/workshop_min${index+1}.jpg`
+}))
+
+const vueconfPhotos = [...Array(159).keys()].map(index => ({
+  url: `${s3Base}/vueconf-2017/img${index+1}.jpg`,
+  thumbnail: `${s3Base}/vueconf-2017/img_min${index+1}.jpg`
+}))
 
 export default {
   components: {
@@ -35,7 +39,7 @@ export default {
   },
   data() {
     return {
-      photos,
+      photos: [ ...vueconfPhotos, ...workshopPhotos ],
       talks: talkVideos,
     }
   },

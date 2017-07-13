@@ -1,17 +1,25 @@
 <template lang="pug">
   .main-photo
     .image-wrapper
-      .image(v-bind:style="{backgroundImage: `url(${photo})`}")
-      .image-backdrop(v-bind:style="{backgroundImage: `url(${photo})`}")
+      .image(v-bind:style="{backgroundImage: `url(${backgroundUrl})`}", :class="{loading: !loaded}")
+      .image-backdrop(v-bind:style="{backgroundImage: `url(${photo.thumbnail})`}")
 </template>
 
 <script>
 
 
 export default {
+  mounted() {
+    const url = this.photo.url;
+
+    const img = new Image();
+    img.onload = () => { this.loaded = true; }
+    img.src = url;
+    if (img.complete) img.onload();
+  },
   props: {
     photo: {
-      type: String,
+      type: Object,
       required: true,
     },
     blur: {
@@ -19,6 +27,16 @@ export default {
       required: true,
     }
   },
+  computed: {
+    backgroundUrl() {
+      return this.loaded ? this.photo.url : this.photo.thumbnail
+    }
+  },
+  data() {
+    return {
+      loaded: false
+    }
+  }
 }
 </script>
 <style lang="sass" scoped>
@@ -45,6 +63,10 @@ export default {
       background-size: auto 100%
       background-position: center top
       z-index: 2
+      transition: filter 0.5s ease
+
+      &.loading
+        filter: blur(2px)
 
     .image-backdrop
       position: absolute
@@ -55,7 +77,7 @@ export default {
       left: 0
       background-position: center
       background-size: cover
-      //filter: blur(2px)
+      // filter: blur(2px)
       transform: translate3d(0, 0, 0)
       opacity: 0.1
       backface-visibility: hidden
