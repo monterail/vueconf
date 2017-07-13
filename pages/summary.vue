@@ -57,7 +57,7 @@ export default {
     padding-top: 0
 
   .videos-section
-    background-color: $color-vue-green
+    background-color: $color-blue
     margin-bottom: -80px
     padding-top: 10px
 
@@ -66,11 +66,6 @@ export default {
 
 
     .youtube
-      background-color: white
-      color: $color-vue-green
       font-size: 12pt
       margin-top: 48px
-
-      &:hover
-        background-color: darken(white, 5)
 </style>

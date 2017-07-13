@@ -68,7 +68,7 @@ export default {
     transition: all 0.2s ease
 
     &.selected
-      background-color: $color-blue
+      background-color: $color-vue-green
       color: white
 
     &:not(:last-child)::after
