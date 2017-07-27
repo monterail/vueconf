@@ -73,12 +73,17 @@
       background-color: rgba(0, 0, 0, 0.7)
 
     .modal-window
-      background-color: white
-      width: 853px
-      height: 480px
+      background-color: transparent
+      max-height: 100%
+      width: 100%
+      max-width: calc(80%)
       border-radius: 4px
+      margin: 0 20px
       position: relative
-      box-shadow: 0 15px 35px rgba(50, 50, 93, 0.03), 0 5px 15px rgba(0, 0, 0, 0.06)
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
 
     .modal-window__button
       width: 32px
@@ -93,8 +98,19 @@
       right: -10px
 
     .modal-window__video
-      border-radius: 4px
-      overflow: hidden
+      position: relative
+      padding-bottom: 56.25%; /* 16:9 */
+      padding-top: 25px
+      height: 0
+      width: 100%
+      height: 100%
+
+      iframe
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
 
   .splash-video-enter-active
     transition: opacity .5s 1s ease
