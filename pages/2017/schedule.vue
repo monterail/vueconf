@@ -23,11 +23,12 @@
 </template>
 
 <script>
-import Event from '../components/Event'
-import eventsDay1 from '../content/scheduleDay1'
-import eventsDay2 from '../content/scheduleDay2'
+import Event from '../../components/Event'
+import eventsDay1 from '../../content/scheduleDay1'
+import eventsDay2 from '../../content/scheduleDay2'
 
 export default {
+  layout: '2017',
   head: {
     title: 'VueConf 2017 | Talks'
   },

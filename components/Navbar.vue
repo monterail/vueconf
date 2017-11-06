@@ -1,7 +1,7 @@
 <template lang="pug">
 .navbar(:class="isOpen && 'open'")
   .navbar__container
-    nuxt-link.navbar__logo(to="/")
+    nuxt-link.navbar__logo(to="/2017")
 
     button.navbar__burger(type="button", @click="toggle")
         .bar
@@ -11,19 +11,19 @@
     nav
       ul.navbar-nav(@click="toggle")
         li.navbar-nav__item
-          nuxt-link(to="/speakers")
+          nuxt-link(to="/2017/speakers")
             | Speakers
         li.navbar-nav__item
-          nuxt-link(to="/workshops")
+          nuxt-link(to="/2017/workshops")
             | Workshops
         li.navbar-nav__item
-          nuxt-link(to="/schedule")
+          nuxt-link(to="/2017/schedule")
             | Schedule
         li.navbar-nav__item
-          nuxt-link(to="/guide")
+          nuxt-link(to="/2017/guide")
             | Guide
         li.navbar-nav__item
-          nuxt-link.button(to="/summary")
+          nuxt-link.button(to="/2017/summary")
             | Summary
 </template>
 

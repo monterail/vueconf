@@ -33,6 +33,8 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/img/logo-48.png' },
       { rel: 'manifest', href: '/manifest.json' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600&amp;subset=latin-ext' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Montserrat:300' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans:300,400' }
     ],
     script: [
       { type: 'text/javascript', src: '/sw.js' }
@@ -49,6 +51,6 @@ module.exports = {
   plugins: [
     { src: '~plugins/analytics', ssr: false },
     { src: '~plugins/cookies', ssr: false },
-    { src: '~plugins/offline.js', ssr: false }
+    { src: '~plugins/offline', ssr: false }
   ]
 }

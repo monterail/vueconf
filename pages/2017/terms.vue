@@ -120,6 +120,7 @@
 </template>
 <script>
 export default {
+  layout: '2017',
   head: {
     title: 'VueConf 2017 | Terms & Conditions'
   }

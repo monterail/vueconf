@@ -1,0 +1,7 @@
+<template>
+<svg viewBox="0 0 921 793" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+  <path d="M460.3 300.54L167.9 792.45h594L460.3 300.54z" fill="#34495f"/>
+  <path d="M460.368 0l460.356 792.453H.013L460.368-.001zm0 316.064l-277.13 476.389h554.26l-277.13-476.389z" fill="#3ab982"/>
+  <path d="M353.535 792.46l106.8-183.22 106.9 183.22h-213.7z" fill="#3ab982"/>
+</svg>
+</template>

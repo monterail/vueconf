@@ -12,7 +12,7 @@
 
       Monterail – Monterail.com Sp. z o.o. with its registered office in Wrocław, at 27-29 Oławska street, 50-123 Wrocław, Poland, registered with the Register of Entrepreneurs of the National Court Register maintained by the District Court of Wrocław-Fabryczna in Wrocław, VI Commercial Division of the National Court Register, under entry number KRS 0000357415, NIP 778-147-18-20, REGON 301447685, share capital 5.000 PLN, e-mail vueconf@monterail.com.
 
-      Website – official website of the VueConf 2017, available at [conf.vuejs.org](https://conf.vuejs.org/).
+      Website – official website of the VueConf 2017, available at [conf.vuejs.org/2017](https://conf.vuejs.org/2017).
 
       ## § 2
       ### PERSONAL DATA
@@ -55,7 +55,7 @@
 
       Monterail reserves the right to amend the provisions of this Privacy Policy at any time due to important reasons, in particular economic, technical or legal, without the obligation to justify these reasons.
 
-      The current version of this Privacy Policy is available at any time at [conf.vuejs.org/privacypolicy](https://conf.vuejs.org/privacypolicy), also in a downloadable [form](https://conf.vuejs.org/privacypolicy.pdf).
+      The current version of this Privacy Policy is available at any time at [conf.vuejs.org/2017/privacypolicy](https://conf.vuejs.org/2017/privacypolicy), also in a downloadable [form](https://conf.vuejs.org/privacypolicy.pdf).
 
       ## § 5
       ### CONTACT
@@ -64,6 +64,7 @@
 </template>
 <script>
 export default {
+  layout: '2017',
   head: {
     title: 'VueConf 2017 | Private Policy'
   }

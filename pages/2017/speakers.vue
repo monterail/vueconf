@@ -7,7 +7,7 @@
     speakers-list(:speakers="speakers", :adjust-img-url="true")
 
     .center
-      nuxt-link(to="/schedule")
+      nuxt-link(to="/2017/schedule")
         button.button.speaker-button Check out the schedule
 
     h2
@@ -15,10 +15,11 @@
 </template>
 
 <script>
-import SpeakersList from '../components/SpeakersList'
-import speakers from '../content/speakers/speaker-list'
+import SpeakersList from '../../components/SpeakersList'
+import speakers from '../../content/speakers/speaker-list'
 
 export default {
+  layout: '2017',
   head: {
     title: 'VueConf 2017 | Speakers'
   },

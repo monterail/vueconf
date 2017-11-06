@@ -15,12 +15,12 @@ footer.footer
             span.at monterail.com
       ul.footer__list.footer__list--small
         h3.footer__header Useful links
-        li: nuxt-link(to="/speakers") Speakers
-        li: nuxt-link(to="/schedule") Schedule
-        li: nuxt-link(to="/workshops") Workshops
-        li: nuxt-link(to="/terms") Terms & Conditions
-        li: nuxt-link(to="/codeofconduct") Code of Conduct
-        li: nuxt-link(to="/privacypolicy") Privacy Policy
+        li: nuxt-link(to="/2017/speakers") Speakers
+        li: nuxt-link(to="/2017/schedule") Schedule
+        li: nuxt-link(to="/2017/workshops") Workshops
+        li: nuxt-link(to="/2017/terms") Terms & Conditions
+        li: nuxt-link(to="/2017/codeofconduct") Code of Conduct
+        li: nuxt-link(to="/2017/privacypolicy") Privacy Policy
 
     .footer__bottom
       | Proudly supported by

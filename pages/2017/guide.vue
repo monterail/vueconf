@@ -52,35 +52,36 @@ div
       p.
         Here you can find helpful info that will make your stay in Wroclaw easier and more entertaining. We chose several places and attractions that are certainly worth your attention. Check out these special conference discounts and extras:
 
-      attraction(v-for="hotel of hotels", :attraction="hotel")
+      attraction(v-for="(hotel, index) of hotels", :key='index', :attraction="hotel")
       h2: strong Restaurant recommendations
       p.
         A list of our favorite places to eat and drink. Show your VueConf badge and get special discounts!
 
-      attraction(v-for="restaurant of restaurants", :attraction="restaurant")
+      attraction(v-for="(restaurant, index) of restaurants", :key='index', :attraction="restaurant")
       h2: strong Good to know
       p.
         A bit more key information to make your stay comfortable!
 
-      hint(v-for="hint of hints", :hint="hint")
+      hint(v-for="(hint, index) of hints", :key='index', :hint="hint")
       h2: strong Attractions
       p.
         Wrocław is full of beautiful and interesting places you must see being here. We created a short list of the most important ones to help you plan your trip around this astonishing city!
 
-      attraction(v-for="sight of sights", :attraction="sight")
+      attraction(v-for="(sight, index) of sights", key='index', :attraction="sight")
 </template>
 
 <script>
-import VenueSection from '~components/Venue'
-import WroclawVideo from '~components/WroclawVideo'
-import Attraction from '~components/Attraction'
-import Hint from '~components/Hint'
+import VenueSection from '~/components/Venue'
+import WroclawVideo from '~/components/WroclawVideo'
+import Attraction from '~/components/Attraction'
+import Hint from '~/components/Hint'
 import hotels from '~/content/hotels'
 import restaurants from '~/content/restaurants'
 import hints from '~/content/hints'
 import sights from '~/content/sights'
 
 export default {
+  layout: '2017',
   components: {
     VenueSection,
     WroclawVideo,

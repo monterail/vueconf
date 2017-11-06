@@ -1,7 +1,7 @@
 <template lang="pug">
 .speakers-list
   transition-group(name="fade", tag="div")
-    speaker.fade(v-for="speaker of speakersList", :speaker="speaker", :key="speaker", :adjust-img-url="adjustImgUrl")
+    speaker.fade(v-for="(speaker, index) of speakersList", :speaker="speaker", :key="index", :adjust-img-url="adjustImgUrl")
 </template>
 
 <script>
@@ -36,7 +36,7 @@ export default {
 
 .speakers-list
   margin: 0 -10px
-  
+
 .fade
   opacity: 1
   transition: opacity 0.2s ease-in-out

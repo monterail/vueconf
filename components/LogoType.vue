@@ -285,15 +285,22 @@ export default {
     }
   },
   async mounted () {
-    if (process.BROWSER_BUILD) {
-      await this.animateLogo()
-      this.animateTrees()
-      await wait(800)
-      this.animateTypo()
-      this.animateSun()
-      await wait(400)
-      this.animateDate()
-    }
+    await this.animateLogo()
+    this.animateTrees()
+    await wait(800)
+    this.animateTypo()
+    this.animateSun()
+    await wait(400)
+    this.animateDate()
+    // if (process.BROWSER_BUILD) {
+    //   await this.animateLogo()
+    //   this.animateTrees()
+    //   await wait(800)
+    //   this.animateTypo()
+    //   this.animateSun()
+    //   await wait(400)
+    //   this.animateDate()
+    // }
   }
 }
 </script>

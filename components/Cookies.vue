@@ -6,7 +6,7 @@
       | You can block cookies by adjusting settings on your browser. If you do not block cookies,
       | you give your consent to use them and store them in the memory of your device. For more information see our
       = " "
-      nuxt-link(to="/privacypolicy") Privacy Policy
+      nuxt-link(to="/2017/privacypolicy") Privacy Policy
       | .
     button.button(type="button", @click="acceptCookies") Accept
     button.button.button--dark(type="button", @click="cookiesAccepted = true") Close

@@ -12,13 +12,14 @@
     .agenda
       talk(
         v-for="talk of talks",
+        :key='talk'
         :talk="talk"
       )
 </template>
 
 <script>
-import Talk from '../components/Talk'
-import talks from '../content/agenda'
+import Talk from '../../components/Talk'
+import talks from '../../content/agenda'
 
 export default {
   head: {

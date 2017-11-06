@@ -8,7 +8,7 @@
         | Wrocław, Poland • June 21-23, 2017
       h2.hero-banner__subheader.hero-banner__subheader--last
         | The first Official Vue.js Conference in the world!
-      nuxt-link.post-section__button.button(to="/summary")
+      nuxt-link.post-section__button.button(to="/2017/summary")
         | See the summary
 </template>
 

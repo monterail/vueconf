@@ -2,7 +2,7 @@
 .container
   .section.desc-section
     .container__inner.post-section
-      include:markdown-it ../content/summaryText.md
+      include:markdown-it ../../content/summaryText.md
 
   photo-slider(:photos="photos", :autoPlayDuration="10000")
   .section.videos-section
@@ -13,10 +13,10 @@
 </template>
 
 <script>
-import PhotoSlider from '../components/PhotoSlider'
-import VideoPlayer from '../components/VideoPlayer'
+import PhotoSlider from '../../components/PhotoSlider'
+import VideoPlayer from '../../components/VideoPlayer'
 
-import talkVideos from '../content/talkVideos.js'
+import talkVideos from '../../content/talkVideos.js'
 
 const s3Base = 'https://vueconf.s3.amazonaws.com'
 
@@ -31,6 +31,7 @@ const vueconfPhotos = [...Array(159).keys()].map(index => ({
 }))
 
 export default {
+  layout: '2017',
   components: {
     PhotoSlider,
     VideoPlayer,

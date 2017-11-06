@@ -5,7 +5,7 @@
     p.subheader__description
       strong DAY 1 (21 June) 9:00 – 17:00
       br
-      strong 
+      strong
         | Location:
         a(href="https://goo.gl/maps/Y9MwJikkhB32", target="_BLANK")  ibis Styles Wrocław
       br
@@ -61,9 +61,10 @@
 </template>
 
 <script>
-import Talk from '../components/Talk'
+import Talk from '../../components/Talk'
 
 export default {
+  layout: '2017',
   head: {
     title: 'VueConf 2017 | Workshops'
   },
