@@ -26,116 +26,115 @@
           p.post-section__paragraph
             | Organized and supported by
 
-          a.organizers__logo(href="http://monterail.com?utm_campaign=Vue.js&utm_medium=site&utm_source=vjsconf" target="_blank")
+          a.organizers__logo(href="https://www.monterail.com?utm_campaign=Vue.js&utm_medium=site&utm_source=vjsconf" target="_blank")
             img(src="~assets/img/monterail-logotype.svg" alt="Monterail")
 
     .organizers-more
       .organizers-more__text
-        | #[a(href="http://monterail.com?utm_campaign=Vue.js&utm_medium=site&utm_source=vjsconf" target="_blank") Monterail] is a #[strong web development and design agency] based in Poland.
+        | #[a(href="https://www.monterail.com/services/vue-development?utm_campaign=Vue.js&utm_medium=site&utm_source=vjsconf" target="_blank") Monterail] is a #[strong web development and design agency] based in Poland.
         | #[br] And we kinda love #[strong Vue]!
 </template>
 
 <script>
-export default {
-}
+  export default {};
 </script>
 
 <style lang="sass">
-@import ~assets/css/base/helpers
+  @import ~assets/css/base/helpers
 
-.organizers
-  display: flex
-  justify-content: space-between
-  flex-wrap: wrap
+  .organizers
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
 
-.section.organizers-section
-  padding-bottom: 0
+  .section.organizers-section
+    padding-bottom: 0
 
-.organizer
-  width: 100%
-  margin: 10px 0 40px 0
+  .organizer
+    width: 100%
+    margin: 10px 0 40px 0
 
-  @media #{$medium-up}
-    width: 50%
+    @media #{$medium-up}
+      width: 50%
 
-  @media #{$large-up}
-    width: 25%
+    @media #{$large-up}
+      width: 25%
+      margin: 10px 0
+
+  .organizer__title
+    font-size: 24px
+    font-weight: 600
+    color: $color-text
+
+  .organizer__subtitle
+    font-size: 18px
+    font-weight: 300
+    color: $color-blue
+
+  .organizer__image
+    max-width: 202px
+    margin-bottom: 15px
+    border-radius: 300px
+
+  .organizer__social
+    margin-top: 15px
+
+    .icon--twitter
+      margin-left: 15px
+
+  .organizer__company
+    width: 100%
     margin: 10px 0
 
-.organizer__title
-  font-size: 24px
-  font-weight: 600
-  color: $color-text
+    @media #{$large-up}
+      width: 35%
 
-.organizer__subtitle
-  font-size: 18px
-  font-weight: 300
-  color: $color-blue
+  .organizers__logo
+    img
+      max-width: 233px
+      width: 100%
 
-.organizer__image
-  max-width: 202px
-  margin-bottom: 15px
-  border-radius: 300px
-
-.organizer__social
-  margin-top: 15px
-
-  .icon--twitter
-    margin-left: 15px
-
-.organizer__company
-  width: 100%
-  margin: 10px 0
-
-  @media #{$large-up}
-    width: 35%
-
-.organizers__logo
-  img
-    max-width: 233px
-    width: 100%
-
-.organizer__content
-  display: inline-block
-
-  @media #{$large-up}
-    display: flex
-    flex-direction: column
-    margin-top: 45px
-
-  .post-section__paragraph
-    text-align: center
-
-.organizers-more
-  margin-top: 60px
-
-.organizers-more__text,
-.organizers-more__button
-  margin: 10px 0
-
-  @media #{$large-up}
+  .organizer__content
     display: inline-block
-    vertical-align: middle
 
-.organizers-more__text
-  font-size: 18px
-  font-weight: 300
-  color: $color-text
-  line-height: 1.4
-  text-align: left
+    @media #{$large-up}
+      display: flex
+      flex-direction: column
+      margin-top: 45px
 
-  a
-    font-weight: 600
-    text-decoration: none
-    color: $color-red
+    .post-section__paragraph
+      text-align: center
 
-  @media #{$large-up}
-    font-size: 20px
-    text-align: center
+  .organizers-more
+    margin-top: 60px
 
-.organizers-more__button
-  background-color: $color-red
+  .organizers-more__text,
+  .organizers-more__button
+    margin: 10px 0
 
-  &:hover
-    background-color: lighten($color-red, 10%)
+    @media #{$large-up}
+      display: inline-block
+      vertical-align: middle
+
+  .organizers-more__text
+    font-size: 18px
+    font-weight: 300
+    color: $color-text
+    line-height: 1.4
+    text-align: left
+
+    a
+      font-weight: 600
+      text-decoration: none
+      color: $color-red
+
+    @media #{$large-up}
+      font-size: 20px
+      text-align: center
+
+  .organizers-more__button
+    background-color: $color-red
+
+    &:hover
+      background-color: lighten($color-red, 10%)
 </style>
